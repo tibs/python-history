@@ -159,11 +159,11 @@ https://en.wikipedia.org/wiki/History_of_Python
 * https://www.w3.org/Tools/Python/Overview.html - the Python WWW tools
 * http://dalkescientific.com/writings/diary/archive/2009/03/27/python_0_9_1p1.html
   - Andrew Dalke resurrected Python 0.9.1 (And very primitive it is too. No
-    copyright message when it starts up. Bad error reporting. Class delaration
-    requires a () even when there are no parents. There's no __init__ special
-    method, so the convention is to call 'Create()' yourself. Uses 'self' and
-    'this' and other terms instead of only 'self'. Only understands 'single
-    quote strings' and not "double quotes." )
+  copyright message when it starts up. Bad error reporting. Class delaration
+  requires a () even when there are no parents. There's no __init__ special
+  method, so the convention is to call 'Create()' yourself. Uses 'self' and
+  'this' and other terms instead of only 'self'. Only understands 'single
+  quote strings' and not "double quotes." )
 * https://opensource.org/licenses/Python-2.0 - Python 2.0 license
 
 * https://www.youtube.com/channel/UChA9XP_feY1-1oSy2L7acog - PyCon UK videos
