@@ -16,12 +16,81 @@ code with a date on it that I've found is from 1994.
 
 * Monty Python, not snakes (and Guido's reluctance to see snakes associated
   with the language)
-* Early web browser written in Python
+* Early web browser written in Python https://en.wikipedia.org/wiki/Grail_(web_browser)
+
+  Grail was a free extensible multi-platform web browser written in the Python
+  programming language. The project was started in August 1995, with its first
+  public release in November of that year.[3] The 0.3 beta contained over
+  27,000 lines of Python.[3] The last official release was version 0.6 in
+  1999.
+
+  One of the major distinguishing features of Grail was the ability to run
+  client-side Python code
+
+  * https://en.wikipedia.org/wiki/Netscape started as:
+  * https://en.wikipedia.org/wiki/Mosaic_(web_browser) 1992
+  * https://en.wikipedia.org/wiki/Internet_Explorer 1994
+
+  * http://grail.sourceforge.net/
+  * https://github.com/mdoege/Trail - Grail fork
+  * https://github.com/ashumeow/grail - Grail fork
+  * https://www.reddit.com/r/Python/comments/3dthqf/grail_a_python_web_browser_from_the_90s_written/ (1 year ago)
+
+    * https://github.com/mdoege/grailbrowser - fork that says it works with
+      Python 2.7
+
 * the Usenet days - back when you could read all of comp.lang.python every day
 * Starship Python
+
 * the Zen of Python, Guido's time machine, the PSF, and other jokes
+
+  * https://www.python.org/doc/humor/
+  * https://wiki.python.org/moin/Humor
+  * https://www.youtube.com/watch?v=gJ4duC-V6Xw&feature=youtu.be - Monty
+    Python Jokes for Pythonistas
+  * https://xkcd.com/353/
+  * timbot
+  * Guido's time machine
+
+    * https://speakerdeck.com/pyconza/pyconza-2014-what-i-learned-about-python-and-about-guidos-time-machine-by-reading-the-python-ideas-mailing-list-by-david-mertz
+    * https://archive.org/details/pyconza2014-python-ideas (video)
+
+  * https://mail.python.org/pipermail/python-list/2001-February/063576.html
+    Python the role playing game
+  * PSU: Python Sectret Underground (who do not exist)
+
+    * https://groups.google.com/forum/#!search/The$20PSU$27s$20Existence$20Revealed$20comp.lang.python/comp.lang.python/AFqy7ItagYM/XxW95wMEpEoJ
+    * https://groups.google.com/forum/#!search/The$20PSU$27s$20Existence$20Revealed$20comp.lang.python/comp.lang.python/st0yPgpr-aU/wXTiFFAugNEJ
+    * https://groups.google.com/forum/#!search/Status$20of$20the$20PSU$20comp.lang.python/comp.lang.python/7UAoH95mUpw/rrTUUXz-SmYJ
+    * https://groups.google.com/forum/#!topic/comp.lang.python/VNXTFOdWPI0%5B151-175%5D
+    * https://groups.google.com/forum/#!msg/comp.lang.python/7qszKYUqqwI/goDCgE78U_EJ (Roswell)
+    * https://groups.google.com/forum/#!search/Status$20of$20the$20PSU$20comp.lang.python/comp.lang.python/G293F7R5_Y4/PzrfgpXGA5EJ
+    * https://groups.google.com/forum/#!search/roswell$20PSU$20comp.lang.python/comp.lang.python/hxUeYn94Cis/u6xMo-MuKEkJ
+    * https://groups.google.com/forum/#!search/alien$20whitespace/comp.lang.python/V4EEmLncO5E/T5be4rZAB9MJ (Alien whitespace eating nanovirus)
+
+* Python easter eggs: https://www.youtube.com/watch?v=R4tkq6AhGCw
+  * import this
+  * import antigravity
+  * from __future__ import braces
+  * from __future__ import barry_as_FLUFL (does this still work?)
+
 * Guido - release a new version and go on holiday
 * Tim Peters and timsort
+
+  * http://stackoverflow.com/users/2705542/tim-peters
+  * http://wiki.c2.com/?TimPeters
+  * https://www.youtube.com/watch?v=1wAOy88WxmY Interview with Tim Peters,
+    PyCon 2006
+  * https://www.python.org/dev/peps/pep-0020/ The Zen of Python is a PEP
+  * https://www.cs.duke.edu/courses/cps006/fall10/notes/slides14-4up.pdf
+  * https://en.wikipedia.org/wiki/Timsort
+  * the source code for timsort contains wonderful explanatory comments
+  * http://www.drmaciver.com/2010/01/understanding-timsort-1adaptive-mergesort/
+  * he invented doctest
+
+    * https://docs.python.org/2/library/doctest.html
+    * https://en.wikipedia.org/wiki/Doctest
+
 * Python, Perl, Parrot
 
   * Fake Parrot interview: http://www.perl.com/pub/2001/04/01/parrot.htm
@@ -29,7 +98,7 @@ code with a date on it that I've found is from 1994.
  
   From video https://www.youtube.com/watch?v=gJ4duC-V6Xw&feature=youtu.be
 
-* Matz and Ruby
+* Matz and Ruby (maybe not)
 * tkinter, and why
 * dictionaries all the way down
 * doc strings
@@ -106,6 +175,26 @@ https://en.wikipedia.org/wiki/History_of_Python
   - Diversity in practice: How the Boston Python User Group grew to 1700
   people and over 15% women 
 
+Python 2.7 will not be maintained past 2020 (https://pythonclock.org/)
+
+* http://pybit.es/python-porting.html Best Practices for Compatible Python 2 and 3 Code, Mar 2017
+* http://sebastianraschka.com/Articles/2014_python_2_3_key_diff.html The key differences between Python 2.7.x and Python 3.x with examples, Jun 2014 
+* http://python-future.org/compatible_idioms.html Cheat Sheet: Writing Python 2-3 compatible code (last date 2016)
+* http://www.asmeurer.com/python3-presentation/slides.html#1 - 10 awesome
+  features of Python that you can't use because you refuse to upgrade to
+  Python 3 - goes up to about 3.5, Mar 2016
+
+* https://en.wikipedia.org/wiki/Sphinx_(documentation_generator)
+* Georg Brandl, 2008, for Python documentation
+* https://raw.githubusercontent.com/sphinx-doc/sphinx/master/CHANGES.old for
+  old versions back to first release
+* http://pythonic.pocoo.org/2008/3/21/sphinx-is-released appears to be 400 Bad
+  Request. I think http://archive.is/Dgon is an archive of it
+* Fredrik Lundh had his http://effbot.org/zone/pyref.htm An Alternative Python Reference which I think may have come first?
+* http://robertlehmann.de/img/sphinx.pdf - some history. About George Brandl
+  it says """In 2008 , he received the Python Software Foundation Community Award for “building the Sphinx documentation system as an alternative to the LaTeX-based system [they] had been using previously, and converting the Python documentation to use it.”"""
+* http://pythonic.pocoo.org/2007/6/23/introducing-py-rest-doc - another 400
+
 Timeline makers:
 
 * https://www.preceden.com/timeline-makers - list of 33 choices
@@ -113,6 +202,5 @@ Timeline makers:
 * http://www.ispringsolutions.com/blog/top-10-free-and-paid-interactive-timeline-makers/
 * https://support.office.com/en-gb/article/Create-a-timeline-9c4448a9-99c7-4b0e-8eff-0dcf535f223c - using Excel
 
-:w
 
 .. vim: set filetype=rst tabstop=8 softtabstop=2 shiftwidth=2 expandtab:
