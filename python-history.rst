@@ -202,5 +202,18 @@ Timeline makers:
 * http://www.ispringsolutions.com/blog/top-10-free-and-paid-interactive-timeline-makers/
 * https://support.office.com/en-gb/article/Create-a-timeline-9c4448a9-99c7-4b0e-8eff-0dcf535f223c - using Excel
 
+Why I like Python
+=================
+* runnable pseudo-code - especially the significant indentation
+* dictionaries all the way down - high level datastructures built in
+* exposes its innards - very unusually for a programming language, it allows
+  itself to be modified - at least two implementations of goto (!) and Hy
+* "safe"/"sane" - a sensible language written and designed by sensible people
+
+- http://entrian.com/goto/ (goto and comefrom)
+- https://github.com/snoack/python-goto
+- and another https://github.com/cdjc/goto
+- http://docs.hylang.org/en/latest/ - a Lisp-flavoured Python
+
 
 .. vim: set filetype=rst tabstop=8 softtabstop=2 shiftwidth=2 expandtab:
