@@ -173,33 +173,101 @@ Timeline
   - string methods (``",".join([1,2,3]``)
   - garbage collections copes with reference cycles
   - Augmented assignment (``+=`` and so on).
-  - ``import module as name``
+  - ``def f(*args, **kwargs)``
   - ``print >> file, "Hello"``
-  - ``zip``, dictionary ``setdefault``
-  - finally all C code is ANSI C
-
-* Jun 2001 2.0.1
+  - ``import module as name``
+  - ``"%r"`` to print the representation of an object
+  - ``zip``
+  - dictionary ``setdefault`` (an "odd new method")
+  - distutils introduced
 
 * Apr 2001 2.1 license now "Python Software Foundation License"
 
   - PSF "owns" Python
   - Nested scopes (off by default)
+  - ``__future__`` directives introduced
+  - rich comparisons (``__lt__`` and friends)
+  - weak references
+  - Ka Ping Yee's inspect.py and pydoc.py
+  - Tim Peter's doctest.py
+  - PyUnit
+  - modules can define ``__all__`` to control what is visible to ``from module
+    import *``
 
-* Dec 2001 2.1
-  - Nested scopes on by default
-  - generators
-  - Unifications of types (C) and classes (Python)
-  - ``True`` and ``False`` appear in 2.2.1
+* Dec 2001 2.2 -> Oct 2002 2.2.2
+
+  - 2.2 license definitely GPL compatible
+  - old- and new-style classes
+  - descriptors
+  - the diamond rule for multiple inheritance
+  - ``__getattribute__`` and ``__slots__``
+  - iterators and ``__iter__``
+  - simple generators - ``yield`` - with ``from __future__ import generators``
+  - introduction of ``//``, and ``from __future__ import division``
+  - nested scopes on by default
+  - ``help()`` at the Python prompt
+
+  - ``True`` and ``False`` appear in 2.2.1 ????
 
 * Jul 2003 2.3
 
+  - ``Set`` class in the sets module
+  - generators are always present, ``yield`` is always a keyword
+  - source code encodings: ``# -*- coding: UTF-8 -*-``
+  - importing from zip files
+  - unicode filenames on Windows NT
+  - Universal newline support
+  - `enumerate`` function
+  - the logging package
   - ``bool`` type appears, ``True`` and ``False`` are now type ``bool``
+  - csv module
+  - extended slices, e.g., ``a[::2]``
+  - raising a string based exception is now an error.
+  - method resolution order was changed
+  - ``"ab" in "abcd"`` now works
+  - ``basestrings`` type added
+  - itertools module
+  - optparse module
+  - datetime module
 
 * Nov 2004 2.4
 
-  - generator expressions
+  - ``set`` and ``frozenset`` built-in types
+  - generator expressions - for instance ``links = (link for link in
+    get_all_links() if not link.followed)``
+  - ``string.Template``
+  - ``@decorator`` notation for function decorators
+  - ``sorted`` and ``reversed`` functions
+  - subprocess module
+  - ``decimal.Decimal``
+  - multi-line imports (using parentheses)
+  - ``sort`` gains ``key`` and ``reverse`` mechanisms/arguments
+  - ``-m`` command line switch finds the named module and runs it as a script
+  - ``None`` becomes a constant
+  - collections module
+  - re module gained simple conditionals: ``(?(group)A|B)``
+  - doctest module was improved
 
 * Sep 2006 2.5
+
+  - the ``with`` statement, and contextlib
+  - ``x = true_thing if condition else false_thing``, after *much* discussion,
+    and a BDFL ruling
+  - ``try``, ``except`` *and* ``finally`` allowed together
+  - ``yield`` is now an expression: ``val = (yield i)``
+  - functools, including ``functools.partial``
+  - absolute and relative imports - ``from __future__ import absolute_import``
+  - exceptions can be new style classes
+  - ``startswith`` and ``endswith`` now accept tuples as an argument
+  - ``any`` and ``all``
+  - it's now (again?) legal to do ``class C(): pass``, specifying no base
+    classes but giving the parameters
+  - ``collections.defaultdict``
+  - regex and regsub modules are finally gone
+  - developers now using subversion instead of cvs
+  - uuid module
+  - ctypes module
+  - sqlite3 module
 
 * Oct 2008 2.6
 
