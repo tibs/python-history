@@ -75,7 +75,7 @@ code with a date on it that I've found is from 1994.
   * from __future__ import barry_as_FLUFL (does this still work?)
 
 * Guido - release a new version and go on holiday
-* Tim Peters and timsort
+* Tim Peters and timsort (2002)
 
   * http://stackoverflow.com/users/2705542/tim-peters
   * http://wiki.c2.com/?TimPeters
@@ -85,6 +85,7 @@ code with a date on it that I've found is from 1994.
   * https://www.cs.duke.edu/courses/cps006/fall10/notes/slides14-4up.pdf
   * https://en.wikipedia.org/wiki/Timsort
   * the source code for timsort contains wonderful explanatory comments
+  * http://bugs.python.org/file4451/timsort.txt
   * http://www.drmaciver.com/2010/01/understanding-timsort-1adaptive-mergesort/
   * he invented doctest
 
@@ -98,6 +99,11 @@ code with a date on it that I've found is from 1994.
  
   From video https://www.youtube.com/watch?v=gJ4duC-V6Xw&feature=youtu.be
 
+  "Pie-thon" challenge:
+
+  * http://grokbase.com/t/perl/perl6-internals/032391mt4t/the-2004-performance-challenge-is-on
+  * http://archive.oreilly.com/pub/a/oscon2004/friday/index.html - 
+
 * Matz and Ruby (maybe not)
 * tkinter, and why
 * dictionaries all the way down
@@ -107,7 +113,6 @@ code with a date on it that I've found is from 1994.
 * the doc-sig and approaches to typing in the docstring or comments
 * sphynx, and the conversion of the Python docs to reStructuredText
 * jpython/Jython, IronPython, PyPy and so on (and Stackless Python)
-* 1.3 -> 1.5.2
 * the story of 2.0 and Python licenses (and where Guido worked)
 * PEPs, and the importance of being able to implement experimental things *in*
   Python, because its insides are so exposed
@@ -194,6 +199,47 @@ Python 2.7 will not be maintained past 2020 (https://pythonclock.org/)
 * http://robertlehmann.de/img/sphinx.pdf - some history. About George Brandl
   it says """In 2008 , he received the Python Software Foundation Community Award for “building the Sphinx documentation system as an alternative to the LaTeX-based system [they] had been using previously, and converting the Python documentation to use it.”"""
 * http://pythonic.pocoo.org/2007/6/23/introducing-py-rest-doc - another 400
+
+
+* http://pyvideo.org/europython-2012/the-story-of-stackless-python.html
+  (video, 54 minutes)
+* https://en.wikipedia.org/wiki/Stackless_Python
+
+* http://www.cosc.canterbury.ac.nz/greg.ewing/python/Pyrex/
+* https://en.wikipedia.org/wiki/Pyrex_(programming_language)
+
+* http://cython.org/
+* https://en.wikipedia.org/wiki/Cython
+
+* http://nuitka.net/
+* https://docs.python.org/3/faq/design.html#can-python-be-compiled-to-machine-code-c-or-some-other-language
+
+* http://pypy.org/
+* https://en.wikipedia.org/wiki/PyPy#RPython
+
+* https://ironpython-test.readthedocs.io/en/latest/contents.html
+* https://ironpython-test.readthedocs.io/en/latest/license.html
+
+  """IronPython was created in 2005 by Jim Hugunin to prove that the .NET
+  Framework was a poor platform for dynamic languages. He failed to do so, and
+  IronPython was born."""
+
+* http://ironpython.net/
+* https://en.wikipedia.org/wiki/IronPython
+
+* http://www.jython.org/archive/22/history.html
+
+  """JPython was created in late 1997 by Jim Hugunin. Jim was also the primary
+  developer while he was at CNRI. In February 1999 Barry Warsaw took over as
+  primary developer and released JPython version 1.1. In October 2000 Barry
+  helped move the software to SourceForge where it was renamed to Jython.
+  Barry then made Finn Bock the primary maintainer."""
+
+* http://hugunin.net/story_of_jython.html
+* https://en.wikipedia.org/wiki/Jython
+
+(providing Java support in Gothic - when I could run up Jython and code
+Python, I knew we'd done it)
 
 Timeline makers:
 

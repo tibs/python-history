@@ -270,7 +270,8 @@ Timeline
   - sqlite3 module
 
 * Oct 2008 2.6 Preparing the migration path to Python 3. Development cycle for
-  Python 2.6 and 3.0 was synchronised.
+  Python 2.6 and 3.0 was synchronised. Some of the new stuff in 3.0 is also in
+  2,6.
 
   - ``-3`` command line switch, to warn about features that will be removed in
     Python 3.0
@@ -295,7 +296,17 @@ Timeline
 
 * Jul 2010 2.7 Will be supported until 2020 (originally, until 2010)
 
-  - backports from the 3.n series - too much to list here
+  Mostly backportings from 3.1
+
+    * set literals
+    * dictionary and set comprehensions
+    * multiple context managers in one ``with``
+    * collections.OrderedDict
+    * argparse
+    * fields in ``format()`` don't need to be numbered
+    * collections.Counter
+    * unittest greatly enhanced - becomes what was the external unittest2
+    * ensurepip appears in 2.7.9
 
 * Dec 2008 3.0 So much stuff. So this is only a sample
 
