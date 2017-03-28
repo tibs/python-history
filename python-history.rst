@@ -4,7 +4,86 @@ An amble through the history of Python
 An amble through some of Python's history, pointing out interesting landmarks
 as we go, because to do the whole thing would take too long.
 
-Maybe restrict to Python 2?
+
+* Feb 1991 0.9.0
+
+* Feb 1991 0.9.1p1
+
+* 0.9.2 - never properly released
+
+* 0.9.3 - again, probably not very released
+
+* Dec 1991 0.9.4alpha
+
+* Jan 1993 0.9.8
+
+* Jan 1994 1.0, also comp.lang.python starts up
+
+* Oct 1994 1.1
+
+* Apr 1995 (probably) 1.2
+
+  - docstrings
+
+* Oct 1995 (probably) 1.3
+
+  - the "ni" module
+
+* Oct 1996 1.4
+
+* Dec 1997 1.5
+
+  - "re" module introduced
+
+* Apr 1999 1.5.2
+
+  - documentation separated out
+
+* Sep 2000 1.6 penultimate CNRI version
+* 1.6.1 same with a GPL compatible license
+
+* Oct 2000 2.0 first non-CNRI version, modern Python license
+
+  - development now on sourceforge, opened up
+  - PEPs
+
+* Apr 2001 2.1 license now "Python Software Foundation License"
+
+  - PSF
+
+* Dec 2001 2.2
+
+  - license now definitely GPL compatible
+
+* Jul 2003 2.3
+
+* Nov 2004 2.4
+
+* Sep 2006 2.5
+
+* Oct 2008 2.6
+
+  - documentation now in reStructuredText, using Sphinx
+  - new issue tracker, Roundup
+
+* Jul 2010 2.7 Will be supported until 2020 (originally, until 2010)
+
+* Dec 2008 3.0
+
+* Jun 2009 3.1
+
+* Feb 2011 3.2
+
+  - mercurial repository for Python, as well as subversion
+
+* Sep 2012 3.3
+
+* Dec 2016 3.6
+
+  - Feb 2017 CPython source moves to github
+
+
+
 
 Timeline
 
@@ -240,6 +319,11 @@ Python 2.7 will not be maintained past 2020 (https://pythonclock.org/)
 
 (providing Java support in Gothic - when I could run up Jython and code
 Python, I knew we'd done it)
+
+https://www.infoq.com/news/2016/01/python-moving-to-github
+https://snarky.ca/the-history-behind-the-decision-to-move-python-to-github/
+https://www.python.org/dev/peps/pep-0512/ - Migrating from hg.python.org to GitHub
+https://mail.python.org/pipermail/python-dev/2017-February/147341.html
 
 Timeline makers:
 
