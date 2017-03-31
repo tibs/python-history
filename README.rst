@@ -1,7 +1,7 @@
 An amble through the history of Python
 ======================================
 
-A slideshow produced for the `April 2017 meeting` of CamPUG_.
+A slideshow produced for the `April 2017 meeting`_ of CamPUG_.
 
 .. _`April 2017 meeting`: https://www.meetup.com/CamPUG/events/233934907/
 .. _CamPUG: https://www.meetup.com/CamPUG/
@@ -19,8 +19,8 @@ For what the Makefile can do::
 
 Requirements:
 
-  * hovercraft
-  * Python 3 (of whatever version hovercraft wants)
+* hovercraft
+* Python 3 (of whatever version hovercraft wants)
 
 and an appropriate ``make`` if you want to use the Makefile.
 
