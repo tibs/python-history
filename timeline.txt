@@ -429,4 +429,87 @@ Timeline
   - use of ``async`` and ``await`` as variable, class, function or module
     names will generate a DeprecationWarning. They will become keywords in 3.7
 
+PyConUK
+=======
+
+The ACCU years
+---------------
+
+   * **ACCU Apr 2002**: Heritage Motor Centre, Gaydon
+
+     - "including the Python UK Conference"
+
+   * *ACCU Apr 2003*
+   * **ACCU Apr 2004**: Oxford, with a 2 day Python track
+   * *ACCU Apr 2005*
+   * **ACCU Apr 2006**: Oxford, 2 day Python track
+     
+     - Guido van Rossum as keynote speaker
+
+.. note::
+
+   I know I was at the first of those, because I remember the venue and
+   specific items on the program. I'm fairly sure of the last, because of
+   Guido being a keynote speaker. I *think* the middle one is the right year,
+   I know I wasn't at 2003, and I don't think I got to 2005.
+
+   ACCU is/was relatively expensive, so I'd only go for the a couple of days.
+
+   I got partially funded for 2002.
+
+   ACCU Apr 2002:
+
+   * https://mail.python.org/pipermail/python-uk/2002-February/000167.html
+   * https://mail.python.org/pipermail/python-uk/2002-February/000168.html
+   * http://www.gossamer-threads.com/lists/python/python/94742#94742
+
+----
+
+John Pinner and the West Midlands Group
+---------------------------------------
+
+The *actual* UK Python conferences were started by John Pinner
+
+.. image:: images/john-pinner.jpg
+   :width: 256
+   :height: 256
+
+and the West Midlands Python group.
+
+----
+
+PyConUK
+-------
+
+   * **PyConUK 2007** and **2008**: September, Birmingham Conservatoire
+
+     * **Python Unconference**: one day, September 2010, Birmingham
+
+   * **EuroPython 2009** and **2010**: June/July, Birmingham Conservatoire
+
+     * **Floss UK**: one day only, October 2010, Birmingham BMI
+
+   * **PyConUK 2011 to 2015** were in the TechnoCenter, Coventry
+   * **PyConUK 2016** moved to Cardiff
+   * *PyConUK 2017* will be in Cardiff again
+
+.. note::
+
+   I got funded in 2010, and my boxx and I gave talks - my first talk at a
+   PyConUK. PyconUK 2010, https://metaljoe.wordpress.com/2010/07/24/europython-2010/
+
+     """To round off the day, I attended two talks by Richard Watts and Tony
+     Ibbs of Kynesim who presented Muddle, their open source build system
+     which looks very cool, and KBUS which is an elegant and lightweight
+     messaging system implemented as a Linux kernel extension."""
+
+   In the EuroPython years, people still wanted a "something" in the latter
+   part of the year, hence the UnConference and the FlossUK event (which was
+   also an unconference - I requested an item on using Bacula, and in the way
+   of such things ended up "running" it!).  
+
+   2014 was John Pinner's last PyConUK.
+
+   I got funded in 2014, 2015 and 2016 by Velocix/ALU/Nokia
+
 .. vim: set filetype=rst tabstop=8 softtabstop=2 shiftwidth=2 expandtab:

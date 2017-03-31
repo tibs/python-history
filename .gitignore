@@ -4,3 +4,5 @@
 *~
 *.gz
 *.tgz
+*.html
+slides/
