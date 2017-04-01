@@ -16,7 +16,9 @@ Written using reStructuredText_.  Presented using hovercraft_.
 .. _reStructuredText: http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html
 .. _hovercraft: https://github.com/regebro/hovercraft
 
-.. note:: Python has been going since the early 1990s, and to talk about all
+.. note::
+
+  Python has been going since the early 1990s, and to talk about all
   of its history, and the history of computing that impinges on it, would
   clearly take much too long. So this is intended to be an open-ended (i.e.,
   we don't expect to finish) talk.
@@ -27,30 +29,40 @@ Written using reStructuredText_.  Presented using hovercraft_.
   Other obviously related resources:
 
   * http://python-history.blogspot.co.uk/ - The History of Python by Guido
+
+    * Starts at http://python-history.blogspot.co.uk/2009/04/metaclasses-and-extension-classes-aka.html
+
   * https://www.packtpub.com/books/content/brief-history-python - A Brief
     History of Python by Sam Wood, Oct 2015
   * http://www.artima.com/intv/pythonP.html - The Making of Python - Interview
     with Guido
   * https://docs.python.org/3/license.html - history and license
-  * https://www.youtube.com/channel/UChA9XP_feY1-1oSy2L7acog - PyCon UK videos
-  * https://www.youtube.com/watch?v=CI_RPSbsRw8 - Pycon UK 2014 keynote: A time
-    traveler's guide to Python, Jessica McKellar
-  * https://www.youtube.com/watch?v=zHgASlRMpg4 - Python Tutorial: History of
-    the Python Programming Language, Feb 2015
 
+  * video: https://www.youtube.com/channel/UChA9XP_feY1-1oSy2L7acog - PyCon UK videos
+
+  * video: https://www.youtube.com/watch?v=CI_RPSbsRw8 - Pycon UK 2014 keynote: A time
+    traveler's guide to Python, Jessica McKellar
+
+    First 7 minutes are a quick dash through the history of Python itself.
+
+  * video: 2014 https://archive.org/details/pyconza2014-python-ideas What I learned about Python – and about Guido's time machine – by reading the python-ideas mailing list 
+
+      * slides for the same: https://speakerdeck.com/pyconza/pyconza-2014-what-i-learned-about-python-and-about-guidos-time-machine-by-reading-the-python-ideas-mailing-list-by-david-mertz
 
 ----
 
 Why me
 ======
 
+I don't remember exactly when I first found Python, but my first dated
+Python script is from 1994.
+
+My background had been with BCPL, Fortran and C (and also Emacs and
+TeX/LaTeX, which will become relevant later on).
+
+When I came across Python, I fell in love with it.
+
 .. note::
-
-  I don't remember exactly when I first found Python, but my first dated
-  Python script is from 1994.
-
-  My background had been with BCPL, Fortran and C (and also Emacs and
-  TeX/LaTeX, which will become relevant later on.
 
   Work had tasked me with looking for a programming language we could embed
   into our object oriented database. At that time, the obvious choices were
@@ -70,17 +82,15 @@ Why me
 Where Python came from
 ======================
 
-* ABC
-* Readable before writable
- 
-  - significant indentation
-  - the colon
+* Named after Monty Python, not the snakes
+* Inspired by ABC and Modula-3
+* Meant to be *readable*
+* Python 1.0 came out in 1994
 
-* Perl came out in 1987
-* Tcl came out in 1988, Tk round about the same time, although it was useful
-  from about 1990
-
-Named after Monty Python, not the snakes.
+  * Perl came out in 1987
+  * Tcl came out in 1988, Tk round about the same time, although it was useful
+    from about 1990
+  * Java 1.0 came out in 1995
 
 .. note::
 
@@ -118,7 +128,7 @@ Named after Monty Python, not the snakes.
   programming languages which use it. The idea seems to date from at least
   1966.
 
-.. _`off-side rule`: https://en.wikipedia.org/wiki/Off-side_rule 
+  .. _`off-side rule`: https://en.wikipedia.org/wiki/Off-side_rule 
 
   * https://docs.python.org/3/faq/design.html#why-does-python-use-indentation-for-grouping-of-statements
   * https://docs.python.org/3/faq/design.html#why-are-colons-required-for-the-if-while-def-class-statements
@@ -141,20 +151,40 @@ Why I like Python
   itself to be modified - at least two implementations of goto (!) and Hy
 * "safe"/"sane" - a sensible language written and designed by sensible people
 
-- http://entrian.com/goto/ (goto and comefrom)
-- https://github.com/snoack/python-goto
-- and another https://github.com/cdjc/goto
-- http://docs.hylang.org/en/latest/ - a Lisp-flavoured Python
+.. note::
+ 
+  * Not one, not two, but three ways of implementing ``goto`` in Python:
+
+    - http://entrian.com/goto/ (goto and comefrom)
+    - https://github.com/snoack/python-goto
+    - and another https://github.com/cdjc/goto
+
+  * and even a Lisp:
+
+    - http://docs.hylang.org/en/latest/ - a Lisp-flavoured Python
 
 ----
 
-What's in the timeline
-======================
+About this talk
+===============
 
 I cover, at least briefly, the major releases of Python (and 1.5.2), and also
 things that were happening in the Python world around those times.
 
+1991 to 2018 - that's 27 years...
+
+Is it accurate?
+
+Well, there's certainly a lot of information (and links in the notes), but
+there are also many places where I'm using my own memory of events, which is
+doubtless unreliable. So think of it as an informal history, at best.
+
 .. note::
+
+  There is too much information in this slideset to present it all. What I
+  intend to do is to skim over the slides that describe what is new in each
+  Python release - they're mainly there to give an idea of scope, and to act
+  as a reference (of some sort) when reading this later.
 
   The dates given for a Python release are for the .0 release, but remember
   that most versions of Python go through several minor releases. The features
@@ -165,10 +195,18 @@ things that were happening in the Python world around those times.
   documents, started by Andrew Kuchling in 1999 (for 2.0). He continued until
   2.7 in 2010, by which time it was traditional/expected to have them.
 
-  His slides for `Why projects should have What's New documents`_ are worth
-  reading through.
+  I hope I've transcribed information correctly - any mistakes are mine.
+  Similarly, I've not included *all* the information for each release, and
+  what is omitted is detrermined by my own preferences (at the time of making
+  this set of slides), so apologies to anyone if I've left out stuff they
+  would have cared about.
+
+  By the way, Andrew Kuchling's slides for `Why projects should have What's
+  New documents`_ are worth reading through.
  
-.. _`Why projects should have What's New documents`: https://speakerdeck.com/akuchling/why-projects-should-have-whats-new-documents
+  .. _`Why projects should have What's New documents`: https://speakerdeck.com/akuchling/why-projects-should-have-whats-new-documents
+
+  General resources:
 
   * http://legacy.python.org/download/releases/src/README - historical Python
     sources, up to 2.0
@@ -184,10 +222,6 @@ things that were happening in the Python world around those times.
   * http://legacy.python.org/dev/peps/pep-0001/
   * https://www.python.org/download/alternatives/ - Alternative Python
     implementations
-
-----
-
-1991 to 2018 - 27 years...
 
 ----
 
@@ -224,7 +258,9 @@ Before 1994
 
 ----
 
-* Feb 1991 0.9.1p1
+Before 1994: Feb 1991 Release 0.9.1p1
+-------------------------------------
+
 
   - no ``__init__`` method
   - no double quote strings
@@ -232,7 +268,10 @@ Before 1994
 
 ----
 
-* 0.9.2 - never properly released
+Before 1994: 1991 Release 0.9.2
+-------------------------------
+
+*Never properly released*
 
   - semicolons to separate statements
   - ``continue``
@@ -246,7 +285,10 @@ Before 1994
 
 ----
 
-* 0.9.3 - again, probably not very released
+Before 1994: 1991 Release 0.9.3
+-------------------------------
+
+*Again, probably not very released*
 
   - ``global`` statement
   - ``class B`` allowed, instead of ``class B()``, and can do ``class B(D)``
@@ -257,7 +299,8 @@ Before 1994
 
 ----
 
-* Dec 1991 0.9.4alpha
+Before 1994: Dec 1991 Release 0.9.4alpha
+----------------------------------------
 
   - new exceptions
   - functions are called with 0..N arguments, not just 0 or 1. So:
@@ -266,7 +309,8 @@ Before 1994
 
 ----
 
-0.9.8
+Before 1994 Release 0.9.8
+-------------------------
 
   - number of arguments to a function must match number declared
   - ``*args`` introduced to allow "varargs"
@@ -293,8 +337,6 @@ and from 0.9.7beta:
 1994
 ====
 
-* Jan **1.0**
-
 * Oct 1994 **1.1**
   
 * comp.lang.python starts up
@@ -305,7 +347,8 @@ and from 0.9.7beta:
 
 ----
 
-* Jan 1994 1.0, also comp.lang.python starts up
+1994 Jan Release 1.0
+--------------------
 
   - builds across many Unices without alteration, uses GNU autoconf
   - sources and standard library reorganised
@@ -319,7 +362,8 @@ and from 0.9.7beta:
 
 ----
 
-* Oct 1994 1.1
+1994 Oct Release 1.1
+--------------------
 
   - ``__getattr__`` and friends introduced
   - ``__call__``
@@ -331,32 +375,47 @@ and from 0.9.7beta:
 ----
 
 Some comp.lang.python memes
----------------------------
+===========================
 
 * Guido - release a new version and go on holiday
 * Guido's time machine
-
-  * https://speakerdeck.com/pyconza/pyconza-2014-what-i-learned-about-python-and-about-guidos-time-machine-by-reading-the-python-ideas-mailing-list-by-david-mertz
-  * https://archive.org/details/pyconza2014-python-ideas (video)
-
-* https://mail.python.org/pipermail/python-list/2001-February/063576.html
-  Python the role playing game
-* PSU: Python Sectret Underground (who do not exist)
-
-  * https://groups.google.com/forum/#!search/The$20PSU$27s$20Existence$20Revealed$20comp.lang.python/comp.lang.python/AFqy7ItagYM/XxW95wMEpEoJ
-  * https://groups.google.com/forum/#!search/The$20PSU$27s$20Existence$20Revealed$20comp.lang.python/comp.lang.python/st0yPgpr-aU/wXTiFFAugNEJ
-  * https://groups.google.com/forum/#!search/Status$20of$20the$20PSU$20comp.lang.python/comp.lang.python/7UAoH95mUpw/rrTUUXz-SmYJ
-  * https://groups.google.com/forum/#!topic/comp.lang.python/VNXTFOdWPI0%5B151-175%5D
-  * https://groups.google.com/forum/#!msg/comp.lang.python/7qszKYUqqwI/goDCgE78U_EJ (Roswell)
-  * https://groups.google.com/forum/#!search/Status$20of$20the$20PSU$20comp.lang.python/comp.lang.python/G293F7R5_Y4/PzrfgpXGA5EJ
-  * https://groups.google.com/forum/#!search/roswell$20PSU$20comp.lang.python/comp.lang.python/hxUeYn94Cis/u6xMo-MuKEkJ
-  * https://groups.google.com/forum/#!search/alien$20whitespace/comp.lang.python/V4EEmLncO5E/T5be4rZAB9MJ (Alien whitespace eating nanovirus)
+* Roswell
+* Alien whitespace-eating nanovirus
+* Python the role playing game
+* timbot, effbot, martellibot
 
 .. note::
 
-  Not just from this year.
+  * https://mail.python.org/pipermail/python-list/2001-February/063576.html
+    Python the role playing game
+  * PSU: Python Sectret Underground (who do not exist)
+
+  * Particular items
+
+    * https://groups.google.com/forum/#!search/The$20PSU$27s$20Existence$20Revealed$20comp.lang.python/comp.lang.python/AFqy7ItagYM/XxW95wMEpEoJ
+    * https://groups.google.com/forum/#!search/The$20PSU$27s$20Existence$20Revealed$20comp.lang.python/comp.lang.python/st0yPgpr-aU/wXTiFFAugNEJ
+    * https://groups.google.com/forum/#!search/Status$20of$20the$20PSU$20comp.lang.python/comp.lang.python/7UAoH95mUpw/rrTUUXz-SmYJ
+    * https://groups.google.com/forum/#!topic/comp.lang.python/VNXTFOdWPI0%5B151-175%5D
+    * https://groups.google.com/forum/#!msg/comp.lang.python/7qszKYUqqwI/goDCgE78U_EJ (Roswell)
+    * https://groups.google.com/forum/#!search/Status$20of$20the$20PSU$20comp.lang.python/comp.lang.python/G293F7R5_Y4/PzrfgpXGA5EJ
+    * https://groups.google.com/forum/#!search/roswell$20PSU$20comp.lang.python/comp.lang.python/hxUeYn94Cis/u6xMo-MuKEkJ
+    * https://groups.google.com/forum/#!search/alien$20whitespace/comp.lang.python/V4EEmLncO5E/T5be4rZAB9MJ (Alien whitespace eating nanovirus)
+
+  * Tim Peters (timsort, doctest, floating point guru), Fredrik Lundh (PIL:
+    Python Imaging Library, ElementTree, tkinter), Alex Martelli (Python in a
+    Nutshell, Python Cookbook)
+
+    * https://www.youtube.com/watch?v=1wAOy88WxmY Interview with Tim Peters, PyCon 2006: Chatting with Tim Peters on PyPy, Python and other stuff
+    * http://effbot.org/
+    * https://en.wikipedia.org/wiki/Alex_Martelli
 
 
+----
+
+Replace this slide with one or more talking about specific things...
+--------------------------------------------------------------------
+
+Heh, didn't you mean to replace this slide?
 
 ----
 
@@ -423,7 +482,10 @@ Some comp.lang.python memes
 
 ----
 
-* Apr 1995 (probably) 1.2
+1995 Apr Release 1.2
+--------------------
+
+*(actual release date unsure)*
 
   - ``import a.b.c`` and ``from a.b.c import name`` are supported, but not yet
     implemented. ``__import__`` function and ``imp`` module expose import
@@ -438,7 +500,10 @@ Some comp.lang.python memes
 
 ----
 
-* Oct 1995 (probably) 1.3
+1995 Oct Release 1.3
+--------------------
+
+*(actual release date unsure)*
 
   - keyword arguments (a whole new chapter in the tutorial)
   - htmllib rewritten, incompatibly
@@ -464,7 +529,8 @@ Some comp.lang.python memes
 
 ----
 
-* Oct 1996 1.4
+1996 Oct Release 1.4
+--------------------
 
   - library reference now maintained in Framemaker
   - name mangling to provide a simple form of class private variables:
@@ -519,7 +585,8 @@ Some comp.lang.python memes
 
 ----
 
-* Dec 1997 1.5
+1997 Dec Release 1.5
+--------------------
 
   - recommends ``#!/usr/bin/env python`` instead of ``#!/usr/local/bin/python``
   - ``-O`` produces ``.pyo`` files instead of ``.pyc`` files - removes
@@ -565,7 +632,7 @@ Zope released as free software
   Stackless Python
 
   * https://en.wikipedia.org/wiki/Stackless_Python
-  * http://pyvideo.org/europython-2012/the-story-of-stackless-python.html
+  * video: http://pyvideo.org/europython-2012/the-story-of-stackless-python.html
     (video, 54 minutes)
 
     """This talk gives a good overview of the status of Stackless Python: Its
@@ -646,6 +713,9 @@ in various ways:
   - http://www.troubleshooters.com/tpromag/199906/_digcreate.htm - Digital
     Creations open sourcing Zope
   - https://books.google.co.uk/books?id=W2t2d2KP6HsC&pg=PA137&lpg=PA137&dq=digital+creations+zope+open+source&source=bl&ots=ivXrBjiBY9&sig=F6XV5TpkHGMVCErglRAy5Q9Vz3E&hl=en&sa=X&ved=0ahUKEwiNm4Wi6enSAhUKK8AKHdJyBAAQ6AEISzAI#v=onepage&q=digital%20creations%20zope%20open%20source&f=false - ditto
+
+  structuredText and so on:
+
   - https://www.python.org/community/sigs/current/doc-sig/stext/
   - http://www.tibsnjoan.co.uk/docutils/STpy.html - me(!)
   - https://moinmo.in/StructuredText
@@ -690,7 +760,8 @@ in various ways:
 
 ----
 
-* Apr 1999 1.5.2
+1999 Apr Release 1.5.2
+----------------------
 
   - docs separated out into a separate distributable
   - IDLE introduced
@@ -753,9 +824,11 @@ in various ways:
 
 ----
 
-* Sep 2000 1.6 penultimate CNRI version
-* 1.6.1 same with a GPL compatible license
+2000 Sep Release 1.6, 1.6.1
+---------------------------
 
+* 1.6 penultimate CNRI version
+* 1.6.1 same with a GPL compatible license
 
 .. note::
 
@@ -781,7 +854,10 @@ in various ways:
 
 ----
 
-* Oct 2000 2.0 first non-CNRI version
+2000 Oct Release 2.0
+--------------------
+
+First non-CNRI version
 
   - modern Python license
   - now on sourceforge, development process opened up
@@ -865,7 +941,10 @@ Plone released
 
 ----
 
-* Apr 2001 2.1 license now "Python Software Foundation License"
+2001 Apr Release 2.1
+--------------------
+
+License now "Python Software Foundation License"
 
   - PSF "owns" Python
   - Nested scopes (off by default)
@@ -881,7 +960,10 @@ Plone released
 
 ----
 
-* Dec 2001 2.2 -> Oct 2002 2.2.2
+2001 Dec Release 2.2
+--------------------
+
+...and then in Oct 2002, Release 2.2.2
 
   - 2.2 license definitely GPL compatible
   - old- and new-style classes
@@ -914,6 +996,7 @@ Plone released
 * Apr Pyrex announced by Greg Ewing
 
 * Tim Peters and timsort (2002)
+
   * https://en.wikipedia.org/wiki/Timsort
   * the source code for timsort contains wonderful explanatory comments
   * http://bugs.python.org/file4451/timsort.txt
@@ -937,7 +1020,7 @@ Plone released
 
 * Jul  **2.3**
 
-* First PyCon in the USA
+* First PyCon in the USA (Washington DC)
 
 * PyPy project starts (see http://pypy.org/people.html)
 
@@ -948,7 +1031,8 @@ Plone released
 
 ----
 
-* Jul 2003 2.3
+2003 2.3 Release 2.3
+--------------------
 
   - ``Set`` class in the sets module
   - generators are always present, ``yield`` is always a keyword
@@ -999,7 +1083,8 @@ Plone released
 
 ----
 
-* Nov 2004 2.4
+2004 Nov Release 2.4
+--------------------
 
   - ``set`` and ``frozenset`` built-in types
   - generator expressions - for instance ``links = (link for link in
@@ -1028,7 +1113,7 @@ IronPython started
 
 Django released
 
-Numpy produced, by  combining Numeric and Numarray
+Numpy produced, by combining Numeric and Numarray
 
 .. note::
 
@@ -1075,7 +1160,8 @@ Numpy produced, by  combining Numeric and Numarray
 
 ----
 
-* Sep 2006 2.5
+2006 Sep Release 2.5
+--------------------
 
   - the ``with`` statement (``from __future__ import with_statement``), and contextlib
   - ``x = true_thing if condition else false_thing``, after *much* discussion,
@@ -1123,10 +1209,19 @@ Numpy produced, by  combining Numeric and Numarray
 PyConUK
 =======
 
-From 2002 to 2006, there were Python tracks at the annual ACCU conference. In
-2006, Guido van Rossum was a keynot speaker.
+The UK Python conferences were started by John Pinner and the West Midlands
+Python group in 2007.
+
+   * **PyConUK 2007** and **2008**: September, Birmingham Conservatoire
+   * **EuroPython 2009** and **2010**: June/July, Birmingham Conservatoire
+   * **PyConUK 2011 to 2015** were in the TechnoCenter, Coventry
+   * **PyConUK 2016** moved to Cardiff
+   * **PyConUK 2017** will be in Cardiff again, in October
 
 .. note::
+
+  From 2002 to 2006, there were Python tracks at the annual ACCU conference. In
+  2006, Guido van Rossum was a keynote speaker.
 
    * *ACCU Apr 2002*: Heritage Motor Centre, Gaydon "including the Python UK Conference"
    * *ACCU Apr 2003*
@@ -1149,17 +1244,6 @@ From 2002 to 2006, there were Python tracks at the annual ACCU conference. In
    * https://mail.python.org/pipermail/python-uk/2002-February/000168.html
    * http://www.gossamer-threads.com/lists/python/python/94742#94742
 
-The *actual* UK Python conferences were started by John Pinner
-and the West Midlands Python group.
-
-   * **PyConUK 2007** and **2008**: September, Birmingham Conservatoire
-   * **EuroPython 2009** and **2010**: June/July, Birmingham Conservatoire
-   * **PyConUK 2011 to 2015** were in the TechnoCenter, Coventry
-   * **PyConUK 2016** moved to Cardiff
-   * **PyConUK 2017** will be in Cardiff again, in October
-
-.. note::
-
    There were also some smaller events:
 
    * **Python Unconference**: one day, September 2010, Birmingham
@@ -1168,7 +1252,7 @@ and the West Midlands Python group.
    on years when a "proper" PythonUK didn't happen
 
 
-   I got funded in 2010, and my boxx and I gave talks - my first talk at a
+   I got funded in 2010, and my boss and I gave talks - my first talk at a
    PyConUK. PyconUK 2010, https://metaljoe.wordpress.com/2010/07/24/europython-2010/
 
      """To round off the day, I attended two talks by Richard Watts and Tony
@@ -1240,9 +1324,11 @@ and the West Midlands Python group.
 
 ----
 
-* Oct 2008 2.6 Preparing the migration path to Python 3. Development cycle for
-  Python 2.6 and 3.0 was synchronised. Some of the new stuff in 3.0 is also in
-  2,6.
+2008 Oct Release 2.6
+--------------------
+
+Preparing the migration path to Python 3. Development cycle for Python 2.6 and
+3.0 was synchronised. Some of the new stuff in 3.0 is also in 2.6.
 
   - ``-3`` command line switch, to warn about features that will be removed in
     Python 3.0
@@ -1267,7 +1353,10 @@ and the West Midlands Python group.
 
 ----
 
-* Dec 2008 3.0 So much stuff. So this is only a sample
+2008 Dec Release 3.0
+--------------------
+
+So much stuff. So this is only a sample
 
   - obviously, everything applicable from 2.6
   - strings are unicode, bytes are not strings
@@ -1299,6 +1388,8 @@ and the West Midlands Python group.
 
 * Jun **3.1**
 
+PEP 3003 - Python Language Moratorium
+
 Proposed move to using Mercurial announced
 
 .. note::
@@ -1306,9 +1397,24 @@ Proposed move to using Mercurial announced
   * https://www.python.org/dev/peps/pep-0385/
   * https://arstechnica.com/information-technology/2009/03/python-adopts-the-mercurial-version-control-system/
 
+  * https://www.python.org/dev/peps/pep-3003/
+
+    """This PEP proposes a temporary moratorium (suspension) of all changes to
+    the Python language syntax, semantics, and built-ins for a period of at
+    least two years from the release of Python 3.1. In particular, the
+    moratorium would include Python 3.2 (to be released 18-24 months after
+    3.1) but allow Python 3.3 (assuming it is not released prematurely) to
+    once again include language changes.
+
+    This suspension of features is designed to allow non-CPython
+    implementations to "catch up" to the core implementation of the language,
+    help ease adoption of Python 3.x, and provide a more stable base for the
+    community."""
+
 ----
 
-* Jun 2009 3.1
+2009 Jun Release 3.1
+--------------------
 
   - ``collections.OrderedDict``
   - fields in ``format()`` don't need to be numbered
@@ -1320,8 +1426,6 @@ Proposed move to using Mercurial announced
   - various useful improvements to unittest
   - importlib module
   - speed improvements in various places
-
-
 
 ----
 
@@ -1349,8 +1453,10 @@ reStructuredText. For free.
 
 ----
 
+2010 Jul Release 2.7
+--------------------
 
-* Jul 2010 2.7 Will be supported until 2020 (originally, until 2010)
+2.7 will be supported until 2020 (originally, until 2010)
 
   Mostly backportings from 3.1
 
@@ -1372,7 +1478,7 @@ reStructuredText. For free.
 
 * Feb **3.2**
 
-Python actually starts using Mercurial
+* Python actually starts using Mercurial
 
 * IPython Notebook added to IPython
 
@@ -1383,7 +1489,8 @@ Python actually starts using Mercurial
 
 ----
 
-* Feb 2011 3.2
+2011 Feb Release 3.2
+--------------------
 
   - minimal stable ABI available to extension modules
   - argparse introduced, optparse still available but not recommended
@@ -1409,7 +1516,8 @@ Python actually starts using Mercurial
 
 ----
 
-* Sep 2012 3.3
+2012 Sep Release 3.3
+--------------------
 
   - ``yield from``
   - ``u"unicode"`` is back, to be friendlier to ex-Python 2 code
@@ -1463,7 +1571,10 @@ Nothing happened in 2013
 
 ----
 
-* Mar 2014 3.4 - no new syntax features
+2014 Mar Release 3.4
+--------------------
+
+No new syntax features
 
   - ensurepip module provides simpler bootstrapping of pip
   - ``codecs.encode()`` and ``codesc.decode()`` (introduced in 2.4) now
@@ -1490,7 +1601,8 @@ Nothing happened in 2013
 
 ----
 
-* Sep 2015 3.5
+2015 Sep Release 3.5
+--------------------
 
   - coroutines with ``async`` and ``await``
   - ``@`` infix operator for matrix multiplication, supported by NumPy 1.10
@@ -1522,7 +1634,8 @@ https://lwn.net/Articles/705224/
 
 ----
 
-* Dec 2016 3.6
+2016 Dec Release 3.6
+--------------------
 
   - formatted string literals: ``f"This module is called {__name__}."``
   - syntax for variable (type) annotations
@@ -1571,7 +1684,7 @@ https://lwn.net/Articles/705224/
 2018
 ====
 
-- **3.7** expected to be released in Jun 2018
+**3.7** expected to be released in Jun 2018
 
   https://www.python.org/dev/peps/pep-0537/
 
@@ -1604,17 +1717,51 @@ Sources at https://github.com/tibs/python-history
     * https://wiki.python.org/moin/Humor
     * https://xkcd.com/353/
 
-  * Python easter eggs: https://www.youtube.com/watch?v=R4tkq6AhGCw
-    * import antigravity
-    * from __future__ import braces
-    * from __future__ import barry_as_FLUFL (does this still work?)
+  * Python easter eggs:
+
+    * ``import this``
+    * ``import antigravity``
+    * ``from __future__ import braces``
+    * ``from __future__ import barry_as_FLUFL`` (does this still work?)
 
   * Tim Peters
 
     * http://stackoverflow.com/users/2705542/tim-peters
     * http://wiki.c2.com/?TimPeters
-    * https://www.youtube.com/watch?v=1wAOy88WxmY Interview with Tim Peters,
+    * video: https://www.youtube.com/watch?v=1wAOy88WxmY Interview with Tim Peters,
       PyCon 2006
+
+  * Frank Willison Memorial Award https://www.python.org/community/awards/frank-willison/
+
+     * Brett Cannon (2016)
+     * Jessica McKellar (2015)
+     * Barry Warsaw (2014)
+     * Anna Martelli Ravenscroft (2013)
+     * Jesse Noller (2012)
+     * Georg Brandl (2011)
+     * Christian Tismer (2010)
+     * Mark Hammond (2009)
+     * Martin von Löwis (2008)
+     * Steve Holden (2007)
+     * Alex Martelli (2006)
+     * Cameron Laird (2004)
+     * Fredrik Lundh (2003)
+     * Andrew Kuchling (2002)
+
+  Collected video links:
+
+  * video: https://www.youtube.com/channel/UChA9XP_feY1-1oSy2L7acog - PyCon UK videos
+
+  * video: 2006 https://www.youtube.com/watch?v=1wAOy88WxmY Interview with Tim Peters, PyCon 2006: Chatting with Tim Peters on PyPy, Python and other stuff
+  * video: 2012 http://pyvideo.org/europython-2012/the-story-of-stackless-python.html
+  * video: 2014 https://archive.org/details/pyconza2014-python-ideas What I learned about Python – and about Guido's time machine – by reading the python-ideas mailing list 
+
+      * slides for the same: https://speakerdeck.com/pyconza/pyconza-2014-what-i-learned-about-python-and-about-guidos-time-machine-by-reading-the-python-ideas-mailing-list-by-david-mertz
+
+  * video: 2014 https://www.youtube.com/watch?v=CI_RPSbsRw8 - Pycon UK 2014 keynote: A time traveler's guide to Python, Jessica McKellar. First 7 minutes are a quick dash through the history of Python itself.
+  * video: 2016 Monty Python for pythonistas, sa friends PyCon Canada 2016: https://www.youtube.com/watch?v=gJ4duC-V6Xw&feature=youtu.be
+
+  and another unrelated video I want to watch:
 
   * http://pyvideo.org/pycon-us-2012/diversity-in-practice-how-the-boston-python-user.html 
     - Diversity in practice: How the Boston Python User Group grew to 1700
