@@ -651,6 +651,20 @@ Stackless Python started
 
 * Design of Perl 6 began
 
+* Alex Martelli refers to "duck typing"
+
+  * https://en.wikipedia.org/wiki/Duck_typing
+
+  Alex Martelli made an early (2000) use of the term in a message_ to the comp.lang.python newsgroup:
+
+    In other words, don't check whether it IS-a duck: check whether it
+    QUACKS-like-a duck, WALKS-like-a duck, etc, etc, depending on exactly what
+    subset of duck-like behaviour you need to play your language-games with.
+
+  * Also see https://en.wikipedia.org/wiki/Duck_test
+
+.. _message: https://groups.google.com/forum/?hl=en#!msg/comp.lang.python/CCs2oJdyuzc/NYjla5HKMOIJ
+
 .. note::
 
   https://opensource.org/licenses/Python-2.0 - Python 2.0 license
@@ -672,6 +686,9 @@ Stackless Python started
 
 * Sep 2000 1.6 penultimate CNRI version
 * 1.6.1 same with a GPL compatible license
+
+
+.. note::
 
   The "What's New" notes for Python 2.0 say:
 
@@ -1489,6 +1506,15 @@ https://lwn.net/Articles/705224/
 
 ----
 
+Fin
+===
 
+That's all folks
+
+Written using reStructuredText_.
+
+Presented using hovercraft_.
+
+Sources at https://github.com/tibs/python-history 
 
 .. vim: set filetype=rst tabstop=8 softtabstop=2 shiftwidth=2 expandtab:
