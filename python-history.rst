@@ -558,10 +558,11 @@ Some comp.lang.python memes
 
 Stackless Python started
 
+Zope released as free software
+
 .. note::
 
-  Obviously, that's not true (in particular, my second son was born!),
-  but I don't seem to have any interesting Python information from then.
+  Stackless Python
 
   * https://en.wikipedia.org/wiki/Stackless_Python
   * http://pyvideo.org/europython-2012/the-story-of-stackless-python.html
@@ -591,6 +592,73 @@ Stackless Python started
     of Stackless Python Perhaps with Armin Rigo as a guest, talking about
     Stackless status in PyPy. Otherwise, I will insert this myself. cheers –
     Chris"""
+
+----
+
+Zope
+====
+
+Zope was the killer Python app that never quite became so. But it's important
+in various ways:
+
+* it's the origin of structuredText, the predecessor to reStructuredText
+* it was (one of?) the first companies to open source its product as a result
+  of commercial advice
+* it was an early non-relational database (ZODB persists Python objects)
+* the Zope web interface is to Python objects - wikipedia says:
+
+  """"A Zope website is usually composed of objects in a Zope Object Database,
+  not files on a file system, as is usual with most web servers. This allows
+  users to harness the advantages of object technologies, such as
+  encapsulation. Zope maps URLs to objects using the containment hierarchy of
+  such objects; methods are considered to be contained in their objects as
+  well. Data can be stored in other databases as well, or on the file system,
+  but ZODB is the most common solution."""
+
+.. note::
+
+  * Guido worked there for a while
+  * An early (the first?) company to take its main product open source for
+    financial reasons
+  * Zope itself - the killer Python app that never quite was
+  * ZODB
+  * structuredText
+  * structuredText and documenting types of arguments
+  * it's still around - Pylons, Zope 2, Blue Bream (aka Zope 3)
+
+
+  - https://en.wikipedia.org/wiki/Zope
+  - https://blog.startifact.com/posts/my-exit-from-zope.html - Martijn Faassen's
+    history of Zope and his involvement
+  - https://blog.startifact.com/posts/the-weirdness-of-zope.html Oct 2013 - part
+    of the above?
+  - https://en.wikipedia.org/wiki/Zope_Object_Database
+  - http://bluebream.zope.org/about/history.html - the history of BlueBream
+    (Zope 3)
+  - https://www.slideshare.net/regebro/zope-is-dead-long-live-zope - slides, Jun
+    2011
+  - http://python-history.blogspot.co.uk/2009/01/personal-history-part-2-cnri-and-beyond.html
+    (Guido worked there for a bit)
+  - http://reinout.vanrees.org/weblog/2011/06/07/zope.html - Who Cares About
+    Zope (Martijn Faassen again)
+  - https://en.wikipedia.org/wiki/Plone_(software)
+  - http://www.troubleshooters.com/tpromag/199906/_digcreate.htm - Digital
+    Creations open sourcing Zope
+  - https://books.google.co.uk/books?id=W2t2d2KP6HsC&pg=PA137&lpg=PA137&dq=digital+creations+zope+open+source&source=bl&ots=ivXrBjiBY9&sig=F6XV5TpkHGMVCErglRAy5Q9Vz3E&hl=en&sa=X&ved=0ahUKEwiNm4Wi6enSAhUKK8AKHdJyBAAQ6AEISzAI#v=onepage&q=digital%20creations%20zope%20open%20source&f=false - ditto
+  - https://www.python.org/community/sigs/current/doc-sig/stext/
+  - http://www.tibsnjoan.co.uk/docutils/STpy.html - me(!)
+  - https://moinmo.in/StructuredText
+  - http://fawcett.blogspot.co.uk/2005/06/tearing-down-markup.html Jun 2005
+  - https://pypi.python.org/pypi/zope.structuredtext - it's alive!
+  - https://github.com/zopefoundation/zope.structuredtext (ish)
+  - http://old.zope.org/Documentation/Articles/STX/ - An introduction to
+    Structured Text
+
+  Broken links?
+
+  * http://www.zope.org/the-world-of-zope/
+  * http://specialtyjobmarkets.com/Wikis/LozinskiClasses/HistoryOfZopeIdeasAndControversies
+  * http://plope.com/Members/chrism/in_defense_of_zope_libraries/talkback/1324502077 - cached by google at http://webcache.googleusercontent.com/search?q=cache:yCRd2QuwpxoJ:plope.com/Members/chrism/in_defense_of_zope_libraries+&cd=1&hl=en&ct=clnk&gl=uk&client=firefox-b-ab, as an explanation (sort of) of "why pyramid" ("""Pyramid is a small, fast, down-to-earth Python web application development framework. It is developed as part of the Pylons Project. It is licensed under a BSD-like license.""") https://trypyramid.com/
 
 
 ----
