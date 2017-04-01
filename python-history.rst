@@ -615,6 +615,8 @@ in various ways:
   well. Data can be stored in other databases as well, or on the file system,
   but ZODB is the most common solution."""
 
+* it's still around - Pylons, Zope 2, Blue Bream (aka Zope 3)
+
 .. note::
 
   * Guido worked there for a while
@@ -624,7 +626,6 @@ in various ways:
   * ZODB
   * structuredText
   * structuredText and documenting types of arguments
-  * it's still around - Pylons, Zope 2, Blue Bream (aka Zope 3)
 
 
   - https://en.wikipedia.org/wiki/Zope
@@ -837,6 +838,8 @@ in various ways:
 
   - license now definitely GPL compatible
 
+Plone released
+
 .. note::
 
   * https://ipython.org/ipython-doc/1/about/history.html
@@ -853,6 +856,12 @@ in various ways:
 
   * https://scipy.github.io/old-wiki/pages/History_of_SciPy
   * https://en.wikipedia.org/wiki/SciPy
+
+  * https://en.wikipedia.org/wiki/Plone_(software)
+    """Plone is a free and open source content management system built on top
+    of the Zope application server. Plone is positioned as an "Enterprise CMS"
+    and is most commonly used for intranets and as part of the web presence of
+    large organizations."""
 
 ----
 
@@ -1584,5 +1593,38 @@ Written using reStructuredText_.
 Presented using hovercraft_.
 
 Sources at https://github.com/tibs/python-history 
+
+.. note::
+
+  Other stuff, not yet used:
+
+  * Humour
+
+    * https://www.python.org/doc/humor/
+    * https://wiki.python.org/moin/Humor
+    * https://xkcd.com/353/
+
+  * Python easter eggs: https://www.youtube.com/watch?v=R4tkq6AhGCw
+    * import antigravity
+    * from __future__ import braces
+    * from __future__ import barry_as_FLUFL (does this still work?)
+
+  * Tim Peters
+
+    * http://stackoverflow.com/users/2705542/tim-peters
+    * http://wiki.c2.com/?TimPeters
+    * https://www.youtube.com/watch?v=1wAOy88WxmY Interview with Tim Peters,
+      PyCon 2006
+
+  * http://pyvideo.org/pycon-us-2012/diversity-in-practice-how-the-boston-python-user.html 
+    - Diversity in practice: How the Boston Python User Group grew to 1700
+    people and over 15% women 
+
+  Timeline makers:
+
+  * https://www.preceden.com/timeline-makers - list of 33 choices
+  * https://www.beedocs.com/timeline3D/mac/
+  * http://www.ispringsolutions.com/blog/top-10-free-and-paid-interactive-timeline-makers/
+  * https://support.office.com/en-gb/article/Create-a-timeline-9c4448a9-99c7-4b0e-8eff-0dcf535f223c - using Excel
 
 .. vim: set filetype=rst tabstop=8 softtabstop=2 shiftwidth=2 expandtab:

@@ -17,27 +17,6 @@ The start of CamPUG
 
 * Starship Python
 
-* the Zen of Python, Guido's time machine, the PSF, and other jokes
-
-  * https://www.python.org/doc/humor/
-  * https://wiki.python.org/moin/Humor
-  * https://xkcd.com/353/
-  * timbot
-
-
-
-* Python easter eggs: https://www.youtube.com/watch?v=R4tkq6AhGCw
-  * import antigravity
-  * from __future__ import braces
-  * from __future__ import barry_as_FLUFL (does this still work?)
-
-* Tim Peters
-
-  * http://stackoverflow.com/users/2705542/tim-peters
-  * http://wiki.c2.com/?TimPeters
-  * https://www.youtube.com/watch?v=1wAOy88WxmY Interview with Tim Peters,
-    PyCon 2006
-
 
 * tkinter, and why
 * dictionaries all the way down
@@ -59,9 +38,6 @@ The start of CamPUG
 Useful links
 ============
 
-* http://pyvideo.org/pycon-us-2012/diversity-in-practice-how-the-boston-python-user.html 
-  - Diversity in practice: How the Boston Python User Group grew to 1700
-  people and over 15% women 
 
 
 
@@ -75,12 +51,6 @@ Useful links
 
 
 
-Timeline makers:
-
-* https://www.preceden.com/timeline-makers - list of 33 choices
-* https://www.beedocs.com/timeline3D/mac/
-* http://www.ispringsolutions.com/blog/top-10-free-and-paid-interactive-timeline-makers/
-* https://support.office.com/en-gb/article/Create-a-timeline-9c4448a9-99c7-4b0e-8eff-0dcf535f223c - using Excel
 
 
 .. vim: set filetype=rst tabstop=8 softtabstop=2 shiftwidth=2 expandtab:
