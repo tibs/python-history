@@ -84,6 +84,19 @@ Named after Monty Python, not the snakes.
 
 .. note::
 
+  http://faculty.cs.tamu.edu/yurttas/PL/SL/python/docs/core-python-programming/html/py-faq.htm#1.2
+
+  """1.2. Why is it called Python?
+
+  Apart from being a computer scientist, I'm also a fan of "Monty Python's
+  Flying Circus" (a BBC comedy series from the seventies, in the -- unlikely
+  -- case you didn't know). It occurred to me one day that I needed a name
+  that was short, unique, and slightly mysterious. And I happened to be
+  reading some scripts from the series at the time... So then I decided to
+  call my language Python. But Python is not a joke. And don't you associate
+  it with dangerous reptiles either! (If you need an icon, use an image of the
+  16-ton weight from the TV series or of a can of SPAM :-) """
+
   * perl: https://en.wikipedia.org/wiki/Perl
   * tcl: http://www.tcl.tk/about/history.html by Jogn Ousterhout
   * occam: https://en.wikipedia.org/wiki/Occam_(programming_language)
@@ -114,9 +127,9 @@ Named after Monty Python, not the snakes.
   In fact the whole page at https://docs.python.org/3/faq/design.html is worth
   reading, if you haven't.
 
-Monty Python for pythonistas: https://www.youtube.com/watch?v=gJ4duC-V6Xw&feature=youtu.be
-(a video that gives some of the Python references, for those who didn't grow
-up with the show)
+  Monty Python for pythonistas: https://www.youtube.com/watch?v=gJ4duC-V6Xw&feature=youtu.be
+  (a video that gives some of the Python references, for those who didn't grow
+  up with the show)
 
 ----
 
@@ -254,9 +267,15 @@ Some comp.lang.python memes
 
 * Aug development of Grail started
 
+* Numeric - predecessor/ancestor of Numpy
+
 * Oct (probably) **1.3**
 
   - the "ni" module
+
+* Java 1.0
+
+* Ruby 0.95
 
 .. note::
 
@@ -286,6 +305,19 @@ Some comp.lang.python memes
     * https://github.com/mdoege/grailbrowser - fork that says it works with
       Python 2.7
 
+  * Java
+
+    * https://en.wikipedia.org/wiki/Java_%28programming_language%29
+
+  * Ruby - first public release 0.95, Dec 1995 (on Japanese newsgroups),
+    followed by 3 more versions in 2 days
+
+    * https://en.wikipedia.org/wiki/Ruby_(programming_language)
+    * https://www.ruby-lang.org/en/about/
+    * Matz (Yukihiro Matsumoto): "I wanted a scripting language that was more
+      powerful than Perl, and more object-oriented than Python2." from
+      http://www.linuxdevcenter.com/pub/a/linux/2001/11/29/ruby.html
+      (also, he says no English documentation until 1997)
 
 
 ----
@@ -314,7 +346,7 @@ Some comp.lang.python memes
 
 * JPython started (which became Jython in 2000)
 
-.. _`Starship Python`_: http://starship.python.net/
+.. _`Starship Python`: http://starship.python.net/
 
 .. note::
 
@@ -346,9 +378,12 @@ Some comp.lang.python memes
 1998
 ====
 
+Nothing happened in 1998
+
 .. note::
 
-  ...
+  Obviously, that's not true (in particular, my second son was born!),
+  but I don't seem to have any interesting Python information from then.
 
 
 
@@ -396,9 +431,22 @@ Some comp.lang.python memes
 
 * Nov, reStructuredText (first drafts to DocSIG, June 2001 first release rolled out)
 
+* Design of Perl 6 began
+
 .. note::
 
   https://en.wikipedia.org/wiki/ReStructuredText
+
+  Perl 6:
+
+  * https://en.wikipedia.org/wiki/Perl_6
+  * https://en.wikibooks.org/wiki/Perl_6_Programming/Perl_History
+  * http://www.perlfoundation.org/perl6/index.cgi?timeline
+    (Parrot-VM begun in 2001, initial Perl 6 compiler for it in 2002,
+    Pugs came along in 2005, compiler renamed Rakudo and massively rewritten
+    in 2008)
+  * http://www.perlfoundation.org/perl6/index.cgi?pugs - written in Haskell
+  * https://www.reddit.com/r/programming/comments/cqysn/10_years_perl_6_project_history_and_personal/
 
 ----
 
@@ -427,6 +475,12 @@ Some comp.lang.python memes
 
 * IPython started
 
+* Numarray
+* SciPy
+
+* Parrot April Fool joke (joint development of Perl 6 and Python on the same
+  interpreter, producing a new language to be called Parrot)
+  http://www.perl.com/pub/2001/04/01/parrot.htm
 
 * Dec **2.2**
 
@@ -440,7 +494,14 @@ Some comp.lang.python memes
 
     http://www.numfocus.org/blog/nteract-building-on-top-of-jupyter-from-a-rich-repl-toolkit-to-interactive-notebooks
 
+  * Travis E. Oliphant: https://www.slideshare.net/shoheihido/sci-pyhistory -
+    gives dates for Matrix Object, Numeric, Numarray and NumPy (1994, 1995,
+    2001 and 2005 respectively) on slide 9
+    
+    Says announced would create (what became) SciPy in 1999
 
+  * https://scipy.github.io/old-wiki/pages/History_of_SciPy
+  * https://en.wikipedia.org/wiki/SciPy
 
 ----
 
@@ -464,10 +525,14 @@ Some comp.lang.python memes
   * http://bugs.python.org/file4451/timsort.txt
   * http://www.drmaciver.com/2010/01/understanding-timsort-1adaptive-mergesort/
 
+* Pypi (aka The Cheese Shop) was launched
+
 .. note::
 
   * http://www.cosc.canterbury.ac.nz/greg.ewing/python/Pyrex/
   * https://en.wikipedia.org/wiki/Pyrex_(programming_language)
+
+  * https://en.wikipedia.org/wiki/Python_Package_Index
 
 
 
@@ -486,7 +551,6 @@ Some comp.lang.python memes
 
   * http://pypy.org/
   * https://en.wikipedia.org/wiki/PyPy#RPython
-
 
 
 ----
@@ -525,6 +589,10 @@ Some comp.lang.python memes
 
 IronPython started
 
+Django released
+
+Numpy produced, by  combining Numeric and Numarray
+
 .. note::
 
   * https://ironpython-test.readthedocs.io/en/latest/contents.html
@@ -536,6 +604,22 @@ IronPython started
 
   * http://ironpython.net/
   * https://en.wikipedia.org/wiki/IronPython
+
+  * Django - started 2003, release July 2005
+
+    * https://en.wikipedia.org/wiki/Django_(web_framework)
+
+      """Django was born in the fall of 2003, when the web programmers at the
+      Lawrence Journal-World newspaper, Adrian Holovaty and Simon Willison, began
+      using Python to build applications. It was released publicly under a BSD
+      license in July 2005. The framework was named after guitarist Django
+      Reinhardt."""
+
+    * http://djangobook.com/introducing-django/
+
+  * Numpy
+
+    * https://en.wikipedia.org/wiki/NumPy 
 
 
 
@@ -634,9 +718,12 @@ IronPython started
 
 * Jun **3.1**
 
+Proposed move to using Mercurial announced
+
 .. note::
 
-  ...
+  * https://www.python.org/dev/peps/pep-0385/
+  * https://arstechnica.com/information-technology/2009/03/python-adopts-the-mercurial-version-control-system/
 
 
 
@@ -647,9 +734,9 @@ IronPython started
 
 * Jul **2.7** Will be supported until 2020 (originally, until 2010)
 
-*Apr2010 last release of Pyrex (0.9.9)
+* Apr2010 last release of Pyrex (0.9.9)
 
-*Aug 2010 (?) Nuitka starts
+* Aug 2010 (?) Nuitka starts
 
 Eric Holscher announce Read the Docs, using Sphinx to provide a public
 resource for generating and presenting documentation written in
@@ -671,13 +758,13 @@ reStructuredText. For free.
 
 * Feb **3.2**
 
-  - mercurial repository for Python, as well as subversion
+Python actually starts using Mercurial
 
 * IPython Notebook added to IPython
 
 .. note::
 
-  ...
+  * http://eli.thegreenplace.net/2011/03/18/python-development-switches-to-mercurial-source-control/
 
 
 

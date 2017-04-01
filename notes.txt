@@ -56,7 +56,6 @@ The start of CamPUG
 * the history that led to "a = b if c else d"
 
 
-
 Useful links
 ============
 https://en.wikipedia.org/wiki/History_of_Python
