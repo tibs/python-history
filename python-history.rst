@@ -6,8 +6,7 @@ An amble through some of Python's history
 *pointing out interesting landmarks as we go, because to do the whole thing
 would take too long...*
 
-:amble: for this purpose, to walk at an easy pace, with no particular
-        destination in mind
+  **amble** to walk at an easy pace, with no particular destination in mind
 
 By Tibs / Tony Ibbs, April 2017
 
