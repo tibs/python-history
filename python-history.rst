@@ -174,6 +174,16 @@ things that were happening in the Python world around those times.
     sources, up to 2.0
   * https://www.python.org/doc/versions/ - Python documentation by version, back
     to 1.4
+  * https://en.wikipedia.org/wiki/History_of_Python
+  * https://en.wikipedia.org/wiki/Python_%28programming_language%29
+  * https://en.wikibooks.org/wiki/Python_Programming/Version_history
+  * https://www.python.org/downloads/ for versions 2.7.12 - 3.6.0
+  * https://www.python.org/download/releases/ for versions 1.1 - 1.6.1 (binaries)
+  * http://legacy.python.org/download/releases/src/ for source releases for
+    versions 1.0.1 - 2.0
+  * http://legacy.python.org/dev/peps/pep-0001/
+  * https://www.python.org/download/alternatives/ - Alternative Python
+    implementations
 
 ----
 
@@ -212,6 +222,71 @@ Before 1994
   * http://legacy.python.org/search/hypermail/python-1993/0001.html -
     announcement of 0.9.8, Jan 1993
 
+----
+
+* Feb 1991 0.9.1p1
+
+  - no ``__init__`` method
+  - no double quote strings
+  - adds ``else`` for for loops
+
+----
+
+* 0.9.2 - never properly released
+
+  - semicolons to separate statements
+  - ``continue``
+  - ``{key: value}`` to define a dictionary
+  - blank and comment lines don't need to be correctly indented(!)
+  - ``1 == 1.0``
+  - ``.pyc`` files
+  - first ``pythonmode.el``
+  - tutorial nearly complete
+  - arbitrary precision integers
+
+----
+
+* 0.9.3 - again, probably not very released
+
+  - ``global`` statement
+  - ``class B`` allowed, instead of ``class B()``, and can do ``class B(D)``
+  - C shifting and masking operators (``<<``, etc)
+  - C comparison operators  (``==`` and ``!=``) - the previous ``=`` and
+    ``<>`` are still allowed
+  - class attributes are no long read-only
+
+----
+
+* Dec 1991 0.9.4alpha
+
+  - new exceptions
+  - functions are called with 0..N arguments, not just 0 or 1. So:
+    ``def init(self, (x, y))`` becomes ``def init(self, x, y)``
+  - ``x[-1]`` is equivalent to ``x[len(x)-1]``
+
+----
+
+0.9.8
+
+  - number of arguments to a function must match number declared
+  - ``*args`` introduced to allow "varargs"
+  - ``sys.exitfunc`` called on exit, SIGTERM or SIGHUP
+  - I/O mostly accepts any object supporting ``readline()`` or ``write()``
+  - ``str()`` and ``repr()`` introduced - ``repr(x)`` entirely equivalent to
+    ``\`x\```
+  - ``cmp(x,y)``
+  - modules struct, fcntl, md5
+
+and from 0.9.7beta:
+
+  - ``__getitem__`` and ``__repr__``
+
+.. note::
+
+  http://legacy.python.org/search/hypermail/python-1993/0001.html
+
+  Much of it is concerned with changes to how Python is built - cross platform
+  support in those days was much more complicated.
 
 ----
 
@@ -227,6 +302,33 @@ Before 1994
 .. note::
 
   * the Usenet days - back when you could read all of comp.lang.python every day
+
+----
+
+* Jan 1994 1.0, also comp.lang.python starts up
+
+  - builds across many Unices without alteration, uses GNU autoconf
+  - sources and standard library reorganised
+  - double quotes allowed for strings
+  - keyword ``exec``, replacing built in function
+  - keyword ``lambda``, and new functions ``map``, ``filter``, ``reduce``
+  - ``xrange``
+  - ``__name__`` introduced, the ``if __name__ == '__main__': main()`` trick
+    is introduced
+  - printing an object uses its ``__str__`` method.
+
+----
+
+* Oct 1994 1.1
+
+  - ``__getattr__`` and friends introduced
+  - ``__call__``
+  - threads should work on most platforms
+  - tkinter
+  - signal, curses, urlparse
+
+
+----
 
 Some comp.lang.python memes
 ---------------------------
@@ -319,6 +421,34 @@ Some comp.lang.python memes
       http://www.linuxdevcenter.com/pub/a/linux/2001/11/29/ruby.html
       (also, he says no English documentation until 1997)
 
+----
+
+* Apr 1995 (probably) 1.2
+
+  - ``import a.b.c`` and ``from a.b.c import name`` are supported, but not yet
+    implemented. ``__import__`` function and ``imp`` module expose import
+    functionality.
+  - pickle and shelve
+  - docstrings via the ``__doc__`` attribute, string literals allowed for
+    modules, classes and functions (it will take quite a long while before
+    everything in the standard library has doc strings - essentially until
+    Python 1.5)
+  - Mark Hammond's support for Windows NT
+  - exceptions can be classes (all built in exceptions are still strings)
+
+----
+
+* Oct 1995 (probably) 1.3
+
+  - keyword arguments (a whole new chapter in the tutorial)
+  - htmllib rewritten, incompatibly
+  - ``globals()`` and ``locals()`` to get the global and local variables
+  - the ``ni`` module supports importing modules with hierarchical names. So,
+    for instance::
+
+      import ni
+      ni.ni()
+      from a.b.c import name
 
 ----
 
@@ -331,6 +461,20 @@ Some comp.lang.python memes
 
   ...
 
+
+----
+
+* Oct 1996 1.4
+
+  - library reference now maintained in Framemaker
+  - name mangling to provide a simple form of class private variables:
+    ``__spam``
+  - ``access`` is no longer a reserved word
+  - ``lstrip`` and ``rstrip``, third argument to ``split``
+  - "The PC build procedure now really works"
+  - ``...`` (Ellipses) provided for use by Numerical Python
+  - ``x**y`` (same as ``pow(x,y)``)
+  - complex numbers
 
 
 ----
@@ -355,6 +499,7 @@ Some comp.lang.python memes
   * see http://pyfound.blogspot.co.uk/2010/07/frank-willison-memorial-award-recipient.html
     which confirms the date when Starship Python started, and of course also
     explains why Christian Tismer got the award
+  * http://starship.python.net/ - the Starship
 
   JPython/Jython:
 
@@ -372,20 +517,80 @@ Some comp.lang.python memes
   (providing Java support in Gothic - when I could run up Jython and code
   Python, I knew we'd done it)
 
+----
+
+* Dec 1997 1.5
+
+  - recommends ``#!/usr/bin/env python`` instead of ``#!/usr/local/bin/python``
+  - ``-O`` produces ``.pyo`` files instead of ``.pyc`` files - removes
+    SET_LINENO instructions and assert statements
+  - private variables starting ``__`` are now a permanent feature
+  - raw strings ``r"'n"``
+  - ``assert`` statement
+  - ``raise SomeClass, some_value`` where ``some_value`` is not an instance of
+    ``SomeClass`` raises ``SomeClass(some_value)``.
+  - thread safe ``sys.exc_info()``
+  - string interning
+  - ``int()``, ``long()`` and ``float()`` can now take string arguments
+  - the "Don Beaudry hook" for metaclasses
+  - new, experimental ``re.py`` regular expression module was introduced, and
+    then almost immediately replaced by an even newer one based on Philip
+    Hazel's ``pcre``. The old ``regex`` module is officially obsolete, but
+    still there.
+  - pprint.py
+  - Python builds as a single library file, libpython1.5.a
+  - os.path.join (and friends) take more than two arguments
+  - issubclass and isinstance
+  - ``dict.get()``
+  - ``import spam.ham.eggs`` supported directly, ``ni`` declared obsolete,
+    ``__init__.py`` files required)
+  - all standard exceptions are now classes (by default)
+  - OS/2 support (!)
+
+  PythonWin and other associated Windows support is still released separately
+  by Mark Hammond.
+
 
 ----
 
 1998
 ====
 
-Nothing happened in 1998
+Stackless Python started
 
 .. note::
 
   Obviously, that's not true (in particular, my second son was born!),
   but I don't seem to have any interesting Python information from then.
 
+  * https://en.wikipedia.org/wiki/Stackless_Python
+  * http://pyvideo.org/europython-2012/the-story-of-stackless-python.html
+    (video, 54 minutes)
 
+    """This talk gives a good overview of the status of Stackless Python: Its
+    history from the beginning, its current status and its future development
+    to be expected. A discussion and comparison with similar approaches like
+    Greenlet, Eventlet and how they relate is also included. Stackless Python
+    1.0 was started in 1998 as an implementation of true continuations, with
+    all implied complications. In 2002, Stackless 2.0 was born, a complete
+    rewrite. Continuations were abandoned in favor of the much easier to
+    comprehend tasklets - one-shot continuations that could resume their
+    current state just once, like Coroutines. In 2004, Stackless 3.0 was
+    created, which merged the 2.0 features with a new concept: so-called
+    “Soft-Switching”, which made the Pickling of Program State” possible. As a
+    consequence, a few recent application make solely use of Program State
+    Pickling, which changes the purpose of Stackless Python quite a bit. One
+    example of this is the “Nagare Web Framework” which will be shown in
+    examples. In the light of the popularity of a Stackless spin-off, called
+    “Greenlet”, the concept of a new Stackless branch will be depicted:
+    Stackless, written as a pure extension module on top of Greenlets, which
+    includes State Pickling - a feature that seemed to be impossible to
+    implement without changing CPython. But the impossible and ways to get
+    around it was always a major topic in this project, which is going to
+    augment what Stackless on PyPy already can do. Christian Tismer, creator
+    of Stackless Python Perhaps with Armin Rigo as a guest, talking about
+    Stackless status in PyPy. Otherwise, I will insert this myself. cheers –
+    Chris"""
 
 
 ----
@@ -414,6 +619,19 @@ Nothing happened in 1998
     * https://www.python.org/dev/peps/pep-0020 PEP 20 from 2004
   
 
+----
+
+* Apr 1999 1.5.2
+
+  - docs separated out into a separate distributable
+  - IDLE introduced
+  - bare ``raise`` re-raises
+  - """Added a hack so that when you type 'quit' or 'exit' at the interpreter,
+    you get a friendly explanation of how to press Ctrl-D (or Ctrl-Z) to
+    exit."""
+  - list ``pop`` method, experimentally
+  - ``ndiff.py`` - Tim Peter's text diffing tool
+
 
 ----
 
@@ -435,6 +653,8 @@ Nothing happened in 1998
 
 .. note::
 
+  https://opensource.org/licenses/Python-2.0 - Python 2.0 license
+
   https://en.wikipedia.org/wiki/ReStructuredText
 
   Perl 6:
@@ -447,6 +667,52 @@ Nothing happened in 1998
     in 2008)
   * http://www.perlfoundation.org/perl6/index.cgi?pugs - written in Haskell
   * https://www.reddit.com/r/programming/comments/cqysn/10_years_perl_6_project_history_and_personal/
+
+----
+
+* Sep 2000 1.6 penultimate CNRI version
+* 1.6.1 same with a GPL compatible license
+
+  The "What's New" notes for Python 2.0 say:
+
+  """Python 1.6 can be thought of as the Contractual Obligations Python
+  release. After the core development team left CNRI in May 2000, CNRI
+  requested that a 1.6 release be created, containing all the work on Python
+  that had been performed at CNRI. Python 1.6 therefore represents the state
+  of the CVS tree as of May 2000, with the most significant new feature being
+  Unicode support. Development continued after May, of course, so the 1.6 tree
+  received a few fixes to ensure that it’s forward-compatible with Python 2.0.
+  1.6 is therefore part of Python’s evolution, and not a side branch.
+
+  So, should you take much interest in Python 1.6? Probably not. The 1.6final
+  and 2.0beta1 releases were made on the same day (September 5, 2000), the
+  plan being to finalize Python 2.0 within a month or so. If you have
+  applications to maintain, there seems little point in breaking things by
+  moving to 1.6, fixing them, and then having another round of breakage within
+  a month by moving to 2.0; you’re better off just going straight to 2.0. Most
+  of the really interesting features described in this document are only in
+  2.0, because a lot of work was done between May and September."""
+
+----
+
+* Oct 2000 2.0 first non-CNRI version
+
+  - modern Python license
+  - now on sourceforge, development process opened up
+  - PEPs introduced as the way to introduce changes
+  - unicode added
+  - list comprehensions ``[x**2 for x in range(10)]``
+  - string methods (``",".join([1,2,3]``)
+  - garbage collections copes with reference cycles
+  - Augmented assignment (``+=`` and so on).
+  - ``def f(*args, **kwargs)``
+  - ``print >> file, "Hello"``
+  - ``import module as name``
+  - ``"%r"`` to print the representation of an object
+  - ``zip``
+  - dictionary ``setdefault`` (an "odd new method")
+  - distutils introduced
+
 
 ----
 
@@ -505,6 +771,40 @@ Nothing happened in 1998
 
 ----
 
+* Apr 2001 2.1 license now "Python Software Foundation License"
+
+  - PSF "owns" Python
+  - Nested scopes (off by default)
+  - ``__future__`` directives introduced
+  - rich comparisons (``__lt__`` and friends)
+  - weak references
+  - Ka Ping Yee's inspect.py and pydoc.py
+  - Tim Peter's doctest.py
+  - PyUnit
+  - modules can define ``__all__`` to control what is visible to ``from module
+    import *``
+
+
+----
+
+* Dec 2001 2.2 -> Oct 2002 2.2.2
+
+  - 2.2 license definitely GPL compatible
+  - old- and new-style classes
+  - descriptors
+  - the diamond rule for multiple inheritance
+  - ``__getattribute__`` and ``__slots__``
+  - iterators and ``__iter__``
+  - simple generators - ``yield`` - with ``from __future__ import generators``
+  - introduction of ``//``, and ``from __future__ import division``
+  - nested scopes on by default
+  - ``help()`` at the Python prompt
+
+  - ``True`` and ``False`` appear in 2.2.1 ????
+
+
+----
+
 2002
 ====
 
@@ -552,6 +852,29 @@ Nothing happened in 1998
   * http://pypy.org/
   * https://en.wikipedia.org/wiki/PyPy#RPython
 
+----
+
+* Jul 2003 2.3
+
+  - ``Set`` class in the sets module
+  - generators are always present, ``yield`` is always a keyword
+  - source code encodings: ``# -*- coding: UTF-8 -*-``
+  - importing from zip files
+  - unicode filenames on Windows NT
+  - Universal newline support
+  - `enumerate`` function
+  - the logging package
+  - ``bool`` type appears, ``True`` and ``False`` are now type ``bool``
+  - csv module
+  - extended slices, e.g., ``a[::2]``
+  - raising a string based exception is now an error.
+  - method resolution order was changed
+  - ``"ab" in "abcd"`` now works
+  - ``basestrings`` type added
+  - itertools module
+  - optparse module
+  - datetime module
+
 
 ----
 
@@ -579,6 +902,26 @@ Nothing happened in 1998
 
   * http://grokbase.com/t/perl/perl6-internals/032391mt4t/the-2004-performance-challenge-is-on
   * http://archive.oreilly.com/pub/a/oscon2004/friday/index.html - 
+
+----
+
+* Nov 2004 2.4
+
+  - ``set`` and ``frozenset`` built-in types
+  - generator expressions - for instance ``links = (link for link in
+    get_all_links() if not link.followed)``
+  - ``string.Template``
+  - ``@decorator`` notation for function decorators
+  - ``sorted`` and ``reversed`` functions
+  - subprocess module
+  - ``decimal.Decimal``
+  - multi-line imports (using parentheses)
+  - ``sort`` gains ``key`` and ``reverse`` mechanisms/arguments
+  - ``-m`` command line switch finds the named module and runs it as a script
+  - ``None`` becomes a constant
+  - collections module
+  - re module gained simple conditionals: ``(?(group)A|B)``
+  - doctest module was improved
 
 
 
@@ -636,6 +979,30 @@ Numpy produced, by  combining Numeric and Numarray
   ...
 
 
+----
+
+* Sep 2006 2.5
+
+  - the ``with`` statement (``from __future__ import with_statement``), and contextlib
+  - ``x = true_thing if condition else false_thing``, after *much* discussion,
+    and a BDFL ruling
+  - ``try``, ``except`` *and* ``finally`` allowed together
+  - ``yield`` is now an expression: ``val = (yield i)``
+  - functools, including ``functools.partial``
+  - absolute and relative imports - ``from __future__ import absolute_import``
+  - exceptions can be new style classes
+  - ``startswith`` and ``endswith`` now accept tuples as an argument
+  - ``any`` and ``all``
+  - it's now (again?) legal to do ``class C(): pass``, specifying no base
+    classes but giving the parameters
+  - ``collections.defaultdict``
+  - regex and regsub modules are finally gone
+  - developers now using subversion instead of cvs
+  - uuid module
+  - ctypes module
+  - sqlite3 module
+
+
 
 ----
 
@@ -656,6 +1023,73 @@ Numpy produced, by  combining Numeric and Numarray
 
   * http://cython.org/
   * https://en.wikipedia.org/wiki/Cython
+
+----
+
+PyConUK
+=======
+
+From 2002 to 2006, there were Python tracks at the annual ACCU conference. In
+2006, Guido van Rossum was a keynot speaker.
+
+.. note::
+
+   * *ACCU Apr 2002*: Heritage Motor Centre, Gaydon "including the Python UK Conference"
+   * *ACCU Apr 2003*
+   * *ACCU Apr 2004*: Oxford, with a 2 day Python track
+   * *ACCU Apr 2005*
+   * *ACCU Apr 2006*: Oxford, 2 day Python track,  Guido van Rossum as keynote speaker
+
+   I know I was at the first of those, because I remember the venue and
+   specific items on the program. I'm fairly sure of the last, because of
+   Guido being a keynote speaker. I *think* the middle one is the right year,
+   I know I wasn't at 2003, and I don't think I got to 2005.
+
+   ACCU is/was relatively expensive, so I'd only go for the a couple of days.
+
+   I got partially funded for 2002.
+
+   ACCU Apr 2002:
+
+   * https://mail.python.org/pipermail/python-uk/2002-February/000167.html
+   * https://mail.python.org/pipermail/python-uk/2002-February/000168.html
+   * http://www.gossamer-threads.com/lists/python/python/94742#94742
+
+The *actual* UK Python conferences were started by John Pinner
+and the West Midlands Python group.
+
+   * **PyConUK 2007** and **2008**: September, Birmingham Conservatoire
+   * **EuroPython 2009** and **2010**: June/July, Birmingham Conservatoire
+   * **PyConUK 2011 to 2015** were in the TechnoCenter, Coventry
+   * **PyConUK 2016** moved to Cardiff
+   * **PyConUK 2017** will be in Cardiff again, in October
+
+.. note::
+
+   There were also some smaller events:
+
+   * **Python Unconference**: one day, September 2010, Birmingham
+   * **Floss UK**: one day only, October 2010, Birmingham BMI
+
+   on years when a "proper" PythonUK didn't happen
+
+
+   I got funded in 2010, and my boxx and I gave talks - my first talk at a
+   PyConUK. PyconUK 2010, https://metaljoe.wordpress.com/2010/07/24/europython-2010/
+
+     """To round off the day, I attended two talks by Richard Watts and Tony
+     Ibbs of Kynesim who presented Muddle, their open source build system
+     which looks very cool, and KBUS which is an elegant and lightweight
+     messaging system implemented as a Linux kernel extension."""
+
+   In the EuroPython years, people still wanted a "something" in the latter
+   part of the year, hence the UnConference and the FlossUK event (which was
+   also an unconference - I requested an item on using Bacula, and in the way
+   of such things ended up "running" it!).  
+
+   2014 was John Pinner's last PyConUK.
+
+   I got funded in 2014, 2015 and 2016 by Velocix/ALU/Nokia
 
 
 
@@ -710,6 +1144,59 @@ Numpy produced, by  combining Numeric and Numarray
     Python 3 - goes up to about 3.5, Mar 2016
 
 
+----
+
+* Oct 2008 2.6 Preparing the migration path to Python 3. Development cycle for
+  Python 2.6 and 3.0 was synchronised. Some of the new stuff in 3.0 is also in
+  2,6.
+
+  - ``-3`` command line switch, to warn about features that will be removed in
+    Python 3.0
+  - documentation now in reStructuredText using Sphinx
+  - new issue tracker (Roundup)
+  - ``with`` statement now always enabled, ``with`` is a keyword, more things
+    support context management
+  - multiprocessing package
+  - string formatting with ``.format``
+  - ``from __future__ import print_function``
+  - now must write ``except TypeError as exc``
+  - ``from __future__ import unicode_literals``
+  - io module
+  - abstract base classes (abc module and other things)
+  - octal may be ``0o123`` as well as ``0123``
+  - class decorators
+  - fractions module
+  - ``next(iterator, [default])``
+  - ``@property`` and its friends
+  - ast module
+  - json module
+
+----
+
+* Dec 2008 3.0 So much stuff. So this is only a sample
+
+  - obviously, everything applicable from 2.6
+  - strings are unicode, bytes are not strings
+  - ``print`` is now a function
+  - ``0123`` is not valid, ``0o123`` is octal (and ``0b1010`` is binary)
+  - some things return *views* instead of lists
+  - ``1/2`` is 0.5, ``1//2`` is 0.
+  - ``repr`` of a long int no longer has a trailing ``L``, because all ints
+    are of the same type
+  - function argument and return value annotations are introduced, but with
+    no semantics
+  - ``nonlocal``
+  - extended iterable unpacking - e.g., ``a, *rest, b = range(5)``
+  - dictionary comprehensions: ``{k: v for k, v in stuff}``
+  - set literals: ``{1, 2}``
+  - lots of library reorganisation
+  - "unbound methods" as a concept has gone
+  - more intelligent ``super``, doesn't normally need any arguments
+  - ``input`` is now what was ``raw_input``
+  - ``dict.has_key()`` has gone - just use ``in``
+  - ``callable()`` has gone
+  - lots of other stuff
+
 
 ----
 
@@ -724,6 +1211,21 @@ Proposed move to using Mercurial announced
 
   * https://www.python.org/dev/peps/pep-0385/
   * https://arstechnica.com/information-technology/2009/03/python-adopts-the-mercurial-version-control-system/
+
+----
+
+* Jun 2009 3.1
+
+  - ``collections.OrderedDict``
+  - fields in ``format()`` don't need to be numbered
+  - multiple context managers in one statement: ``with this() as a, that() as b:``
+  - more intelligent floating point representation - e.g., ``repr(1.1)`` is
+    now ``1.1``, not ``1.1000000000000001``
+  - ``collections.Counter``
+  - ``logging.NullHandler``
+  - various useful improvements to unittest
+  - importlib module
+  - speed improvements in various places
 
 
 
@@ -753,6 +1255,24 @@ reStructuredText. For free.
 
 ----
 
+
+* Jul 2010 2.7 Will be supported until 2020 (originally, until 2010)
+
+  Mostly backportings from 3.1
+
+    * set literals
+    * dictionary and set comprehensions
+    * multiple context managers in one ``with``
+    * collections.OrderedDict
+    * argparse
+    * fields in ``format()`` don't need to be numbered
+    * collections.Counter
+    * unittest greatly enhanced - becomes what was the external unittest2
+    * ensurepip appears in 2.7.9
+
+
+----
+
 2011
 ====
 
@@ -767,6 +1287,20 @@ Python actually starts using Mercurial
   * http://eli.thegreenplace.net/2011/03/18/python-development-switches-to-mercurial-source-control/
 
 
+----
+
+* Feb 2011 3.2
+
+  - minimal stable ABI available to extension modules
+  - argparse introduced, optparse still available but not recommended
+  - concurrent.futures module
+  - pyc repository directories - all .pyc files stored in a ``__pycache__``
+    direcory, named according to the Python version
+  - ``hasattr`` now calls ``getattr`` and checks for an exception
+  - ``callable()`` comes back
+  - lots of new stuff in existing library modules
+  - there is a mercurial repository for Python, as well as subversion
+
 
 ----
 
@@ -779,12 +1313,32 @@ Python actually starts using Mercurial
 
   ...
 
+----
+
+* Sep 2012 3.3
+
+  - ``yield from``
+  - ``u"unicode"`` is back, to be friendlier to ex-Python 2 code
+  - new modules include: ipaddress, lzma, unittest.mock, venv (virtual
+    environment support built-in)
+  - packages don't necessarily require ``__init__.py``, and can span
+    multiple locations
+  - internally, string representation changes according to the string
+  - new launcher mechanism for ``.py`` files on Windows
+  - reorganised OS and IO exception hierarchy
+  - ``__qualname__`` represents the full path from module to functions and
+    classes - e.g., ``"Class.method"``
+  - more work on import, new importlib
+  - hash randomisation on by default
+  - no more support for OS/2 or VMS
 
 
 ----
 
 2013
 ====
+
+Nothing happened in 2013
 
 .. note::
 
@@ -815,6 +1369,22 @@ Python actually starts using Mercurial
 
 ----
 
+* Mar 2014 3.4 - no new syntax features
+
+  - ensurepip module provides simpler bootstrapping of pip
+  - ``codecs.encode()`` and ``codesc.decode()`` (introduced in 2.4) now
+    properly documented, and have been improved.
+  - asyncio module, with a provisional API
+  - enum module
+  - pathlib module
+  - unittest ``TestCase`` has new method ``subTest()``
+  - unittest provides new context manager ``assertLogs()``
+  - new command line option ``-I``, isolated mode - recommended for use when
+    running system scripts.
+
+
+----
+
 2015
 ====
 
@@ -824,6 +1394,21 @@ Python actually starts using Mercurial
 
   ...
 
+----
+
+* Sep 2015 3.5
+
+  - coroutines with ``async`` and ``await``
+  - ``@`` infix operator for matrix multiplication, supported by NumPy 1.10
+  - more unpacking generalisations - e.g., ``[*range(4), 4]`` is ``[0, 1, 2, 3, 4]``
+    (and it works for ``**`` for dictionaries as well)
+  - bytes and bytearray support ``%`` formatting
+  - typing module is provisional support for type hints, aimed (for instance)
+    at mypy
+  - os.scandir - a better and faster directory iterator
+  - ``math.isclose()`` - approximate equality
+  - ``.pyo`` files have gone (optimised files have a slightly different name,
+    but the same extension)
 
 
 
@@ -841,6 +1426,35 @@ https://lwn.net/Articles/705224/
 
   ...
 
+----
+
+* Dec 2016 3.6
+
+  - formatted string literals: ``f"This module is called {__name__}."``
+  - syntax for variable (type) annotations
+  - underscores allowed (ignored) in numeric literals: ``123_111_112``,
+    ``0b_1100_0011``.
+  - asynchronous generators ``await``
+  - asynchronous comprehensions ``result = [i async for i in aiter() if i % 2]``
+  - ``__init_subclass__`` classmethod will be called on the base class when a
+    new subclass is created - allows customisiing subclass creation without a
+    metaclass
+  - ``os.PathLike`` and the ``__fspath()__`` "magic" method for file system
+    paths and their ilk
+  - local time disambiguation - support in datetime for when local clocks move
+    back, the new ``fold`` attribute
+  - Windows filesystem encoding is now UTF-8
+  - class attribute definition order is preserved, as is keyword argument
+    order. This brings with it a change in dictionary implementation - key order
+    is now preserved (first tried out in PyPy, and dictionaries are smaller).
+    This is, however, an implementation detail - the order of dictionary keys
+    is still not defined (although this *might* change in the future)
+  - secrets module - obvious way to reliably generate cryptographically strong
+    pseudo-random values suitable for managing secrets
+  - asyncio module is no longer provisional
+  - typing module is still provisional
+  - use of ``async`` and ``await`` as variable, class, function or module
+    names will generate a DeprecationWarning. They will become keywords in 3.7
 
 
 ----

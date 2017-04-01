@@ -58,29 +58,6 @@ The start of CamPUG
 
 Useful links
 ============
-https://en.wikipedia.org/wiki/History_of_Python
-
-* https://en.wikipedia.org/wiki/Python_%28programming_language%29
-* https://en.wikibooks.org/wiki/Python_Programming/Version_history
-* https://www.python.org/downloads/ for versions 2.7.12 - 3.6.0
-* https://www.python.org/download/releases/ for versions 1.1 - 1.6.1 (binaries)
-* http://legacy.python.org/download/releases/src/ for source releases for
-  versions 1.0.1 - 2.0
-* https://www.python.org/download/releases/1.6.1/ specifically
-* https://hg.python.org/cpython/raw-file/v2.0.1/Misc/NEWS - what was new in
-  Python 2.0.1 and all the previous versions that succeeded 1.5.2 (i.e.,
-  including 1.6)
-* http://legacy.python.org/dev/peps/pep-0001/
-* https://www.python.org/download/alternatives/ - Alternative Python
-  implementations
-* http://starship.python.net/ - the Starship
-* https://www.python.org/download/releases/1.5/whatsnew/
-* https://www.python.org/download/releases/1.5/ -- 1.5.2
-* https://www.python.org/download/releases/1.6.1/
-* https://dzone.com/articles/how-python-became-language - How Python Became
-  the Language of Choice for Data Science 
-* https://people.eecs.berkeley.edu/~bh/proglang.html - scheme vs. Python
-* https://opensource.org/licenses/Python-2.0 - Python 2.0 license
 
 * http://pyvideo.org/pycon-us-2012/diversity-in-practice-how-the-boston-python-user.html 
   - Diversity in practice: How the Boston Python User Group grew to 1700
@@ -88,9 +65,6 @@ https://en.wikipedia.org/wiki/History_of_Python
 
 
 
-* http://pyvideo.org/europython-2012/the-story-of-stackless-python.html
-  (video, 54 minutes)
-* https://en.wikipedia.org/wiki/Stackless_Python
 
 
 
