@@ -50,31 +50,63 @@ Written using reStructuredText_.  Presented using hovercraft_.
 
 ----
 
-Why me
-======
+About this talk
+===============
 
-I don't remember exactly when I first found Python, but my first dated
-Python script is from 1994.
+I cover, at least briefly, the major releases of Python (and 1.5.2), and also
+things that were happening in the Python world around those times.
 
-My background had been with BCPL, Fortran and C (and also Emacs and
-TeX/LaTeX, which will become relevant later on).
+1991 to 2018 - that's 27 years...
 
-When I came across Python, I fell in love with it.
+Is it accurate?
+
+Well, there's certainly a lot of information (and links in the notes), but
+there are also many places where I'm using my own memory of events, which is
+doubtless unreliable. So think of it as an informal history, at best.
 
 .. note::
 
-  Work had tasked me with looking for a programming language we could embed
-  into our object oriented database. At that time, the obvious choices were
-  things like Tcl and various small lisps or schemes. But I also found Python,
-  and fell in love with it, in large part because it was what I already wrote
-  down when writing pseudo-code (with the exception of the colons - more on
-  them later too). It also had much of the feel I had liked from using VMS DCL
-  (Digital Command Language - a relatively sophisticated Basic descendant,
-  with close integration with the operating system).
+  There is too much information in this slideset to present it all. What I
+  intend to do is to skim over the slides that describe what is new in each
+  Python release - they're mainly there to give an idea of scope, and to act
+  as a reference (of some sort) when reading this later.
 
-  As it happened, we didn't choose any of my found languages (we ended up with
-  a simplified Pascal clone from Byte magazine), and I think at the time we
-  would have thought Python was too much work to embed.
+  The dates given for a Python release are for the .0 release, but remember
+  that most versions of Python go through several minor releases. The features
+  described as new to that version may thus be from the first release or later
+  minor releases.
+
+  Lots of the information is from the "What's New in Python x.y" series of
+  documents, started by Andrew Kuchling in 1999 (for 2.0). He continued until
+  2.7 in 2010, by which time it was traditional/expected to have them.
+
+  I hope I've transcribed information correctly - any mistakes are mine.
+  Similarly, I've not included *all* the information for each release, and
+  what is omitted is detrermined by my own preferences (at the time of making
+  this set of slides), so apologies to anyone if I've left out stuff they
+  would have cared about.
+
+  By the way, Andrew Kuchling's slides for `Why projects should have What's
+  New documents`_ are worth reading through.
+ 
+  .. _`Why projects should have What's New documents`: https://speakerdeck.com/akuchling/why-projects-should-have-whats-new-documents
+
+  General resources:
+
+  * http://legacy.python.org/download/releases/src/README - historical Python
+    sources, up to 2.0
+  * https://www.python.org/doc/versions/ - Python documentation by version, back
+    to 1.4
+  * https://en.wikipedia.org/wiki/History_of_Python
+  * https://en.wikipedia.org/wiki/Python_%28programming_language%29
+  * https://en.wikibooks.org/wiki/Python_Programming/Version_history
+  * https://www.python.org/downloads/ for versions 2.7.12 - 3.6.0
+  * https://www.python.org/download/releases/ for versions 1.1 - 1.6.1 (binaries)
+  * http://legacy.python.org/download/releases/src/ for source releases for
+    versions 1.0.1 - 2.0
+  * http://legacy.python.org/dev/peps/pep-0001/
+  * https://www.python.org/download/alternatives/ - Alternative Python
+    implementations
 
 ----
 
@@ -142,6 +174,34 @@ Where Python came from
 
 ----
 
+How I found Python
+==================
+
+I don't remember exactly when I first found Python, but my first dated
+Python script is from 1994.
+
+My background had been with BCPL, Fortran and C (and also Emacs and
+TeX/LaTeX, which will become relevant later on).
+
+When I came across Python, I fell in love with it.
+
+.. note::
+
+  Work had tasked me with looking for a programming language we could embed
+  into our object oriented database. At that time, the obvious choices were
+  things like Tcl and various small lisps or schemes. But I also found Python,
+  and fell in love with it, in large part because it was what I already wrote
+  down when writing pseudo-code (with the exception of the colons - more on
+  them later too). It also had much of the feel I had liked from using VMS DCL
+  (Digital Command Language - a relatively sophisticated Basic descendant,
+  with close integration with the operating system).
+
+  As it happened, we didn't choose any of my found languages (we ended up with
+  a simplified Pascal clone from Byte magazine), and I think at the time we
+  would have thought Python was too much work to embed.
+
+----
+
 Why I like Python
 =================
 * runnable pseudo-code - especially the significant indentation
@@ -164,80 +224,11 @@ Why I like Python
 
 ----
 
-About this talk
-===============
-
-I cover, at least briefly, the major releases of Python (and 1.5.2), and also
-things that were happening in the Python world around those times.
-
-1991 to 2018 - that's 27 years...
-
-Is it accurate?
-
-Well, there's certainly a lot of information (and links in the notes), but
-there are also many places where I'm using my own memory of events, which is
-doubtless unreliable. So think of it as an informal history, at best.
-
-.. note::
-
-  There is too much information in this slideset to present it all. What I
-  intend to do is to skim over the slides that describe what is new in each
-  Python release - they're mainly there to give an idea of scope, and to act
-  as a reference (of some sort) when reading this later.
-
-  The dates given for a Python release are for the .0 release, but remember
-  that most versions of Python go through several minor releases. The features
-  described as new to that version may thus be from the first release or later
-  minor releases.
-
-  Lots of the information is from the "What's New in Python x.y" series of
-  documents, started by Andrew Kuchling in 1999 (for 2.0). He continued until
-  2.7 in 2010, by which time it was traditional/expected to have them.
-
-  I hope I've transcribed information correctly - any mistakes are mine.
-  Similarly, I've not included *all* the information for each release, and
-  what is omitted is detrermined by my own preferences (at the time of making
-  this set of slides), so apologies to anyone if I've left out stuff they
-  would have cared about.
-
-  By the way, Andrew Kuchling's slides for `Why projects should have What's
-  New documents`_ are worth reading through.
- 
-  .. _`Why projects should have What's New documents`: https://speakerdeck.com/akuchling/why-projects-should-have-whats-new-documents
-
-  General resources:
-
-  * http://legacy.python.org/download/releases/src/README - historical Python
-    sources, up to 2.0
-  * https://www.python.org/doc/versions/ - Python documentation by version, back
-    to 1.4
-  * https://en.wikipedia.org/wiki/History_of_Python
-  * https://en.wikipedia.org/wiki/Python_%28programming_language%29
-  * https://en.wikibooks.org/wiki/Python_Programming/Version_history
-  * https://www.python.org/downloads/ for versions 2.7.12 - 3.6.0
-  * https://www.python.org/download/releases/ for versions 1.1 - 1.6.1 (binaries)
-  * http://legacy.python.org/download/releases/src/ for source releases for
-    versions 1.0.1 - 2.0
-  * http://legacy.python.org/dev/peps/pep-0001/
-  * https://www.python.org/download/alternatives/ - Alternative Python
-    implementations
-
-----
-
 Before 1994
 ===========
 
-* Feb 1991 **0.9.0**
-
-* Feb 1991 **0.9.1p1**
-
-* **0.9.2** - never properly released
-
-* **0.9.3** - again, probably not very released
-
-* Dec 1991 **0.9.4alpha**
-
-* Jan 1993 **0.9.8**
+Python **0.9.0** in 1991, followed by a flurry of other versions (not all
+released), leading up to **0.9.8** in 1993
 
 .. note::
 
@@ -257,72 +248,98 @@ Before 1994
 
 ----
 
-Before 1994: Feb 1991 Release 0.9.1p1
--------------------------------------
+Before 1994: Feb 1991 Python 0.9.1p1
+------------------------------------
 
+No ``__init__`` method;
+no double quoted strings;
+``else`` introduced for ``for`` loops
 
-  - no ``__init__`` method
-  - no double quote strings
-  - adds ``else`` for for loops
+* no ``__init__`` method
+* no double quoted strings
+* ``else`` introduced for ``for`` loops
 
 ----
 
-Before 1994: 1991 Release 0.9.2
--------------------------------
+Before 1994: 1991 Python 0.9.2
+------------------------------
 
 *Never properly released*
 
-  - semicolons to separate statements
-  - ``continue``
-  - ``{key: value}`` to define a dictionary
-  - blank and comment lines don't need to be correctly indented(!)
-  - ``1 == 1.0``
-  - ``.pyc`` files
-  - first ``pythonmode.el``
-  - tutorial nearly complete
-  - arbitrary precision integers
+Semicolons can be used to separate statements; ``continue``; ``{key: value}`` to define a dictionary;
+blank and comment lines don't need to be correctly indented; ``1 == 1.0``;
+``.pyc`` files; first ``pythonmode.el``; arbitrary precision integers; tutorial nearly complete
+
+* Semicolons can be used to separate statements
+* ``continue``
+* ``{key: value}`` to define a dictionary
+* blank and comment lines don't need to be correctly indented
+* ``1 == 1.0``
+* ``.pyc`` files; first ``pythonmode.el``
+* arbitrary precision integers
+* tutorial nearly complete
+
+.. note::
+
+  I love the fact that before 0.9.2 blank lines had to be correctly indented!
 
 ----
 
-Before 1994: 1991 Release 0.9.3
--------------------------------
+Before 1994: 1991 Python 0.9.3
+------------------------------
 
 *Again, probably not very released*
 
-  - ``global`` statement
-  - ``class B`` allowed, instead of ``class B()``, and can do ``class B(D)``
-  - C shifting and masking operators (``<<``, etc)
-  - C comparison operators  (``==`` and ``!=``) - the previous ``=`` and
-    ``<>`` are still allowed
-  - class attributes are no long read-only
+``global`` statement;
+``class B`` allowed, instead of ``class B()``, and can do ``class B(D)``;
+C shifting and masking operators (``<<``, etc);
+C comparison operators  (``==`` and ``!=``) - the previous ``=`` and ``<>`` are still allowed;
+class attributes are no long read-only
+
+* ``global`` statement
+* ``class B`` allowed, instead of ``class B()``, and can do ``class B(D``
+* C shifting and masking operators (``<<``, etc)
+* C comparison operators  (``==`` and ``!=``) - the previous ``=`` and ``<>`` are still allowed
+* class attributes are no long read-only
 
 ----
 
-Before 1994: Dec 1991 Release 0.9.4alpha
-----------------------------------------
+.. note:: The biggest change here is probably being able to assign to class
+  attributes, although really this is quite a significant (non) release.
 
-  - new exceptions
-  - functions are called with 0..N arguments, not just 0 or 1. So:
-    ``def init(self, (x, y))`` becomes ``def init(self, x, y)``
-  - ``x[-1]`` is equivalent to ``x[len(x)-1]``
+Before 1994: Dec 1991 Python 0.9.4alpha
+---------------------------------------
+
+New exceptions;
+functions are called with 0..N arguments, not just 0 or 1. (``def init(self, (x, y))`` becomes ``def init(self, x, y)``);
+``x[-1]`` is equivalent to ``x[len(x)-1]``
+
+* new exceptions
+* functions are called with 0..N arguments, not just 0 or 1. So: ``def init(self, (x, y))`` becomes ``def init(self, x, y)``
+* ``x[-1]`` is equivalent to ``x[len(x)-1]``
 
 ----
 
-Before 1994 Release 0.9.8
+Before 1994: Python 0.9.8
 -------------------------
 
-  - number of arguments to a function must match number declared
-  - ``*args`` introduced to allow "varargs"
-  - ``sys.exitfunc`` called on exit, SIGTERM or SIGHUP
-  - I/O mostly accepts any object supporting ``readline()`` or ``write()``
-  - ``str()`` and ``repr()`` introduced - ``repr(x)`` entirely equivalent to
-    ``\`x\```
-  - ``cmp(x,y)``
-  - modules struct, fcntl, md5
+Number of arguments to a function must match number declared;
+``*args`` introduced to allow "varargs";
+``sys.exitfunc`` called on exit, SIGTERM or SIGHUP;
+I/O mostly accepts any object supporting ``readline()`` or ``write()``;
+``str()`` and ``repr()``;
+``cmp(x,y)``;
+modules struct, fcntl, md5;
+and from 0.9.7beta, ``__getitem__`` and ``__repr__``
 
-and from 0.9.7beta:
-
-  - ``__getitem__`` and ``__repr__``
+* number of arguments to a function must match number declared
+* ``*args`` introduced to allow "varargs"
+* ``sys.exitfunc`` called on exit, SIGTERM or SIGHUP
+* I/O mostly accepts any object supporting ``readline()`` or ``write()``
+* ``str()`` and ``repr()``
+* ``cmp(x,y)``
+* modules struct, fcntl, md5
+* and from 0.9.7beta, ``__getitem__`` and ``__repr__``
 
 .. note::
 
@@ -336,8 +353,8 @@ and from 0.9.7beta:
 1994
 ====
 
-* Oct 1994 **1.1**
-  
+* Python **1.0**
+* Python **1.1**
 * comp.lang.python starts up
 
 .. note::
@@ -346,90 +363,105 @@ and from 0.9.7beta:
 
 ----
 
-1994 Jan Release 1.0
+1994 Jan Python 1.0
 --------------------
 
-  - builds across many Unices without alteration, uses GNU autoconf
-  - sources and standard library reorganised
-  - double quotes allowed for strings
-  - keyword ``exec``, replacing built in function
-  - keyword ``lambda``, and new functions ``map``, ``filter``, ``reduce``
-  - ``xrange``
-  - ``__name__`` introduced, the ``if __name__ == '__main__': main()`` trick
-    is introduced
-  - printing an object uses its ``__str__`` method.
+* builds across many Unices without alteration, uses GNU autoconf
+* sources and standard library reorganised
+* double quotes allowed for strings
+* keyword ``exec``, replacing built in function
+* keyword ``lambda``, and new functions ``map``, ``filter``, ``reduce``
+* ``xrange``
+* ``__name__`` and the ``if __name__ == '__main__': main()`` trick
+* printing an object now uses its ``__str__`` method
+
+.. note:: ``exec`` will become a function again in 3.0
 
 ----
 
-1994 Oct Release 1.1
+1994 Oct Python 1.1
 --------------------
 
-  - ``__getattr__`` and friends introduced
-  - ``__call__``
-  - threads should work on most platforms
-  - tkinter
-  - signal, curses, urlparse
-
+* ``__getattr__`` and friends
+* ``__call__``
+* threads should work on most platforms
+* modules tkinter, signal, curses, urlparse
 
 ----
 
-Some comp.lang.python memes
+Usenet and comp.lang.python
 ===========================
 
-* BDFL
-* Guido - release a new version and go on holiday
-* PSA and PSU (who definitely don't exist)
+* The BDFL
+* Guido's tendency to release a new version of Python and immediately go on holiday
+* The PSA (who did exist) and tge PSU (who definitely do not exist)
 * Guido's time machine
 * Python the role playing game
 * timbot, effbot, martellibot
 
 .. note::
 
+  How many people in the audience remember/know of Usenet_? (The wikipedia
+  article referenced provides a good summary.)
+
+  .. _Usenet: https://en.wikipedia.org/wiki/Usenet
+
+  * The origin of BDFL (Benevolent Dictator for Life): http://www.artima.com/weblogs/viewpost.jsp?thread=235725
+
   * PSU: Python Sectret Underground (who do not exist), a joke on the PSA
     (Python Software Association / Python Software Activity)
 
-  * Particular items
+  * Particular postings relating to the time machine and the PSU - there are
+    doubtless many more, but it can be a bit hard to search for such things:
 
-    * Origin of BDFL (Benevolent Dictator for Life) from 1995: http://www.artima.com/weblogs/viewpost.jsp?thread=235725
-    * 2001-02 Python the RPG https://mail.python.org/pipermail/python-list/2001-February/063576.html
-    * 2001-01 PSU conspiracy revealed https://groups.google.com/forum/#!search/The$20PSU$27s$20Existence$20Revealed$20comp.lang.python/comp.lang.python/AFqy7ItagYM/XxW95wMEpEoJ
-    * 2003-03 https://groups.google.com/forum/#!search/The$20PSU$27s$20Existence$20Revealed$20comp.lang.python/comp.lang.python/st0yPgpr-aU/wXTiFFAugNEJ
-    * 2001-01 Notice: State of the PSU https://groups.google.com/forum/#!search/Status$20of$20the$20PSU$20comp.lang.python/comp.lang.python/7UAoH95mUpw/rrTUUXz-SmYJ
-    * 2000-01 Time machine/Roswell https://groups.google.com/forum/#!msg/comp.lang.python/7qszKYUqqwI/goDCgE78U_EJ
-    * 2003-03 PSU Elections https://groups.google.com/forum/#!search/Status$20of$20the$20PSU$20comp.lang.python/comp.lang.python/G293F7R5_Y4/PzrfgpXGA5EJ
+    * 2000-01 `Time machine/Roswell`_
+    * 2001-01 `Notice: State of the PSU`_
+    * 2001-01 `PSU conspiracy revealed`_
+    * 2001-02 `Python the RPG`_
+    * 2003-03 `PSU Elections`_
+    * 2003-03 `The PSU Existence Revealed`_
 
-  * Tim Peters (timsort, doctest, floating point guru), Fredrik Lundh (PIL:
-    Python Imaging Library, ElementTree, tkinter), Alex Martelli (Python in a
-    Nutshell, Python Cookbook)
+  * The bots - people who posted so frequently to comp.lang.python that it was
+    joked that they must have been replaced by robots (I believe the timbot
+    came first):
+    
+    * timbot: `Tim Peters`_ (timsort, doctest, floating point guru). Two
+      "origins" of the timbot are preserved on the Python humour_ page:
 
-    * https://www.youtube.com/watch?v=1wAOy88WxmY Interview with Tim Peters, PyCon 2006: Chatting with Tim Peters on PyPy, Python and other stuff
-    * http://effbot.org/
-    * https://en.wikipedia.org/wiki/Alex_Martelli
+      * https://www.python.org/doc/humor/#the-origin-of-the-great-timbot-conspiracy-theory
+      * https://www.python.org/doc/humor/#the-other-origin-of-the-great-timbot-conspiracy-theory
 
+    * fbot: `Fredrik Lundh`_ (PIL: Python Imaging Library, ElementTree, tkinter)
+    * martellibot: `Alex Martelli`_ (Python in a Nutshell, Python Cookbook)
 
-----
+    .. _`Time machine/Roswell`: https://groups.google.com/forum/#!msg/comp.lang.python/7qszKYUqqwI/goDCgE78U_EJ
+    .. _`Notice: State of the PSU`: https://groups.google.com/forum/#!search/Status$20of$20the$20PSU$20comp.lang.python/comp.lang.python/7UAoH95mUpw/rrTUUXz-SmYJ
+    .. _`PSU conspiracy revealed`: https://groups.google.com/forum/#!search/The$20PSU$27s$20Existence$20Revealed$20comp.lang.python/comp.lang.python/AFqy7ItagYM/XxW95wMEpEoJ
+    .. _`Python the RPG`: https://mail.python.org/pipermail/python-list/2001-February/063576.html
+    .. _`PSU Elections`: https://groups.google.com/forum/#!search/Status$20of$20the$20PSU$20comp.lang.python/comp.lang.python/G293F7R5_Y4/PzrfgpXGA5EJ
+    .. _`The PSU Existence Revealed`: https://groups.google.com/forum/#!search/The$20PSU$27s$20Existence$20Revealed$20comp.lang.python/comp.lang.python/st0yPgpr-aU/wXTiFFAugNEJ
 
-Replace this slide with one or more talking about specific things...
---------------------------------------------------------------------
-
-Heh, didn't you mean to replace this slide?
+    .. _humour: https://www.python.org/doc/humor
+    .. _`Tim Peters`: https://www.youtube.com/watch?v=1wAOy88WxmY Interview with Tim Peters, PyCon 2006: Chatting with Tim Peters on PyPy, Python and other stuff
+    .. _`Fredrik Lundh`: http://effbot.org/
+    .. _`Alex Martelli`: https://en.wikipedia.org/wiki/Alex_Martelli
 
 ----
 
 1995
 ====
 
-* Apr (probably) **1.2**
+* Python **1.2**
 
   - docstrings
 
-* Aug development of Grail started
-
-* Numeric - predecessor/ancestor of Numpy
-
-* Oct (probably) **1.3**
+* Python **1.3**
 
   - the "ni" module
+
+* The development of Grail started
+
+* Numeric, the predecessor/ancestor of Numpy
 
 * Java 1.0
 
@@ -479,45 +511,83 @@ Heh, didn't you mean to replace this slide?
 
 ----
 
-1995 Apr Release 1.2
+1995 Apr Python 1.2
 --------------------
 
 *(actual release date unsure)*
 
-  - ``import a.b.c`` and ``from a.b.c import name`` are supported, but not yet
-    implemented. ``__import__`` function and ``imp`` module expose import
+* ``import a.b.c`` and ``from a.b.c import name`` supported, but no implementation
+* ``__import__`` function
+* new modules: imp, pickle, shelve
+* docstrings
+* Mark Hammond's support for Windows NT
+* exceptions can be classes
+
+.. note::
+
+  * ``import a.b.c`` and ``from a.b.c import name`` are supported, but not yet
+    implemented. The ``__import__`` function and ``imp`` module expose import
     functionality.
-  - pickle and shelve
-  - docstrings via the ``__doc__`` attribute, string literals allowed for
-    modules, classes and functions (it will take quite a long while before
-    everything in the standard library has doc strings - essentially until
-    Python 1.5)
-  - Mark Hammond's support for Windows NT
-  - exceptions can be classes (all built in exceptions are still strings)
+
+  * docstrings are introduced for modules, classes and functions (which
+    includes methods). They are stored in the (new) ``__doc__`` attribute of
+    those objects. Their implementation takes advantage of the fact that
+    a string literal can occur as a lone statement (as can any Python object,
+    come to that), so a string literal occuring at the very start of a module, 
+    or immediately after a ``class`` or ``def`` statement's ``:`` is
+    "hijacked" as being a docstring.
+
+    It will take quite a long while before everything in the standard library
+    has doc strings - essentially until Python 1.5
+
+  * exceptions can be classes, but all built in exceptions are still strings
 
 ----
 
-1995 Oct Release 1.3
+1995 Oct Python 1.3
 --------------------
 
 *(actual release date unsure)*
 
-  - keyword arguments (a whole new chapter in the tutorial)
-  - htmllib rewritten, incompatibly
-  - ``globals()`` and ``locals()`` to get the global and local variables
-  - the ``ni`` module supports importing modules with hierarchical names. So,
-    for instance::
+* keyword arguments (a whole new chapter in the tutorial)
+* htmllib rewritten, incompatibly
+* ``globals()`` and ``locals()``
+* the ``ni`` module
 
-      import ni
-      ni.ni()
-      from a.b.c import name
+.. note::
+
+  * Keyword arguments are introduced for the first time. They get a whole new
+    chapter in the tutorial.
+  * ``globals()`` and ``locals()`` are, of course, used to get the global and local variables
+
+
+----
+
+The "ni" module
+---------------
+
+The "ni" module supports importing modules with hierarchical names. So, for instance:
+
+.. code:: python
+
+    import ni
+    ni.ni()
+    from a.b.c import name
+
+.. note::
+
+  Named, of course, after The Knights Who Say "Ni!".
+
+  This is clearly felt to be a hack (albeit with a cool name), but
+  it's another good example of new ideas being tried out, with an actual
+  implementation, before they become "proper" parts of Python
 
 ----
 
 1996
 ====
 
-* Oct **1.4**
+Python **1.4**
 
 .. note::
 
@@ -526,32 +596,30 @@ Heh, didn't you mean to replace this slide?
 
 ----
 
-1996 Oct Release 1.4
+1996 Oct Python 1.4
 --------------------
 
-  - library reference now maintained in Framemaker
-  - name mangling to provide a simple form of class private variables:
-    ``__spam``
-  - ``access`` is no longer a reserved word
-  - ``lstrip`` and ``rstrip``, third argument to ``split``
-  - "The PC build procedure now really works"
-  - ``...`` (Ellipses) provided for use by Numerical Python
-  - ``x**y`` (same as ``pow(x,y)``)
-  - complex numbers
-
+* library reference now maintained in Framemaker
+* name mangling to provide a simple form of class private variables: ``__spam``
+* ``access`` is no longer a reserved word
+* ``lstrip`` and ``rstrip``, third argument to ``split``
+* "The PC build procedure now really works"
+* ``...`` (Ellipses) provided for use by Numerical Python
+* ``x**y`` (same as ``pow(x,y)``)
+* complex numbers
 
 ----
 
 1997
 ====
 
-* Dec **1.5**
+* Python **1.5**
 
   - "re" module introduced
 
 * Christian Tismer starts up the `Starship Python`_
 
-* JPython started (which became Jython in 2000)
+* JPython started
 
 .. _`Starship Python`: http://starship.python.net/
 
@@ -564,7 +632,7 @@ Heh, didn't you mean to replace this slide?
     explains why Christian Tismer got the award
   * http://starship.python.net/ - the Starship
 
-  JPython/Jython:
+  JPython/Jython (JPython became Jython in 2000):
 
   * http://www.jython.org/archive/22/history.html
 
@@ -577,43 +645,59 @@ Heh, didn't you mean to replace this slide?
   * http://hugunin.net/story_of_jython.html
   * https://en.wikipedia.org/wiki/Jython
 
-  (providing Java support in Gothic - when I could run up Jython and code
-  Python, I knew we'd done it)
+  (At work a few years later, I was one of the team providing Java support in
+  our object oriented database.  I felt that being able to run up Jython and
+  code in Python was a good demonstration of our success.)
 
 ----
 
-1997 Dec Release 1.5
+1997 Dec Python 1.5
 --------------------
 
-  - recommends ``#!/usr/bin/env python`` instead of ``#!/usr/local/bin/python``
-  - ``-O`` produces ``.pyo`` files instead of ``.pyc`` files - removes
-    SET_LINENO instructions and assert statements
-  - private variables starting ``__`` are now a permanent feature
-  - raw strings ``r"'n"``
-  - ``assert`` statement
-  - ``raise SomeClass, some_value`` where ``some_value`` is not an instance of
+* ``#!/usr/bin/env python`` recommended, instead of ``#!/usr/local/bin/python``
+* ``-O`` produces ``.pyo`` files
+* private variables starting ``__`` are now a permanent feature
+* ``raise SomeClass, some_value``
+* thread safe ``sys.exc_info()``
+* string interning
+* ``int()``, ``long()`` and ``float()`` can now take string arguments
+* the "Don Beaudry hook" for metaclasses
+* new, experimental ``re.py`` regular expression module
+* pprint.py
+* Python builds as a single library file
+* os.path.join (and friends) take more than two arguments
+* issubclass and isinstance
+* ``dict.get()``
+* ``import spam.ham.eggs`` supported directly, ``ni`` declared obsolete
+* all standard exceptions are now classes (by default)
+* OS/2 support (!)
+
+PythonWin and other associated Windows support is still released separately by Mark Hammond.
+
+.. note::
+
+  Some of those deserve a little more explanation:
+
+  * ``#!/usr/bin/env python`` recommended, instead of
+    ``#!/usr/local/bin/python`` - different systems may put Python in
+    different places (I might even have installed it into my own home
+    directories), so it's better to say "use the Python on the PATH" than to
+    bind in an assumption of where Python lives. This is still the
+    recommendation today. This is contentious with some people, who worry that
+    it is a security hole to rely on the PATH being safe - if it matters, then
+    indeed bind in the location of Python for the scripts that need to worry
+    about this (i.e., system scripts).
+  * ``-O`` produces ``.pyo`` files instead of ``.pyc`` files. This basically
+    removes SET_LINENO instructions and assert statements
+  * ``raise SomeClass, some_value`` where ``some_value`` is not an instance of
     ``SomeClass`` raises ``SomeClass(some_value)``.
-  - thread safe ``sys.exc_info()``
-  - string interning
-  - ``int()``, ``long()`` and ``float()`` can now take string arguments
-  - the "Don Beaudry hook" for metaclasses
-  - new, experimental ``re.py`` regular expression module was introduced, and
-    then almost immediately replaced by an even newer one based on Philip
+  * The new, experimental ``re.py`` regular expression module was introduced,
+    and then almost immediately replaced by an even newer one based on Philip
     Hazel's ``pcre``. The old ``regex`` module is officially obsolete, but
     still there.
-  - pprint.py
-  - Python builds as a single library file, libpython1.5.a
-  - os.path.join (and friends) take more than two arguments
-  - issubclass and isinstance
-  - ``dict.get()``
-  - ``import spam.ham.eggs`` supported directly, ``ni`` declared obsolete,
-    ``__init__.py`` files required)
-  - all standard exceptions are now classes (by default)
-  - OS/2 support (!)
-
-  PythonWin and other associated Windows support is still released separately
-  by Mark Hammond.
-
+  * Python builds as a single library file, libpython1.5.a
+  * ``import spam.ham.eggs`` supported directly, ``ni`` declared obsolete, an
+    ``__init__.py`` file is required to identify a directory as a package
 
 ----
 
@@ -623,6 +707,17 @@ Heh, didn't you mean to replace this slide?
 Stackless Python started
 
 Zope released as free software
+
+----
+
+Stackless Python
+================
+
+Stackless Python, by Christian Tismer, was a set of modification for CPython
+to provide true continuations, replaced later on with tasklets.
+
+It eventually led to the greenlets module, and is an important precursor to
+PyPy.
 
 .. note::
 
@@ -666,64 +761,55 @@ Zope was the killer Python app that never quite became so. But it's important
 in various ways:
 
 * it's the origin of structuredText, the predecessor to reStructuredText
-* it was (one of?) the first companies to open source its product as a result
+* it was (one of) the first companies to open source its product as a result
   of commercial advice
 * it was an early non-relational database (ZODB persists Python objects)
-* the Zope web interface is to Python objects - wikipedia says:
-
-  """"A Zope website is usually composed of objects in a Zope Object Database,
-  not files on a file system, as is usual with most web servers. This allows
-  users to harness the advantages of object technologies, such as
-  encapsulation. Zope maps URLs to objects using the containment hierarchy of
-  such objects; methods are considered to be contained in their objects as
-  well. Data can be stored in other databases as well, or on the file system,
-  but ZODB is the most common solution."""
-
+* the Zope web interface is to Python objects
 * it's still around - Pylons, Zope 2, Blue Bream (aka Zope 3)
 
 .. note::
 
-  * Guido worked there for a while
-  * An early (the first?) company to take its main product open source for
-    financial reasons
-  * Zope itself - the killer Python app that never quite was
-  * ZODB
-  * structuredText
-  * structuredText and documenting types of arguments
+  * Guido worked for Digital Creations for a while
 
+  * wikipedia says:
 
-  - https://en.wikipedia.org/wiki/Zope
-  - https://blog.startifact.com/posts/my-exit-from-zope.html - Martijn Faassen's
-    history of Zope and his involvement
-  - https://blog.startifact.com/posts/the-weirdness-of-zope.html Oct 2013 - part
-    of the above?
-  - https://en.wikipedia.org/wiki/Zope_Object_Database
-  - http://bluebream.zope.org/about/history.html - the history of BlueBream
-    (Zope 3)
-  - https://www.slideshare.net/regebro/zope-is-dead-long-live-zope - slides, Jun
-    2011
-  - http://python-history.blogspot.co.uk/2009/01/personal-history-part-2-cnri-and-beyond.html
-    (Guido worked there for a bit)
-  - http://reinout.vanrees.org/weblog/2011/06/07/zope.html - Who Cares About
-    Zope (Martijn Faassen again)
-  - https://en.wikipedia.org/wiki/Plone_(software)
-  - http://www.troubleshooters.com/tpromag/199906/_digcreate.htm - Digital
-    Creations open sourcing Zope
-  - https://books.google.co.uk/books?id=W2t2d2KP6HsC&pg=PA137&lpg=PA137&dq=digital+creations+zope+open+source&source=bl&ots=ivXrBjiBY9&sig=F6XV5TpkHGMVCErglRAy5Q9Vz3E&hl=en&sa=X&ved=0ahUKEwiNm4Wi6enSAhUKK8AKHdJyBAAQ6AEISzAI#v=onepage&q=digital%20creations%20zope%20open%20source&f=false - ditto
+    """"A Zope website is usually composed of objects in a Zope Object Database,
+    not files on a file system, as is usual with most web servers. This allows
+    users to harness the advantages of object technologies, such as
+    encapsulation. Zope maps URLs to objects using the containment hierarchy of
+    such objects; methods are considered to be contained in their objects as
+    well. Data can be stored in other databases as well, or on the file system,
+    but ZODB is the most common solution."""
 
-  structuredText and so on:
+  There is lots of information out there on Digital Creations, the Zope
+  foundation and Zope itself. Some useful links may be:
 
-  - https://www.python.org/community/sigs/current/doc-sig/stext/
-  - http://www.tibsnjoan.co.uk/docutils/STpy.html - me(!) attempting to define
-    structuredText
-  - https://moinmo.in/StructuredText
-  - http://fawcett.blogspot.co.uk/2005/06/tearing-down-markup.html Jun 2005
-  - https://pypi.python.org/pypi/zope.structuredtext - it's alive!
-  - https://github.com/zopefoundation/zope.structuredtext (ish)
-  - http://old.zope.org/Documentation/Articles/STX/ - An introduction to
-    Structured Text
+  * https://en.wikipedia.org/wiki/Zope
+  * https://blog.startifact.com/posts/my-exit-from-zope.html - Martijn Faassen's history of Zope and his involvement
+  * https://blog.startifact.com/posts/the-weirdness-of-zope.html Oct 2013 - part of the above?
+  * https://en.wikipedia.org/wiki/Zope_Object_Database
+  * http://bluebream.zope.org/about/history.html - the history of BlueBream (Zope 3)
+  * https://www.slideshare.net/regebro/zope-is-dead-long-live-zope - slides, Jun 2011
+  * http://python-history.blogspot.co.uk/2009/01/personal-history-part-2-cnri-and-beyond.html (Guido worked there after CNRI)
+  * http://reinout.vanrees.org/weblog/2011/06/07/zope.html - Who Cares About Zope (Martijn Faassen again)
+  * https://en.wikipedia.org/wiki/Plone_(software)
+  * http://www.troubleshooters.com/tpromag/199906/_digcreate.htm - Digital Creations open sourcing Zope
 
-  Broken links?
+  StructuredText 4.1.0_ is available on PyPi, dating from 2014, and there is
+  a `StructuredText github repository`_. To get a flavour of it, read the
+  `Introduction to Structured Text`_. `StructuredTextNG`_ ("next generation")
+  was intended to be a replacement. Back in the day, I wrote a document which
+  tried to `define StructuredTextNG` more formally than its own documentaiton,
+  as part of the work to work out a replacement.
+
+  .. _4.1.0: https://pypi.python.org/pypi/zope.structuredtext
+  .. _`StructuredText github repository`: https://github.com/zopefoundation/zope.structuredtext
+  .. _`Introduction to Structured Text`: http://old.zope.org/Documentation/Articles/STX/
+  .. _`StructuredTextNG`: http://old.zope.org/Members/jim/StructuredTextWiki/StructuredTextNG.1
+  .. _`define StructuredTextNG`: http://tibsnjoan.co.uk/docutils/STNG-format.html
+
+  The following links looked interesting, but last time I tried, appeared to
+  be broken:
 
   * http://www.zope.org/the-world-of-zope/
   * http://specialtyjobmarkets.com/Wikis/LozinskiClasses/HistoryOfZopeIdeasAndControversies
@@ -735,12 +821,11 @@ in various ways:
 1999
 ====
 
-* Apr **1.5.2**
+* Python **1.5.2**
 
   - documentation separated out
 
-* Zen of Python (Tim Peters, comp.lang.python, 4 June 1999,
-  https://mail.python.org/pipermail/python-list/1999-June/001951.html)
+* Zen of Python
 
 .. note::
 
@@ -749,16 +834,23 @@ in various ways:
   vaguely recall people having *serious discussions* about upgrading from 1.3
   to 1.5.2, and then again from 1.5.2 to 2.n.
 
-  Follow ons to the Zen of Python:
+  The Zen of Python was written, more or less as a throw-away, by Tim Peters
+  in a post on comp.lang.python, 4 June 1999:
 
-    * https://www.wefearchange.org/2010/06/import-this-and-zen-of-python.html
-      ("import this" from 2001)
-    * https://www.python.org/dev/peps/pep-0020 PEP 20 from 2004
+    https://mail.python.org/pipermail/python-list/1999-June/001951.html)
+
+  The ``import this`` Easter Egg was introduced in 2001:
+
+    https://www.wefearchange.org/2010/06/import-this-and-zen-of-python.html
+
+  and it became a PEP in 2004:
+
+    https://www.python.org/dev/peps/pep-0020
   
 
 ----
 
-1999 Apr Release 1.5.2
+1999 Apr Python 1.5.2
 ----------------------
 
   - docs separated out into a separate distributable
@@ -776,68 +868,106 @@ in various ways:
 2000
 ====
 
-* Sep **1.6** penultimate CNRI version
+* Python **1.6**, the penultimate CNRI version
 
-* **1.6.1** same with a GPL compatible license
+* Python **1.6.1**, the same with a GPL compatible license
 
-* Oct **2.0** first non-CNRI version, modern Python license
+* Python **2.0**, the first non-CNRI version, with a modern Python license
 
-  - development now on sourceforge, opened up
-  - PEPs
+* development now on sourceforge, opened up
+* PEPs
 
-* Nov, reStructuredText (first drafts to DocSIG, June 2001 first release rolled out)
+*  reStructuredText
+
+* Alex Martelli coins "duck typing"
 
 * Design of Perl 6 began
-
-* Alex Martelli refers to "duck typing"
-
-  * https://en.wikipedia.org/wiki/Duck_typing
-
-  Alex Martelli made an early (2000) use of the term in a message_ to the comp.lang.python newsgroup:
-
-    In other words, don't check whether it IS-a duck: check whether it
-    QUACKS-like-a duck, WALKS-like-a duck, etc, etc, depending on exactly what
-    subset of duck-like behaviour you need to play your language-games with.
-
-  * Also see https://en.wikipedia.org/wiki/Duck_test
-
-.. _message: https://groups.google.com/forum/?hl=en#!msg/comp.lang.python/CCs2oJdyuzc/NYjla5HKMOIJ
 
 .. note::
 
   https://opensource.org/licenses/Python-2.0 - Python 2.0 license
 
-  reStructuredText:
+  * reStructuredText: first drafts go to the DocSIG in November 2000, first
+    release rolled out in June 2001
 
-  * https://en.wikipedia.org/wiki/ReStructuredText
-  * http://tibsnjoan.co.uk/docutils.html - links to my attempt at more formal
-    documentation for StructuredTextNG, my initial attempt at a replacement,
-    and copies of David Goodger's original postings to the Doc-SIG, which led
-    to Docutils and reStructuredText as we know them
-  * http://docutils.sourceforge.net/
-  * http://docutils.sourceforge.net/docs/index.html
-  * http://docutils.sourceforge.net/rst.html - the reference document
-  * http://docutils.sourceforge.net/docs/user/rst/quickref.html - my cheat sheet
+    * https://en.wikipedia.org/wiki/ReStructuredText - they refuse to use a
+      lower-case letter at the beginning of page names. Oh well, we're not the
+      only people to suffer.
+    * http://tibsnjoan.co.uk/docutils.html - links to my attempt at more formal
+      documentation for Zope's (planned) StructuredTextNG, my initial attempt at
+      a replacement for it and StructuredTExt, and (more importantly) copies of
+      David Goodger's original postings to the Doc-SIG, which led to Docutils
+      and reStructuredText as we know them
+    * http://docutils.sourceforge.net/ is the site for both docutils and
+      reStructuredText (which is part of docutils)
+    * http://docutils.sourceforge.net/docs/ref/rst/introduction.html#history is
+      David Goodger's account of the history of reStructuredText - he write it,
+      so he should know. I think he is quite restrained in his mention of the
+      length of the discussions on the DocSIG.
+    * http://docutils.sourceforge.net/docs/index.html is the documentation for the project
+    * http://docutils.sourceforge.net/rst.html is the reference document
+    * http://docutils.sourceforge.net/docs/user/rst/quickref.html is the *very useful* cheat sheet, what I wrote
+
+    Note that Guido vetoed StructuredText or StructuredTextNG being accepted as
+    "the" Python documentation format for various reasons, perhaps the most
+    important being its ambiguity and its use of paragraph indentation to
+    determine "levels".
+
+       (For instance, all forms of StructuredText were unclear whether::
+
+           In Spanish, the letter
+           o is a word.
+
+       contained a list or not, since ``o`` was allowed as a list delimiter,
+       and there was no need to precede a list with a blank line.)
+
+    He also insisted that any Python documentation system must allow him to
+    use "<" and ">" without needing to use escapes - he wanted to be able to
+    discuss XML easily, and presumably also to use the constructs like "<name>".
+
+    David Goodger's solution solved all of those, and was clearly the way to go.
+
+  * Alex Martelli coins "duck typing"
+
+    * https://en.wikipedia.org/wiki/Duck_typing
+
+    Alex Martelli made an early (2000) use of the term in a message_ to the comp.lang.python newsgroup:
+
+      In other words, don't check whether it IS-a duck: check whether it
+      QUACKS-like-a duck, WALKS-like-a duck, etc, etc, depending on exactly what
+      subset of duck-like behaviour you need to play your language-games with.
+
+    * Also see https://en.wikipedia.org/wiki/Duck_test
 
 
-  Perl 6:
+  * Perl 6. You might ask why this should be discussed here, but Python was,
+    for many years, regularly contrasted with Perl, and the introduction of
+    Perl 6 is an interesting contrast to what happened with Python 3.
 
-  * https://en.wikipedia.org/wiki/Perl_6
-  * https://en.wikibooks.org/wiki/Perl_6_Programming/Perl_History
-  * http://www.perlfoundation.org/perl6/index.cgi?timeline
-    (Parrot-VM begun in 2001, initial Perl 6 compiler for it in 2002,
-    Pugs came along in 2005, compiler renamed Rakudo and massively rewritten
-    in 2008)
-  * http://www.perlfoundation.org/perl6/index.cgi?pugs - written in Haskell
-  * https://www.reddit.com/r/programming/comments/cqysn/10_years_perl_6_project_history_and_personal/
+      (Basically, Perl 6 is a new language broadly based on Perl 5, and whilst
+      it is arguably a much better, and perhaps more interesting, language, it
+      has never seemed to gain any traction - although many of its features
+      have fed back into Perl 5. By contrast, Python 3 was much more modest
+      in its changes, and has clearly been much more successful.)
+
+    * https://en.wikipedia.org/wiki/Perl_6
+    * https://en.wikibooks.org/wiki/Perl_6_Programming/Perl_History
+    * http://www.perlfoundation.org/perl6/index.cgi?timeline
+      (Parrot-VM begun in 2001, initial Perl 6 compiler for it in 2002,
+      Pugs came along in 2005, compiler renamed Rakudo and massively rewritten
+      in 2008)
+    * http://www.perlfoundation.org/perl6/index.cgi?pugs - written in Haskell
+    * https://www.reddit.com/r/programming/comments/cqysn/10_years_perl_6_project_history_and_personal/
+
+.. _message: https://groups.google.com/forum/?hl=en#!msg/comp.lang.python/CCs2oJdyuzc/NYjla5HKMOIJ
 
 ----
 
-2000 Sep Release 1.6, 1.6.1
+2000 Sep Python 1.6, 1.6.1
 ---------------------------
 
-* 1.6 penultimate CNRI version
-* 1.6.1 same with a GPL compatible license
+* Python 1.6, the penultimate CNRI version
+* Python 1.6.1, the same with a GPL compatible license
 
 .. note::
 
@@ -863,26 +993,26 @@ in various ways:
 
 ----
 
-2000 Oct Release 2.0
+2000 Oct Python 2.0
 --------------------
 
-First non-CNRI version
+The first non-CNRI version
 
-  - modern Python license
-  - now on sourceforge, development process opened up
-  - PEPs introduced as the way to introduce changes
-  - unicode added
-  - list comprehensions ``[x**2 for x in range(10)]``
-  - string methods (``",".join([1,2,3]``)
-  - garbage collections copes with reference cycles
-  - Augmented assignment (``+=`` and so on).
-  - ``def f(*args, **kwargs)``
-  - ``print >> file, "Hello"``
-  - ``import module as name``
-  - ``"%r"`` to print the representation of an object
-  - ``zip``
-  - dictionary ``setdefault`` (an "odd new method")
-  - distutils introduced
+* modern Python license
+* now on sourceforge, development process opened up
+* PEPs introduced as the way to introduce changes
+* unicode added
+* list comprehensions ``[x**2 for x in range(10)]``
+* string methods (``",".join([1,2,3]``)
+* garbage collections copes with reference cycles
+* Augmented assignment (``+=`` and so on).
+* ``def f(*args, **kwargs)``
+* ``print >> file, "Hello"``
+* ``import module as name``
+* ``"%r"`` to print the representation of an object
+* ``zip``
+* dictionary ``setdefault`` (an "odd new method")
+* distutils introduced
 
 
 ----
@@ -890,11 +1020,11 @@ First non-CNRI version
 2001
 ====
 
-* Jun reStructuredText (first release rolled out)
+* First release of reStructuredText
 
-* Apr **2.1** license now "Python Software Foundation License"
+* Python **2.1**
 
-  - PSF
+* Python **2.2**
 
 * eff-bot's favourite lamda refactoring rule::
 
@@ -905,10 +1035,7 @@ First non-CNRI version
       4) convert the lambda to a def statement, using that name
       5) remove the comment 
 
-* Tim Peters doctest (in 2.1)
-
-  * https://docs.python.org/2/library/doctest.html
-  * https://en.wikipedia.org/wiki/Doctest
+* Tim Peters doctest
 
 * IPython started
 
@@ -920,30 +1047,46 @@ First non-CNRI version
   http://www.perl.com/pub/2001/04/01/parrot.htm
   and the story behind it is told at http://archive.oreilly.com/pub/a/oreilly//news/parrotstory_0401.html
 
-* Dec **2.2**
-
-  - license now definitely GPL compatible
-
 Plone released
 
 .. note::
 
+  As stated in the notes for an earlier slide, the first release of
+  reStructuredText was in June 2001.
+
+  Python 2.1 introduced Tim Peters doctest:
+
+  * https://docs.python.org/2/library/doctest.html
+  * https://en.wikipedia.org/wiki/Doctest
+
+  IPython started:
+
   * https://ipython.org/ipython-doc/1/about/history.html
   * https://en.wikipedia.org/wiki/IPython
-  * Useful link that also does a brief history of IPython and Jupyter (and how to use nteract):
+  * http://www.numfocus.org/blog/nteract-building-on-top-of-jupyter-from-a-rich-repl-toolkit-to-interactive-notebooks
+    starts with a brief history of IPython and Jupyter
 
-    http://www.numfocus.org/blog/nteract-building-on-top-of-jupyter-from-a-rich-repl-toolkit-to-interactive-notebooks
+  Numarry and Scipy are discussed in Travis E. Oliphant's slides at
+  https://www.slideshare.net/shoheihido/sci-pyhistory, which
+  gives dates for Matrix Object, Numeric, Numarray and NumPy (1994, 1995, 2001
+  and 2005 respectively) on slide 9 
 
-  * Travis E. Oliphant: https://www.slideshare.net/shoheihido/sci-pyhistory -
-    gives dates for Matrix Object, Numeric, Numarray and NumPy (1994, 1995,
-    2001 and 2005 respectively) on slide 9
-    
-    Says announced would create (what became) SciPy in 1999
+  He says they announced the intent to create (what became) SciPy in 1999
 
   * https://scipy.github.io/old-wiki/pages/History_of_SciPy
   * https://en.wikipedia.org/wiki/SciPy
 
-  * https://en.wikipedia.org/wiki/Plone_(software)
+  The Parrot April Fool joke (joint development of Perl 6 and Python on the same
+  interpreter, producing a new language to be called Parrot) is at
+  http://www.perl.com/pub/2001/04/01/parrot.htm, and the story behind it is
+  told at http://archive.oreilly.com/pub/a/oreilly//news/parrotstory_0401.html
+
+  Of course, this gave the name to the *actual* VM that was intended to run
+  both Perl and Python (although not to provide a merged language).
+
+  Plone (https://plone.org/) is described by wikipedia at
+  https://en.wikipedia.org/wiki/Plone_(software):
+
     """Plone is a free and open source content management system built on top
     of the Zope application server. Plone is positioned as an "Enterprise CMS"
     and is most commonly used for intranets and as part of the web presence of
@@ -951,43 +1094,67 @@ Plone released
 
 ----
 
-2001 Apr Release 2.1
+2001 Apr Python 2.1
 --------------------
 
 License now "Python Software Foundation License"
 
-  - PSF "owns" Python
-  - Nested scopes (off by default)
-  - ``__future__`` directives introduced
-  - rich comparisons (``__lt__`` and friends)
-  - weak references
-  - Ka Ping Yee's inspect.py and pydoc.py
-  - Tim Peter's doctest.py
-  - PyUnit
-  - modules can define ``__all__`` to control what is visible to ``from module
-    import *``
+* PSF "owns" Python
+* Nested scopes (off by default)
+* ``__future__``
+* rich comparisons
+* weak references
+* new modules: doctest, inspect, pydoc, unittest
+* ``__all__``
 
+.. note::
+
+  Slightly expanded:
+
+  * PSF "owns" Python
+  * Nested scopes (off by default)
+  * ``__future__`` directives introduced
+  * rich comparisons (``__lt__`` and friends)
+  * weak references
+  * Ka Ping Yee's inspect.py and pydoc.py
+  * Tim Peter's doctest.py
+  * PyUnit introduces unit testing with the unittest module, inspired by Java
+  * modules can define ``__all__`` to control what is visible to ``from module import *``
 
 ----
 
-2001 Dec Release 2.2
+2001 Dec Python 2.2
 --------------------
 
-...and then in Oct 2002, Release 2.2.2
+...followed in Oct 2002 by Python 2.2.2
 
-  - 2.2 license definitely GPL compatible
-  - old- and new-style classes
-  - descriptors
-  - the diamond rule for multiple inheritance
-  - ``__getattribute__`` and ``__slots__``
-  - iterators and ``__iter__``
-  - simple generators - ``yield`` - with ``from __future__ import generators``
-  - introduction of ``//``, and ``from __future__ import division``
-  - nested scopes on by default
-  - ``help()`` at the Python prompt
+* license definitely GPL compatible
+* old- and new-style classes
+* descriptors
+* the diamond rule for multiple inheritance
+* ``__getattribute__`` and ``__slots__``
+* iterators and ``__iter__``
+* ``from __future__ import generators`` and ``yield``
+* ``from __future__ import division`` and ``//``
+* nested scopes on by default
+* ``help()`` at the Python prompt
+* ``True`` and ``False``
 
-  - ``True`` and ``False`` appear in 2.2.1 ????
+.. note::
 
+  Slightly expanded:
+
+  * 2.2 license definitely GPL compatible
+  * old- and new-style classes
+  * descriptors
+  * the diamond rule for multiple inheritance
+  * ``__getattribute__`` and ``__slots__``
+  * iterators and ``__iter__``
+  * simple generators - ``from __future__ import generators`` and ``yield``
+  * ``from __future__ import division`` and ``//``
+  * nested scopes on by default
+  * ``help()`` at the Python prompt
+  * I think ``True`` and ``False`` appeared in Python 2.2.1
 
 ----
 
@@ -996,32 +1163,49 @@ License now "Python Software Foundation License"
 
 * First EuroPython
 
-* April v0.4 of reStructuredText and the associated Document Processing
-  System merged and released as Docutils 0.1
-  (from http://docutils.sourceforge.net/docs/ref/rst/introduction.html#history)
+* Docutils 1.0
 
-  See also http://tibsnjoan.co.uk/docutils.html (which contains a copy of
-  David's Nov 2000 postings to the Doc-SIG)
+* Pyrex announced by Greg Ewing
 
-* Apr Pyrex announced by Greg Ewing
-
-* Tim Peters and timsort (2002)
-
-  * https://en.wikipedia.org/wiki/Timsort
-  * there is an explanation of timsort in the CPython source code, in the
-    file listsort.txt_
-  * http://www.drmaciver.com/2010/01/understanding-timsort-1adaptive-mergesort/ David MacIver explains how to arrive at the core of timsort
-
-  .. _listsort.txt: https://github.com/python/cpython/blob/master/Objects/listsort.txt
+* timsort
 
 * Pypi (aka The Cheese Shop) was launched
 
+* Armin Rigo starts Psyco
+
 .. note::
 
-  * http://www.cosc.canterbury.ac.nz/greg.ewing/python/Pyrex/
-  * https://en.wikipedia.org/wiki/Pyrex_(programming_language)
+  * April: v0.4 of reStructuredText and the associated Document Processing
+    System were merged and released as Docutils 0.1
+    (from http://docutils.sourceforge.net/docs/ref/rst/introduction.html#history)
 
-  * https://en.wikipedia.org/wiki/Python_Package_Index
+  * Also in April: Pyrex announced by Greg Ewing
+
+  * Tim Peters and timsort
+
+    * https://en.wikipedia.org/wiki/Timsort
+    * there is an explanation of timsort in the CPython source code, in the file listsort.txt_
+    * http://www.drmaciver.com/2010/01/understanding-timsort-1adaptive-mergesort/ David MacIver explains how to arrive at the core of timsort
+
+  * Pyrex was the original package from which Cython would eventually diverge.
+    
+    (When Cython started, it was parly as a reaction to the slow pace of
+    change of Pyrex, and partly with the intent of being more adventurous in
+    what it would do):
+
+    * http://www.cosc.canterbury.ac.nz/greg.ewing/python/Pyrex/
+    * https://en.wikipedia.org/wiki/Pyrex_(programming_language)
+
+  * Pypi on wikipedia: https://en.wikipedia.org/wiki/Python_Package_Index
+
+  * Psyco was "a Python extension module which can greatly speed up the
+    execution of any Python code", written by Armin Rigo. The project ran
+    between 2002 and 2010. It was an important precursor to PyPy.
+
+    * https://en.wikipedia.org/wiki/Pysco
+    * http://psyco.sourceforge.net/
+
+  .. _listsort.txt: https://github.com/python/cpython/blob/master/Objects/listsort.txt
 
 
 
@@ -1030,7 +1214,7 @@ License now "Python Software Foundation License"
 2003
 ====
 
-* Jul  **2.3**
+* Python **2.3**
 
 * First PyCon in the USA (Washington DC)
 
@@ -1038,36 +1222,34 @@ License now "Python Software Foundation License"
 
 .. note::
 
-  * http://pypy.org/
-  * https://en.wikipedia.org/wiki/PyPy#RPython
+  * PyPy started in 2003, and PyPy 1.0 was released in mid 2007
 
-  * Announcement of first PyPy sprint, Oct 2003 http://code.activestate.com/lists/python-list/364702/
-  * Talks and papers about PyPy http://doc.pypy.org/en/latest/extradoc.html
-  * PyPy timeline http://cfbolz.de/pypy-timeline/timeline.html
+    * http://pypy.org/
+    * http://pypy.org/people.html has some background on how it started and who was responsible
+    * https://en.wikipedia.org/wiki/PyPy
+    * Announcement of the first PyPy sprint, Oct 2003: http://code.activestate.com/lists/python-list/364702/
+    * Talks and papers about PyPy http://doc.pypy.org/en/latest/extradoc.html
+    * PyPy timeline: http://cfbolz.de/pypy-timeline/timeline.html
 
 ----
 
-2003 2.3 Release 2.3
+2003 2.3 Python 2.3
 --------------------
 
-  - ``Set`` class in the sets module
-  - generators are always present, ``yield`` is always a keyword
-  - source code encodings: ``# -*- coding: UTF-8 -*-``
-  - importing from zip files
-  - unicode filenames on Windows NT
-  - Universal newline support
-  - `enumerate`` function
-  - the logging package
-  - ``bool`` type appears, ``True`` and ``False`` are now type ``bool``
-  - csv module
-  - extended slices, e.g., ``a[::2]``
-  - raising a string based exception is now an error.
-  - method resolution order was changed
-  - ``"ab" in "abcd"`` now works
-  - ``basestrings`` type added
-  - itertools module
-  - optparse module
-  - datetime module
+* ``Set`` class in the sets module
+* generators are always present, ``yield`` is always a keyword
+* source code encodings: ``# -*- coding: UTF-8 -*-``
+* importing from zip files
+* unicode filenames on Windows NT
+* Universal newline support
+* `enumerate`` function
+* ``bool`` type appears, ``True`` and ``False`` are now type ``bool``
+* extended slices, e.g., ``a[::2]``
+* raising a string based exception is now an error.
+* method resolution order was changed
+* ``"ab" in "abcd"`` now works
+* ``basestrings`` type added
+* new modules: itertools, optparse, datetime, csv, logging
 
 
 ----
@@ -1075,9 +1257,9 @@ License now "Python Software Foundation License"
 2004
 ====
 
-* "Pie-thon" challenge - can Parrot run Python faster than Python itself?
+* Python **2.4**
 
-* Nov **2.4**
+* "Pie-thon" challenge - can Parrot run Python faster than Python itself?
 
 .. note::
 
@@ -1102,26 +1284,24 @@ License now "Python Software Foundation License"
 
 ----
 
-2004 Nov Release 2.4
+2004 Nov Python 2.4
 --------------------
 
-  - ``set`` and ``frozenset`` built-in types
-  - generator expressions - for instance ``links = (link for link in
-    get_all_links() if not link.followed)``
-  - ``string.Template``
-  - ``@decorator`` notation for function decorators
-  - ``sorted`` and ``reversed`` functions
-  - subprocess module
-  - ``decimal.Decimal``
-  - multi-line imports (using parentheses)
-  - ``sort`` gains ``key`` and ``reverse`` mechanisms/arguments
-  - ``-m`` command line switch finds the named module and runs it as a script
-  - ``None`` becomes a constant
-  - collections module
-  - re module gained simple conditionals: ``(?(group)A|B)``
-  - doctest module was improved
+* ``set`` and ``frozenset`` built-in types
+* generator expressions - for instance ``links = (link for link in get_all_links() if not link.followed)``
+* ``string.Template``
+* ``@decorator`` notation for function decorators
+* ``sorted`` and ``reversed`` functions
+* multi-line imports (using parentheses)
+* ``sort`` gains ``key`` and ``reverse`` mechanisms/arguments
+* ``-m`` command line switch finds the named module and runs it as a script
+* ``None`` becomes a constant
+* re module gained simple conditionals: ``(?(group)A|B)``
+* new modules: collections, subprocess, decimal
 
+.. note::
 
+  The decimal module introduces the ``Decimal`` type
 
 ----
 
@@ -1136,15 +1316,17 @@ Numpy produced, by combining Numeric and Numarray
 
 .. note::
 
-  * https://ironpython-test.readthedocs.io/en/latest/contents.html
-  * https://ironpython-test.readthedocs.io/en/latest/license.html
+  * IronPython:
 
-    """IronPython was created in 2005 by Jim Hugunin to prove that the .NET
-    Framework was a poor platform for dynamic languages. He failed to do so, and
-    IronPython was born."""
+    * https://ironpython-test.readthedocs.io/en/latest/license.html
 
-  * http://ironpython.net/
-  * https://en.wikipedia.org/wiki/IronPython
+      """IronPython was created in 2005 by Jim Hugunin to prove that the .NET
+      Framework was a poor platform for dynamic languages. He failed to do so, and
+      IronPython was born."""
+
+    * https://ironpython-test.readthedocs.io/en/latest/contents.html
+    * http://ironpython.net/
+    * https://en.wikipedia.org/wiki/IronPython
 
   * Django - started 2003, release July 2005
 
@@ -1158,19 +1340,16 @@ Numpy produced, by combining Numeric and Numarray
 
     * http://djangobook.com/introducing-django/
 
-  * Numpy
+  * Numpy - we discussed this earlier
 
     * https://en.wikipedia.org/wiki/NumPy 
-
-
-
 
 ----
 
 2006
 ====
 
-* Sep **2.5**
+* Python **2.5**
 
 .. note::
 
@@ -1179,49 +1358,69 @@ Numpy produced, by combining Numeric and Numarray
 
 ----
 
-2006 Sep Release 2.5
+2006 Sep Python 2.5
 --------------------
 
-  - the ``with`` statement (``from __future__ import with_statement``), and contextlib
-  - ``x = true_thing if condition else false_thing``, after *much* discussion,
-    and a BDFL ruling
-  - ``try``, ``except`` *and* ``finally`` allowed together
-  - ``yield`` is now an expression: ``val = (yield i)``
-  - functools, including ``functools.partial``
-  - absolute and relative imports - ``from __future__ import absolute_import``
-  - exceptions can be new style classes
-  - ``startswith`` and ``endswith`` now accept tuples as an argument
-  - ``any`` and ``all``
-  - it's now (again?) legal to do ``class C(): pass``, specifying no base
-    classes but giving the parameters
-  - ``collections.defaultdict``
-  - regex and regsub modules are finally gone
-  - developers now using subversion instead of cvs
-  - uuid module
-  - ctypes module
-  - sqlite3 module
+* developers now using subversion instead of cvs
+* ``from __future__ import with_statement`` and the ``with`` statement
+* ``from __future__ import absolute_import``
+* ``x = true_thing if condition else false_thing``, after *much* discussion, and a BDFL ruling
+* ``try``, ``except`` *and* ``finally`` allowed together
+* ``yield`` is now an expression: ``val = (yield i)``
+* exceptions can be new style classes
+* ``startswith`` and ``endswith`` now accept tuples as an argument
+* ``any`` and ``all``
+* it's now legal to do ``class C(): pass``, specifying no base classes
+* ``collections.defaultdict``
+* new modules: uuid, ctypes, sqlite3, functools, contextlib
+* regex and regsub modules are finally gone
 
+.. note::
 
+  Python 2.5 provided a lot of stuff, quite a lot of it significant.
+
+  The ``with`` statement is arguably the most important, and it is certainly
+  one of my favourite things about modern Python. In Python 2.5 it's still
+  only experimental, but many people would be enabling it.
+
+  The introduction of the "3 way if" clause finally settled one of the long
+  standing debates about "things missing from Python", arguably in a way that
+  made no-one particularly happy (so perhaps that serves them right!). In
+  practise, I actually quite like it, and think if was a good solution to an
+  impossible problem.
+
+  Allowing ``try``, ``except`` and ``finally`` together closed a long-standing
+  niggle in how to use Python - it was never very obvious why that didn't
+  work.
+
+  It's not entirely clear when ``class C():`` became illegal, but it may have
+  been with Python 0.9.3, so that's quite a while back.
 
 ----
 
 2007
 ====
 
-* Jul Cython officially launched
+* Cython officially launched
 
-* mid 2007: first release of PyPy
+* PyPy 1.0
 
-  (follow up to Armin Rigo's Psyco project, 2002-2010, 1.0 release mid 2007
+* First PyConUK
 
-* Sep First PyConUK
-
-* Oct First CamPUG meeting
+* First CamPUG meeting
 
 .. note::
 
-  * http://cython.org/
-  * https://en.wikipedia.org/wiki/Cython
+  * Cython was launched in July 2007, as a fork of Pyrex.
+
+    * http://cython.org/
+    * https://en.wikipedia.org/wiki/Cython
+
+  * PyPy 1.0 ("the first release of PyPy") was in mid 2007
+
+  * The first PyConUK was in September 2007 - see the next slide
+
+  * The first CamPUG meeting was in October 2007, as a direct consequence
 
 ----
 
@@ -1253,26 +1452,16 @@ Python group in 2007.
    Guido being a keynote speaker. I *think* the middle one is the right year,
    I know I wasn't at 2003, and I don't think I got to 2005.
 
-   ACCU is/was relatively expensive, so I'd only go for the a couple of days.
+   ACCU is relatively cheap for a "professional" conference, but still quite
+   expensive in real terms. This meant that many people (myself included)
+   could only go for a couple of days.
 
-   I got partially funded for 2002.
+   The low cost of PyConUK is undoubtedly a reaction to this, and the same
+   sort of thinking has led to the conferences attitude to making itself
+   inclusive and a friendly space.
 
-   ACCU Apr 2002:
-
-   * https://mail.python.org/pipermail/python-uk/2002-February/000167.html
-   * https://mail.python.org/pipermail/python-uk/2002-February/000168.html
-   * http://www.gossamer-threads.com/lists/python/python/94742#94742
-
-   There were also some smaller events:
-
-   * **Python Unconference**: one day, September 2010, Birmingham
-   * **Floss UK**: one day only, October 2010, Birmingham BMI
-
-   on years when a "proper" PythonUK didn't happen
-
-
-   I got funded in 2010, and my boss and I gave talks - my first talk at a
-   PyConUK. PyconUK 2010, https://metaljoe.wordpress.com/2010/07/24/europython-2010/
+   My boss and I gave talks at PyConUK 2010 - my first talk at a
+   PyConUK. Quoting https://metaljoe.wordpress.com/2010/07/24/europython-2010/
 
      """To round off the day, I attended two talks by Richard Watts and Tony
      Ibbs of Kynesim who presented Muddle, their open source build system
@@ -1280,26 +1469,88 @@ Python group in 2007.
      messaging system implemented as a Linux kernel extension."""
 
    In the EuroPython years, people still wanted a "something" in the latter
-   part of the year, hence the UnConference and the FlossUK event (which was
-   also an unconference - I requested an item on using Bacula, and in the way
-   of such things ended up "running" it!).  
+   part of the year, hence:
 
-   2014 was John Pinner's last PyConUK.
+   * **Python Unconference**: one day, September 2010, Birmingham
+   * **Floss UK**: one day only, October 2010, Birmingham BMI
+  
+   (The FlossUK event was also an unconference - I requested an item on using
+   Bacula, and in the way of such things ended up "running" it!)
 
-   I got funded in 2014, 2015 and 2016 by Velocix/ALU/Nokia
+   2014 was John Pinner's last PyConUK. He will be missed.
 
-
+   At the first PyConUK, Zeth ran a session about starting up local Python
+   User Groups, and made people go and form clusters by where they came from,
+   and then promise to go home and start a group. Somehow, Cambridge ended up
+   with two groups on opposite sides of the room, but we found each other
+   before the first meeting, so all ended well.
 
 ----
 
 2008
 ====
 
-* Oct **2.6**
+* Python **2.6**
 
-  - documentation now in reStructuredText, using Sphinx
+* Python **3.0**
 
-.. note:: As I remember it:
+.. note::
+
+  Moving from Python 2 to Python 3:
+
+  * http://pybit.es/python-porting.html Best Practices for Compatible Python 2 and 3 Code, Mar 2017
+  * http://sebastianraschka.com/Articles/2014_python_2_3_key_diff.html The key differences between Python 2.7.x and Python 3.x with examples, Jun 2014 
+  * http://python-future.org/compatible_idioms.html Cheat Sheet: Writing Python 2-3 compatible code (last date 2016)
+  * http://www.asmeurer.com/python3-presentation/slides.html#1 - 10 awesome
+    features of Python that you can't use because you refuse to upgrade to
+    Python 3 - goes up to about 3.5, Mar 2016
+
+
+----
+
+2008 Oct Python 2.6
+--------------------
+
+Preparing the migration path to Python 3. Development cycle for Python 2.6 and
+3.0 was synchronised. Some of the new stuff in 3.0 is also in 2.6.
+
+* documentation now in reStructuredText using Sphinx
+* new issue tracker (Roundup)
+* ``-3`` command line switch
+* ``with`` now a keyword
+* string ``.format``
+* ``from __future__ import print_function``
+* ``from __future__ import unicode_literals``
+* now must write ``except TypeError as exc``
+* abstract base classes
+* octal may be ``0o123`` as well as ``0123``
+* class decorators
+* ``next(iterator, [default])``
+* ``@property`` and its friends
+* new modules: ast, json, fractions, io, multiprocessing, abc
+
+.. note::
+
+  More details on some things:
+
+  * documentation now in reStructuredText using Sphinx - see below
+  * new issue tracker (Roundup)
+  * ``-3`` command line switch, to warn about features that will be removed in Python 3.0
+  * ``with`` statement now always enabled, ``with`` is a keyword, more things support context management
+  * string formatting with ``.format``
+  * ``from __future__ import print_function``
+  * now must write ``except TypeError as exc``
+  * ``from __future__ import unicode_literals``
+  * abstract base classes
+  * octal may be ``0o123`` as well as ``0123``
+  * class decorators
+  * ``next(iterator, [default])``
+  * ``@property`` and its friends
+  * new modules: ast, json, fractions, io, multiprocessing, abc
+
+  Documentation was moved to reStrucutedText and Sphinx.
+  
+  As I remember it:
 
   The Python documentation was written in LaTeX, and people were very aware
   that this was seen as a big barrier, stopping contributions. But is was also
@@ -1325,98 +1576,78 @@ Python group in 2007.
     it says """In 2008 , he received the Python Software Foundation Community Award for “building the Sphinx documentation system as an alternative to the LaTeX-based system [they] had been using previously, and converting the Python documentation to use it.”"""
   * http://pythonic.pocoo.org/2007/6/23/introducing-py-rest-doc - another 400
 
-  - new issue tracker, Roundup
+----
 
-* Dec **3.0**
+2008 Dec Python 3.0
+--------------------
+
+So much stuff. This is only a sample:
+
+* everything applicable from 2.6
+* strings are unicode, bytes are not strings
+* ``print`` is a function
+* ``0123`` is not valid, ``0o123`` is octal (and ``0b1010`` is binary)
+* some things return *views* instead of lists
+* ``1/2`` is 0.5, ``1//2`` is 0.
+* ``repr`` of a long int no longer has a trailing ``L``
+* function argument and return value annotations
+* ``nonlocal``
+* ``a, *rest, b = range(5)``
+* ``{k: v for k, v in stuff}``
+* ``{1, 2}``
+* lots of library reorganisation
+* "unbound methods" as a concept has gone
+* more intelligent ``super``
+* ``input`` is now what was ``raw_input``
+* ``dict.has_key()`` has gone
+* ``callable()`` has gone
+* lots of other stuff
 
 .. note::
 
-  Moving from Python 2 to Python 3:
+  More details for some things
 
-  * http://pybit.es/python-porting.html Best Practices for Compatible Python 2 and 3 Code, Mar 2017
-  * http://sebastianraschka.com/Articles/2014_python_2_3_key_diff.html The key differences between Python 2.7.x and Python 3.x with examples, Jun 2014 
-  * http://python-future.org/compatible_idioms.html Cheat Sheet: Writing Python 2-3 compatible code (last date 2016)
-  * http://www.asmeurer.com/python3-presentation/slides.html#1 - 10 awesome
-    features of Python that you can't use because you refuse to upgrade to
-    Python 3 - goes up to about 3.5, Mar 2016
-
-
-----
-
-2008 Oct Release 2.6
---------------------
-
-Preparing the migration path to Python 3. Development cycle for Python 2.6 and
-3.0 was synchronised. Some of the new stuff in 3.0 is also in 2.6.
-
-  - ``-3`` command line switch, to warn about features that will be removed in
-    Python 3.0
-  - documentation now in reStructuredText using Sphinx
-  - new issue tracker (Roundup)
-  - ``with`` statement now always enabled, ``with`` is a keyword, more things
-    support context management
-  - multiprocessing package
-  - string formatting with ``.format``
-  - ``from __future__ import print_function``
-  - now must write ``except TypeError as exc``
-  - ``from __future__ import unicode_literals``
-  - io module
-  - abstract base classes (abc module and other things)
-  - octal may be ``0o123`` as well as ``0123``
-  - class decorators
-  - fractions module
-  - ``next(iterator, [default])``
-  - ``@property`` and its friends
-  - ast module
-  - json module
-
-----
-
-2008 Dec Release 3.0
---------------------
-
-So much stuff. So this is only a sample
-
-  - obviously, everything applicable from 2.6
-  - strings are unicode, bytes are not strings
-  - ``print`` is now a function
-  - ``0123`` is not valid, ``0o123`` is octal (and ``0b1010`` is binary)
-  - some things return *views* instead of lists
-  - ``1/2`` is 0.5, ``1//2`` is 0.
-  - ``repr`` of a long int no longer has a trailing ``L``, because all ints
-    are of the same type
-  - function argument and return value annotations are introduced, but with
-    no semantics
-  - ``nonlocal``
-  - extended iterable unpacking - e.g., ``a, *rest, b = range(5)``
-  - dictionary comprehensions: ``{k: v for k, v in stuff}``
-  - set literals: ``{1, 2}``
-  - lots of library reorganisation
-  - "unbound methods" as a concept has gone
-  - more intelligent ``super``, doesn't normally need any arguments
-  - ``input`` is now what was ``raw_input``
-  - ``dict.has_key()`` has gone - just use ``in``
-  - ``callable()`` has gone
-  - lots of other stuff
-
+  * obviously, everything applicable from 2.6
+  * strings are unicode, bytes are not strings
+  * ``print`` is a function
+  * ``0123`` is not valid, ``0o123`` is octal (and ``0b1010`` is binary)
+  * some things return *views* instead of lists
+  * ``1/2`` is 0.5, ``1//2`` is 0.
+  * ``repr`` of a long int no longer has a trailing ``L``, because all ints are of the same type
+  * function argument and return value annotations are introduced, but with no semantics
+  * ``nonlocal``
+  * extended iterable unpacking - e.g., ``a, *rest, b = range(5)``
+  * dictionary comprehensions: ``{k: v for k, v in stuff}``
+  * set literals: ``{1, 2}``
+  * lots of library reorganisation
+  * "unbound methods" as a concept has gone
+  * more intelligent ``super``, doesn't normally need any arguments
+  * ``input`` is now what was ``raw_input``
+  * ``dict.has_key()`` has gone - just use ``in``
+  * ``callable()`` has gone
+  * lots of other stuff
 
 ----
 
 2009
 ====
 
-* Jun **3.1**
+* Python **3.1**
 
-PEP 3003 - Python Language Moratorium
+* `PEP 3003`_  Python Language Moratorium
 
-Proposed move to using Mercurial announced
+* Announcement of proposed move to Mercurial
+
+.. _`PEP 3003`: https://www.python.org/dev/peps/pep-3003/
 
 .. note::
 
-  * https://www.python.org/dev/peps/pep-0385/
-  * https://arstechnica.com/information-technology/2009/03/python-adopts-the-mercurial-version-control-system/
+  * Proposed move to Mercurial:
 
-  * https://www.python.org/dev/peps/pep-3003/
+    * https://www.python.org/dev/peps/pep-0385/
+    * https://arstechnica.com/information-technology/2009/03/python-adopts-the-mercurial-version-control-system/
+
+  * `PEP 3003`_
 
     """This PEP proposes a temporary moratorium (suspension) of all changes to
     the Python language syntax, semantics, and built-ins for a period of at
@@ -1432,70 +1663,76 @@ Proposed move to using Mercurial announced
 
 ----
 
-2009 Jun Release 3.1
+2009 Jun Python 3.1
 --------------------
 
-  - ``collections.OrderedDict``
-  - fields in ``format()`` don't need to be numbered
-  - multiple context managers in one statement: ``with this() as a, that() as b:``
-  - more intelligent floating point representation - e.g., ``repr(1.1)`` is
-    now ``1.1``, not ``1.1000000000000001``
-  - ``collections.Counter``
-  - ``logging.NullHandler``
-  - various useful improvements to unittest
-  - importlib module
-  - speed improvements in various places
+* ``collections.OrderedDict``
+* fields in ``format()`` don't need to be numbered
+* multiple context managers in one statement: ``with this() as a, that() as b:``
+* more intelligent floating point representation - e.g., ``repr(1.1)`` is now ``1.1``, not ``1.1000000000000001``
+* ``collections.Counter``
+* ``logging.NullHandler``
+* various useful improvements to unittest
+* importlib module
+* speed improvements in various places
 
 ----
 
 2010
 ====
 
-* Jul **2.7** Will be supported until 2020 (originally, until 2010)
+* Python **2.7**
 
-* Apr2010 last release of Pyrex (0.9.9)
+* Last release of Pyrex (0.9.9)
 
-* Aug 2010 (?) Nuitka starts
+* Nuitka starts
 
-Eric Holscher announce Read the Docs, using Sphinx to provide a public
-resource for generating and presenting documentation written in
-reStructuredText. For free.
-
+* Read the Docs
+  
 .. note::
 
-  http://ericholscher.com/blog/2010/aug/16/announcing-read-docs/
+  * Apr 2010 last release of Pyrex (0.9.9)
 
-  * http://nuitka.net/
-  * https://docs.python.org/3/faq/design.html#can-python-be-compiled-to-machine-code-c-or-some-other-language
+  * Aug 2010 (?) Nuitka starts
 
-  Python 2.7 will not be maintained past 2020 (https://pythonclock.org/)
+  * Eric Holscher announce Read the Docs, using Sphinx to provide a public
+    resource for generating and presenting documentation written in
+    reStructuredText. For free.
+
+    * http://ericholscher.com/blog/2010/aug/16/announcing-read-docs/
+
+  * Nuitka:
+
+    * http://nuitka.net/
+    * https://docs.python.org/3/faq/design.html#can-python-be-compiled-to-machine-code-c-or-some-other-language
+
+  * Python 2.7 will not be maintained past 2020 (https://pythonclock.org/)
 
 ----
 
-2010 Jul Release 2.7
+2010 Jul Python 2.7
 --------------------
 
 2.7 will be supported until 2020 (originally, until 2010)
 
-  Mostly backportings from 3.1
+Mostly backportings from 3.1
 
-    * set literals
-    * dictionary and set comprehensions
-    * multiple context managers in one ``with``
-    * collections.OrderedDict
-    * argparse
-    * fields in ``format()`` don't need to be numbered
-    * collections.Counter
-    * unittest greatly enhanced - becomes what was the external unittest2
-    * ensurepip appears in 2.7.9
-
+* set literals
+* dictionary and set comprehensions
+* multiple context managers in one ``with``
+* collections.OrderedDict
+* argparse
+* fields in ``format()`` don't need to be numbered
+* collections.Counter
+* unittest greatly enhanced - becomes what was the external unittest2
+* ensurepip appears in 2.7.9
 
 ----
 
 2011
 ====
 
-* Feb **3.2**
+* Python **3.2**
 
 * Python actually starts using Mercurial
 
@@ -1505,29 +1742,32 @@ reStructuredText. For free.
 
   * http://eli.thegreenplace.net/2011/03/18/python-development-switches-to-mercurial-source-control/
 
-
 ----
 
-2011 Feb Release 3.2
+2011 Feb Python 3.2
 --------------------
 
-  - minimal stable ABI available to extension modules
-  - argparse introduced, optparse still available but not recommended
-  - concurrent.futures module
-  - pyc repository directories - all .pyc files stored in a ``__pycache__``
-    direcory, named according to the Python version
-  - ``hasattr`` now calls ``getattr`` and checks for an exception
-  - ``callable()`` comes back
-  - lots of new stuff in existing library modules
-  - there is a mercurial repository for Python, as well as subversion
+* minimal stable ABI available to extension modules
+* argparse introduced, optparse still available but not recommended
+* concurrent.futures module
+* pyc repository directories
+* ``hasattr`` now calls ``getattr``
+* ``callable()`` comes back
+* lots of new stuff in existing library modules
 
+.. note::
+
+  * pyc repository directories - all .pyc files stored in a ``__pycache__``
+    directory, named according to the Python version
+  * ``hasattr`` now calls ``getattr`` and checks for an exception
+  * ``callable`` went away in Python 3.0
 
 ----
 
 2012
 ====
 
-* Sep **3.3**
+* Python **3.3**
 
 .. note::
 
@@ -1535,33 +1775,42 @@ reStructuredText. For free.
 
 ----
 
-2012 Sep Release 3.3
+2012 Sep Python 3.3
 --------------------
 
-  - ``yield from``
-  - ``u"unicode"`` is back, to be friendlier to ex-Python 2 code
-  - new modules include: ipaddress, lzma, unittest.mock, venv (virtual
-    environment support built-in)
-  - packages don't necessarily require ``__init__.py``, and can span
-    multiple locations
-  - internally, string representation changes according to the string
-  - new launcher mechanism for ``.py`` files on Windows
-  - reorganised OS and IO exception hierarchy
-  - ``__qualname__`` represents the full path from module to functions and
-    classes - e.g., ``"Class.method"``
-  - more work on import, new importlib
-  - hash randomisation on by default
-  - no more support for OS/2 or VMS
+* ``yield from``
+* ``u"unicode"`` is back, to be friendlier to ex-Python 2 code
+* ``__init__.py`` now optional, multi-directory packages
+* string representation depends on the string
+* new launcher mechanism for ``.py`` files on Windows
+* reorganised OS and IO exception hierarchy
+* ``__qualname__``
+* new modules include: importlib, ipaddress, lzma, unittest.mock, venv
+* hash randomisation on by default
+* no more support for OS/2 or VMS
 
+.. note::
+
+  More details:
+
+  * ``yield from``
+  * ``u"unicode"`` is back, to be friendlier to ex-Python 2 code
+  * new modules include: ipaddress, lzma, unittest.mock, venv (virtual environment support built-in)
+  * packages don't necessarily require ``__init__.py``, and can span multiple locations
+  * internally, string representation changes according to the string
+  * new launcher mechanism for ``.py`` files on Windows
+  * reorganised OS and IO exception hierarchy
+  * ``__qualname__`` represents the full path from module to functions and classes - e.g., ``"Class.method"``
+  * more work on import, new importlib
+  * hash randomisation on by default
+  * no more support for OS/2 or VMS
 
 ----
 
 2013
 ====
 
-Nothing happened in 2013
-
-Oh, except the MicroPython kickstarter, of course.
+The MicroPython kickstarter
 
 .. note::
 
@@ -1577,15 +1826,12 @@ Oh, except the MicroPython kickstarter, of course.
   * http://micropython.org/
   * https://github.com/micropython/micropython/wiki/Differences - differences from CPython
 
-
-
-
 ----
 
 2014
 ====
 
-* Mar **3.4**
+* Python **3.4**
 
 * Jupyter announced
 
@@ -1602,29 +1848,36 @@ Oh, except the MicroPython kickstarter, of course.
 
 ----
 
-2014 Mar Release 3.4
+2014 Mar Python 3.4
 --------------------
 
 No new syntax features
 
-  - ensurepip module provides simpler bootstrapping of pip
-  - ``codecs.encode()`` and ``codesc.decode()`` (introduced in 2.4) now
-    properly documented, and have been improved.
-  - asyncio module, with a provisional API
-  - enum module
-  - pathlib module
-  - unittest ``TestCase`` has new method ``subTest()``
-  - unittest provides new context manager ``assertLogs()``
-  - new command line option ``-I``, isolated mode - recommended for use when
-    running system scripts.
+* ``codecs.encode()`` and ``codesc.decode()`` (introduced in 2.4) now properly documented, and have been improved.
+* unittest gains ``subTest()`` and ``assertLogs()``
+* new modules: ensurepip, enum, pathlib
+* asyncio module, with a provisional API
+* new command line option ``-I``
 
+.. note::
+
+  More details:
+
+  * ensurepip module provides simpler bootstrapping of pip
+  * ``codecs.encode()`` and ``codesc.decode()`` (introduced in 2.4) now properly documented, and have been improved.
+  * asyncio module, with a provisional API
+  * enum module
+  * pathlib module
+  * unittest ``TestCase`` has new method ``subTest()``
+  * unittest provides new context manager ``assertLogs()``
+  * new command line option ``-I``, isolated mode - recommended for use when running system scripts.
 
 ----
 
 2015
 ====
 
-* Sep **3.5**
+* Python **3.5**
 
 .. note::
 
@@ -1632,21 +1885,28 @@ No new syntax features
 
 ----
 
-2015 Sep Release 3.5
+2015 Sep Python 3.5
 --------------------
 
-  - coroutines with ``async`` and ``await``
-  - ``@`` infix operator for matrix multiplication, supported by NumPy 1.10
-  - more unpacking generalisations - e.g., ``[*range(4), 4]`` is ``[0, 1, 2, 3, 4]``
-    (and it works for ``**`` for dictionaries as well)
-  - bytes and bytearray support ``%`` formatting
-  - typing module is provisional support for type hints, aimed (for instance)
-    at mypy
-  - os.scandir - a better and faster directory iterator
-  - ``math.isclose()`` - approximate equality
-  - ``.pyo`` files have gone (optimised files have a slightly different name,
-    but the same extension)
+* ``async`` and ``await``
+* ``@`` infix operator for matrix multiplication
+* more unpacking generalisations, e.g., ``[*range(4), 4]`` is ``[0, 1, 2, 3, 4]``
+* bytes and bytearray support ``%`` formatting
+* typing module is provisional support for type hints, aimed (for instance) at mypy
+* ``os.scandir()``
+* ``math.isclose()``
+* ``.pyo`` files have gone
 
+.. note::
+
+  * coroutines with ``async`` and ``await``
+  * ``@`` infix operator for matrix multiplication, supported by NumPy 1.10
+  * more unpacking generalisations - e.g., ``[*range(4), 4]`` is ``[0, 1, 2, 3, 4]`` (and it works for ``**`` for dictionaries as well)
+  * bytes and bytearray support ``%`` formatting
+  * typing module is provisional support for type hints, aimed (for instance) at mypy
+  * os.scandir - a better and faster directory iterator
+  * ``math.isclose()`` - approximate equality
+  * ``.pyo`` files have gone (optimised files have a slightly different name, but the same extension)
 
 
 ----
@@ -1654,9 +1914,9 @@ No new syntax features
 2016
 ====
 
-* Dec **3.6**
+* Python **3.6**
 
-Linux kernel documentation now in reStructuredText, using Spinx
+* Linux kernel documentation now in reStructuredText, using Spinx
 
 .. note::
 
@@ -1667,44 +1927,50 @@ Linux kernel documentation now in reStructuredText, using Spinx
 
 ----
 
-2016 Dec Release 3.6
+2016 Dec Python 3.6
 --------------------
 
-  - formatted string literals: ``f"This module is called {__name__}."``
-  - syntax for variable (type) annotations
-  - underscores allowed (ignored) in numeric literals: ``123_111_112``,
-    ``0b_1100_0011``.
-  - asynchronous generators ``await``
-  - asynchronous comprehensions ``result = [i async for i in aiter() if i % 2]``
-  - ``__init_subclass__`` classmethod will be called on the base class when a
-    new subclass is created - allows customisiing subclass creation without a
-    metaclass
-  - ``os.PathLike`` and the ``__fspath()__`` "magic" method for file system
-    paths and their ilk
-  - local time disambiguation - support in datetime for when local clocks move
-    back, the new ``fold`` attribute
-  - Windows filesystem encoding is now UTF-8
-  - class attribute definition order is preserved, as is keyword argument
-    order. This brings with it a change in dictionary implementation - key order
-    is now preserved (first tried out in PyPy, and dictionaries are smaller).
-    This is, however, an implementation detail - the order of dictionary keys
-    is still not defined (although this *might* change in the future)
-  - secrets module - obvious way to reliably generate cryptographically strong
-    pseudo-random values suitable for managing secrets
-  - asyncio module is no longer provisional
-  - typing module is still provisional
-  - use of ``async`` and ``await`` as variable, class, function or module
-    names will generate a DeprecationWarning. They will become keywords in 3.7
+* formatted string literals
+* syntax for variable (type) annotations
+* underscores in numeric literals
+* ``await`` and ``result = [i async for i in aiter() if i % 2]``
+* ``__init_subclass__``
+* ``os.PathLike`` and ``__fspath()__``
+* ``fold()`` - local time disambiguation when clocks change
+* Windows filesystem encoding is now UTF-8
+* class attribute and keyword argument definition orders are preserved
+* secrets module
+* asyncio module is no longer provisional
+* typing module is still provisional
+* use of ``async`` and ``await`` will become keywords in 3.7
 
+.. note::
+
+  * formatted string literals: ``f"This module is called {__name__}."``
+  * syntax for variable (type) annotations
+  * underscores allowed (ignored) in numeric literals: ``123_111_112``, ``0b_1100_0011``.
+  * asynchronous generators ``await``
+  * asynchronous comprehensions ``result = [i async for i in aiter() if i % 2]``
+  * ``__init_subclass__`` classmethod will be called on the base class when a new subclass is created - allows customisiing subclass creation without a metaclass
+  * ``os.PathLike`` and the ``__fspath()__`` "magic" method for file system paths and their ilk
+  * local time disambiguation - support in datetime for when local clocks move back, the new ``fold`` attribute
+  * Windows filesystem encoding is now UTF-8
+  * class attribute definition order is preserved, as is keyword argument order. This brings with it a change in dictionary implementation - key order is now preserved (first tried out in PyPy, and dictionaries are smaller).  This is, however, an implementation detail - the order of dictionary keys is still not defined (although this *might* change in the future)
+  * secrets module - obvious way to reliably generate cryptographically strong pseudo-random values suitable for managing secrets
+  * asyncio module is no longer provisional
+  * typing module is still provisional
+  * use of ``async`` and ``await`` as variable, class, function or module names will generate a DeprecationWarning. They will become keywords in 3.7
 
 ----
 
 2017
 ====
 
-* Feb CPython source moves to github
+CPython source moved to github
 
 .. note::
+
+  In February, Python (CPython) moved to github
 
   * https://www.infoq.com/news/2016/01/python-moving-to-github
   * https://snarky.ca/the-history-behind-the-decision-to-move-python-to-github/
@@ -1717,7 +1983,7 @@ Linux kernel documentation now in reStructuredText, using Spinx
 2018
 ====
 
-**3.7** expected to be released in Jun 2018
+Python **3.7** is currently expected to be released in June 2018
 
   https://www.python.org/dev/peps/pep-0537/
 
