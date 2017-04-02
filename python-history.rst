@@ -251,10 +251,6 @@ released), leading up to **0.9.8** in 1993
 Before 1994: Feb 1991 Python 0.9.1p1
 ------------------------------------
 
-No ``__init__`` method;
-no double quoted strings;
-``else`` introduced for ``for`` loops
-
 * no ``__init__`` method
 * no double quoted strings
 * ``else`` introduced for ``for`` loops
@@ -265,10 +261,6 @@ Before 1994: 1991 Python 0.9.2
 ------------------------------
 
 *Never properly released*
-
-Semicolons can be used to separate statements; ``continue``; ``{key: value}`` to define a dictionary;
-blank and comment lines don't need to be correctly indented; ``1 == 1.0``;
-``.pyc`` files; first ``pythonmode.el``; arbitrary precision integers; tutorial nearly complete
 
 * Semicolons can be used to separate statements
 * ``continue``
@@ -290,12 +282,6 @@ Before 1994: 1991 Python 0.9.3
 
 *Again, probably not very released*
 
-``global`` statement;
-``class B`` allowed, instead of ``class B()``, and can do ``class B(D)``;
-C shifting and masking operators (``<<``, etc);
-C comparison operators  (``==`` and ``!=``) - the previous ``=`` and ``<>`` are still allowed;
-class attributes are no long read-only
-
 * ``global`` statement
 * ``class B`` allowed, instead of ``class B()``, and can do ``class B(D``
 * C shifting and masking operators (``<<``, etc)
@@ -310,10 +296,6 @@ class attributes are no long read-only
 Before 1994: Dec 1991 Python 0.9.4alpha
 ---------------------------------------
 
-New exceptions;
-functions are called with 0..N arguments, not just 0 or 1. (``def init(self, (x, y))`` becomes ``def init(self, x, y)``);
-``x[-1]`` is equivalent to ``x[len(x)-1]``
-
 * new exceptions
 * functions are called with 0..N arguments, not just 0 or 1. So: ``def init(self, (x, y))`` becomes ``def init(self, x, y)``
 * ``x[-1]`` is equivalent to ``x[len(x)-1]``
@@ -322,15 +304,6 @@ functions are called with 0..N arguments, not just 0 or 1. (``def init(self, (x,
 
 Before 1994: Python 0.9.8
 -------------------------
-
-Number of arguments to a function must match number declared;
-``*args`` introduced to allow "varargs";
-``sys.exitfunc`` called on exit, SIGTERM or SIGHUP;
-I/O mostly accepts any object supporting ``readline()`` or ``write()``;
-``str()`` and ``repr()``;
-``cmp(x,y)``;
-modules struct, fcntl, md5;
-and from 0.9.7beta, ``__getitem__`` and ``__repr__``
 
 * number of arguments to a function must match number declared
 * ``*args`` introduced to allow "varargs"
