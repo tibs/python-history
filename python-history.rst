@@ -332,7 +332,7 @@ Before 1994: Python 0.9.8
 
 * Python **1.0**
 * Python **1.1**
-* comp.lang.python starts up
+* **comp.lang.python** starts up
 
 .. note::
 
@@ -525,7 +525,7 @@ Usenet and comp.lang.python
 * keyword arguments (a whole new chapter in the tutorial)
 * htmllib rewritten, incompatibly
 * ``globals()`` and ``locals()``
-* the ``ni`` module
+* the **ni** module
 
 .. note::
 
@@ -675,9 +675,9 @@ PythonWin and other associated Windows support is still released separately by M
 1998
 ====
 
-Stackless Python started
+**Stackless Python** started
 
-Zope released as free software
+**Zope** released as free software
 
 ----
 
@@ -1013,7 +1013,7 @@ The first non-CNRI version
 
 * Python **2.2**
 
-* eff-bot's favourite lamda refactoring rule
+* eff-bot's favourite **lambda refactoring rule**
 
 * Tim Peters doctest
 
@@ -1074,8 +1074,8 @@ The first non-CNRI version
 
 ----
 
-eff-bot's favourite lamda refactoring rule
-==========================================
+eff-bot's favourite lambda refactoring rule
+===========================================
 
 ::
 
@@ -1399,9 +1399,9 @@ License now "Python Software Foundation License"
 
 * PyPy 1.0
 
-* First PyConUK
+* First **PyConUK**
 
-* First CamPUG meeting
+* First **CamPUG** meeting
 
 .. note::
 
@@ -1974,17 +1974,16 @@ CPython source moved to github
 
 ----
 
-2018
-====
+.. |bluecircle| replace:: 🔵
+
+|bluecircle| 2018
+=================
 
 Python **3.7** is currently expected to be released in June 2018
 
-  https://www.python.org/dev/peps/pep-0537/
-
 .. note::
 
-  ...
-
+  https://www.python.org/dev/peps/pep-0537/
 
 
 ----
@@ -1992,13 +1991,13 @@ Python **3.7** is currently expected to be released in June 2018
 Fin
 ===
 
-That's all folks
+*That's all folks*
 
-Written using reStructuredText_.
+  Written using reStructuredText_.
 
-Presented using hovercraft_.
+  Presented using hovercraft_.
 
-Sources at https://github.com/tibs/python-history 
+  Sources at https://github.com/tibs/python-history 
 
 .. note::
 
