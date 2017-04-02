@@ -376,29 +376,27 @@ and from 0.9.7beta:
 Some comp.lang.python memes
 ===========================
 
+* BDFL
 * Guido - release a new version and go on holiday
+* PSA and PSU (who definitely don't exist)
 * Guido's time machine
-* Roswell
-* Alien whitespace-eating nanovirus
 * Python the role playing game
 * timbot, effbot, martellibot
 
 .. note::
 
-  * https://mail.python.org/pipermail/python-list/2001-February/063576.html
-    Python the role playing game
-  * PSU: Python Sectret Underground (who do not exist)
+  * PSU: Python Sectret Underground (who do not exist), a joke on the PSA
+    (Python Software Association / Python Software Activity)
 
   * Particular items
 
-    * https://groups.google.com/forum/#!search/The$20PSU$27s$20Existence$20Revealed$20comp.lang.python/comp.lang.python/AFqy7ItagYM/XxW95wMEpEoJ
-    * https://groups.google.com/forum/#!search/The$20PSU$27s$20Existence$20Revealed$20comp.lang.python/comp.lang.python/st0yPgpr-aU/wXTiFFAugNEJ
-    * https://groups.google.com/forum/#!search/Status$20of$20the$20PSU$20comp.lang.python/comp.lang.python/7UAoH95mUpw/rrTUUXz-SmYJ
-    * https://groups.google.com/forum/#!topic/comp.lang.python/VNXTFOdWPI0%5B151-175%5D
-    * https://groups.google.com/forum/#!msg/comp.lang.python/7qszKYUqqwI/goDCgE78U_EJ (Roswell)
-    * https://groups.google.com/forum/#!search/Status$20of$20the$20PSU$20comp.lang.python/comp.lang.python/G293F7R5_Y4/PzrfgpXGA5EJ
-    * https://groups.google.com/forum/#!search/roswell$20PSU$20comp.lang.python/comp.lang.python/hxUeYn94Cis/u6xMo-MuKEkJ
-    * https://groups.google.com/forum/#!search/alien$20whitespace/comp.lang.python/V4EEmLncO5E/T5be4rZAB9MJ (Alien whitespace eating nanovirus)
+    * Origin of BDFL (Benevolent Dictator for Life) from 1995: http://www.artima.com/weblogs/viewpost.jsp?thread=235725
+    * 2001-02 Python the RPG https://mail.python.org/pipermail/python-list/2001-February/063576.html
+    * 2001-01 PSU conspiracy revealed https://groups.google.com/forum/#!search/The$20PSU$27s$20Existence$20Revealed$20comp.lang.python/comp.lang.python/AFqy7ItagYM/XxW95wMEpEoJ
+    * 2003-03 https://groups.google.com/forum/#!search/The$20PSU$27s$20Existence$20Revealed$20comp.lang.python/comp.lang.python/st0yPgpr-aU/wXTiFFAugNEJ
+    * 2001-01 Notice: State of the PSU https://groups.google.com/forum/#!search/Status$20of$20the$20PSU$20comp.lang.python/comp.lang.python/7UAoH95mUpw/rrTUUXz-SmYJ
+    * 2000-01 Time machine/Roswell https://groups.google.com/forum/#!msg/comp.lang.python/7qszKYUqqwI/goDCgE78U_EJ
+    * 2003-03 PSU Elections https://groups.google.com/forum/#!search/Status$20of$20the$20PSU$20comp.lang.python/comp.lang.python/G293F7R5_Y4/PzrfgpXGA5EJ
 
   * Tim Peters (timsort, doctest, floating point guru), Fredrik Lundh (PIL:
     Python Imaging Library, ElementTree, tkinter), Alex Martelli (Python in a
@@ -716,7 +714,8 @@ in various ways:
   structuredText and so on:
 
   - https://www.python.org/community/sigs/current/doc-sig/stext/
-  - http://www.tibsnjoan.co.uk/docutils/STpy.html - me(!)
+  - http://www.tibsnjoan.co.uk/docutils/STpy.html - me(!) attempting to define
+    structuredText
   - https://moinmo.in/StructuredText
   - http://fawcett.blogspot.co.uk/2005/06/tearing-down-markup.html Jun 2005
   - https://pypi.python.org/pypi/zope.structuredtext - it's alive!
@@ -808,7 +807,18 @@ in various ways:
 
   https://opensource.org/licenses/Python-2.0 - Python 2.0 license
 
-  https://en.wikipedia.org/wiki/ReStructuredText
+  reStructuredText:
+
+  * https://en.wikipedia.org/wiki/ReStructuredText
+  * http://tibsnjoan.co.uk/docutils.html - links to my attempt at more formal
+    documentation for StructuredTextNG, my initial attempt at a replacement,
+    and copies of David Goodger's original postings to the Doc-SIG, which led
+    to Docutils and reStructuredText as we know them
+  * http://docutils.sourceforge.net/
+  * http://docutils.sourceforge.net/docs/index.html
+  * http://docutils.sourceforge.net/rst.html - the reference document
+  * http://docutils.sourceforge.net/docs/user/rst/quickref.html - my cheat sheet
+
 
   Perl 6:
 
@@ -908,6 +918,7 @@ First non-CNRI version
 * Parrot April Fool joke (joint development of Perl 6 and Python on the same
   interpreter, producing a new language to be called Parrot)
   http://www.perl.com/pub/2001/04/01/parrot.htm
+  and the story behind it is told at http://archive.oreilly.com/pub/a/oreilly//news/parrotstory_0401.html
 
 * Dec **2.2**
 
@@ -997,9 +1008,11 @@ License now "Python Software Foundation License"
 * Tim Peters and timsort (2002)
 
   * https://en.wikipedia.org/wiki/Timsort
-  * the source code for timsort contains wonderful explanatory comments
-  * http://bugs.python.org/file4451/timsort.txt
-  * http://www.drmaciver.com/2010/01/understanding-timsort-1adaptive-mergesort/
+  * there is an explanation of timsort in the CPython source code, in the
+    file listsort.txt_
+  * http://www.drmaciver.com/2010/01/understanding-timsort-1adaptive-mergesort/ David MacIver explains how to arrive at the core of timsort
+
+  .. _listsort.txt: https://github.com/python/cpython/blob/master/Objects/listsort.txt
 
 * Pypi (aka The Cheese Shop) was launched
 
@@ -1027,6 +1040,10 @@ License now "Python Software Foundation License"
 
   * http://pypy.org/
   * https://en.wikipedia.org/wiki/PyPy#RPython
+
+  * Announcement of first PyPy sprint, Oct 2003 http://code.activestate.com/lists/python-list/364702/
+  * Talks and papers about PyPy http://doc.pypy.org/en/latest/extradoc.html
+  * PyPy timeline http://cfbolz.de/pypy-timeline/timeline.html
 
 ----
 
@@ -1065,10 +1082,13 @@ License now "Python Software Foundation License"
 .. note::
 
   Parrot was a VM that was conceived to run Perl, Python and other languages
-  in common.
+  in common. It started as a joke.
 
-  * Fake Parrot interview: http://www.perl.com/pub/2001/04/01/parrot.htm
+  * Parrot April Fool joke (joint development of Perl 6 and Python on the same
+    interpreter, producing a new language to be called Parrot)
+    http://www.perl.com/pub/2001/04/01/parrot.htm
   * https://github.com/parrot is the real project
+  * https://en.wikipedia.org/wiki/Parrot_virtual_machine
  
   Dan Sugalski made a bet with Guido van Rossum that Parrot would
   be faster (at executing a pure python benchmark of some sort (to be
@@ -1541,9 +1561,21 @@ reStructuredText. For free.
 
 Nothing happened in 2013
 
+Oh, except the MicroPython kickstarter, of course.
+
 .. note::
 
-  ...
+  Damien George ran a `Kickstarter campaign`_ to fund the writing of
+  MicroPython, and development of an initial board to run it on. It was
+  wildly successful. This was the first time someone had managed to make a
+  Python to run on microcomputers, and it wasn't just a subset of Python,
+  but basically the whole language - and Python 3 as well.
+
+  .. _`Kickstarter campaign`: https://www.kickstarter.com/projects/214379695/micro-python-python-for-microcontrollers
+
+  * https://en.wikipedia.org/wiki/MicroPython
+  * http://micropython.org/
+  * https://github.com/micropython/micropython/wiki/Differences - differences from CPython
 
 
 
@@ -1624,12 +1656,14 @@ No new syntax features
 
 * Dec **3.6**
 
-Linux kernel documentation now in reStructuredText:
-https://lwn.net/Articles/705224/
+Linux kernel documentation now in reStructuredText, using Spinx
 
 .. note::
 
-  ...
+  * https://lwn.net/Articles/692704/ Kernel documentation with Sphinx, part 1: how we got here, Jul 2016
+  * https://lwn.net/Articles/692705/ Kernel documentation with Sphinx, part 2: how it works, Jul 2016
+  * https://lwn.net/Articles/704613/ A Report from the documentation maintainer, Oct 2016
+  * https://lwn.net/Articles/705224/ Kernel Documentation update, Nov 2016
 
 ----
 
@@ -1708,7 +1742,7 @@ Sources at https://github.com/tibs/python-history
 
 .. note::
 
-  Other stuff, not yet used:
+  Other stuff, not used in the talk:
 
   * Humour
 
@@ -1716,19 +1750,12 @@ Sources at https://github.com/tibs/python-history
     * https://wiki.python.org/moin/Humor
     * https://xkcd.com/353/
 
-  * Python easter eggs:
+  * Some of the Python easter eggs:
 
     * ``import this``
     * ``import antigravity``
     * ``from __future__ import braces``
-    * ``from __future__ import barry_as_FLUFL`` (does this still work?)
-
-  * Tim Peters
-
-    * http://stackoverflow.com/users/2705542/tim-peters
-    * http://wiki.c2.com/?TimPeters
-    * video: https://www.youtube.com/watch?v=1wAOy88WxmY Interview with Tim Peters,
-      PyCon 2006
+    * ``from __future__ import barry_as_FLUFL``
 
   * Frank Willison Memorial Award https://www.python.org/community/awards/frank-willison/
 
@@ -1746,31 +1773,5 @@ Sources at https://github.com/tibs/python-history
      * Cameron Laird (2004)
      * Fredrik Lundh (2003)
      * Andrew Kuchling (2002)
-
-  Collected video links:
-
-  * video: https://www.youtube.com/channel/UChA9XP_feY1-1oSy2L7acog - PyCon UK videos
-
-  * video: 2006 https://www.youtube.com/watch?v=1wAOy88WxmY Interview with Tim Peters, PyCon 2006: Chatting with Tim Peters on PyPy, Python and other stuff
-  * video: 2012 http://pyvideo.org/europython-2012/the-story-of-stackless-python.html
-  * video: 2014 https://archive.org/details/pyconza2014-python-ideas What I learned about Python – and about Guido's time machine – by reading the python-ideas mailing list 
-
-      * slides for the same: https://speakerdeck.com/pyconza/pyconza-2014-what-i-learned-about-python-and-about-guidos-time-machine-by-reading-the-python-ideas-mailing-list-by-david-mertz
-
-  * video: 2014 https://www.youtube.com/watch?v=CI_RPSbsRw8 - Pycon UK 2014 keynote: A time traveler's guide to Python, Jessica McKellar. First 7 minutes are a quick dash through the history of Python itself.
-  * video: 2016 Monty Python for pythonistas, sa friends PyCon Canada 2016: https://www.youtube.com/watch?v=gJ4duC-V6Xw&feature=youtu.be
-
-  and another unrelated video I want to watch:
-
-  * http://pyvideo.org/pycon-us-2012/diversity-in-practice-how-the-boston-python-user.html 
-    - Diversity in practice: How the Boston Python User Group grew to 1700
-    people and over 15% women 
-
-  Timeline makers:
-
-  * https://www.preceden.com/timeline-makers - list of 33 choices
-  * https://www.beedocs.com/timeline3D/mac/
-  * http://www.ispringsolutions.com/blog/top-10-free-and-paid-interactive-timeline-makers/
-  * https://support.office.com/en-gb/article/Create-a-timeline-9c4448a9-99c7-4b0e-8eff-0dcf535f223c - using Excel
 
 .. vim: set filetype=rst tabstop=8 softtabstop=2 shiftwidth=2 expandtab:
