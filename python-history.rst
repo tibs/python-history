@@ -297,7 +297,11 @@ Before 1994: Dec 1991 Python 0.9.4alpha
 ---------------------------------------
 
 * new exceptions
-* functions are called with 0..N arguments, not just 0 or 1. So: ``def init(self, (x, y))`` becomes ``def init(self, x, y)``
+
+* functions are called with 0..N arguments, not just 0 or 1.
+
+    ``def init(self, (x, y))`` becomes ``def init(self, x, y)``
+
 * ``x[-1]`` is equivalent to ``x[len(x)-1]``
 
 ----
@@ -367,7 +371,7 @@ Usenet and comp.lang.python
 
 * The BDFL
 * Guido's tendency to release a new version of Python and immediately go on holiday
-* The PSA (who did exist) and tge PSU (who definitely do not exist)
+* The PSA (who did exist) and the PSU (who definitely do not exist)
 * Guido's time machine
 * Python the role playing game
 * timbot, effbot, martellibot
@@ -426,11 +430,7 @@ Usenet and comp.lang.python
 
 * Python **1.2**
 
-  - docstrings
-
 * Python **1.3**
-
-  - the "ni" module
 
 * The development of Grail started
 
@@ -587,8 +587,6 @@ Python **1.4**
 ====
 
 * Python **1.5**
-
-  - "re" module introduced
 
 * Christian Tismer starts up the `Starship Python`_
 
@@ -796,8 +794,6 @@ in various ways:
 
 * Python **1.5.2**
 
-  - documentation separated out
-
 * Zen of Python
 
 .. note::
@@ -826,14 +822,32 @@ in various ways:
 1999 Apr Python 1.5.2
 ----------------------
 
-  - docs separated out into a separate distributable
-  - IDLE introduced
-  - bare ``raise`` re-raises
-  - """Added a hack so that when you type 'quit' or 'exit' at the interpreter,
+* docs separated out
+* IDLE introduced
+* bare ``raise`` re-raises
+* ``quit`` and ``exit`` at the Python prompt tell you how to exit
+* list ``pop`` method, experimentally
+* new module ndiff
+
+.. note::
+
+  More details:
+
+  * docs separated out into a separate distributable
+  * IDLE introduced
+  * bare ``raise`` re-raises
+  * """Added a hack so that when you type 'quit' or 'exit' at the interpreter,
     you get a friendly explanation of how to press Ctrl-D (or Ctrl-Z) to
     exit."""
-  - list ``pop`` method, experimentally
-  - ``ndiff.py`` - Tim Peter's text diffing tool
+  * list ``pop`` method, experimentally
+  * ``ndiff.py`` - Tim Peter's text diffing tool
+
+  There's a lot of argument behing how quit and exit at the Python prompt
+  behave! They can't just exit because the Python prompt doesn't treat things
+  (much) more specially than Python itself, and they aren't function calls,
+  they're just objects. So the compromise is to change their representation to
+  give the information the user needs. But of course many people are still
+  unhappy.
 
 
 ----
@@ -999,14 +1013,7 @@ The first non-CNRI version
 
 * Python **2.2**
 
-* eff-bot's favourite lamda refactoring rule::
-
-      1) write a lambda function
-      2) write a comment explaining what the heck that lambda does
-      3) study the comment for a while, and think of a name that captures
-         the essence of the comment
-      4) convert the lambda to a def statement, using that name
-      5) remove the comment 
+* eff-bot's favourite lamda refactoring rule
 
 * Tim Peters doctest
 
@@ -1020,7 +1027,7 @@ The first non-CNRI version
   http://www.perl.com/pub/2001/04/01/parrot.htm
   and the story behind it is told at http://archive.oreilly.com/pub/a/oreilly//news/parrotstory_0401.html
 
-Plone released
+* Plone released
 
 .. note::
 
@@ -1064,6 +1071,20 @@ Plone released
     of the Zope application server. Plone is positioned as an "Enterprise CMS"
     and is most commonly used for intranets and as part of the web presence of
     large organizations."""
+
+----
+
+eff-bot's favourite lamda refactoring rule
+==========================================
+
+::
+
+      1) write a lambda function
+      2) write a comment explaining what the heck that lambda does
+      3) study the comment for a while, and think of a name that captures
+         the essence of the comment
+      4) convert the lambda to a def statement, using that name
+      5) remove the comment 
 
 ----
 
@@ -1281,11 +1302,11 @@ License now "Python Software Foundation License"
 2005
 ====
 
-IronPython started
+* IronPython started
 
-Django released
+* Django released
 
-Numpy produced, by combining Numeric and Numarray
+* Numpy produced, by combining Numeric and Numarray
 
 .. note::
 
