@@ -230,7 +230,7 @@ Why I like Python
 
 .. |year| unicode:: U+1F535
 
--26 and on |year| Before 1994
+-26..-24 |year| Before 1994
 =============================
 
 Python **0.9.0** in 1991, followed by a flurry of other versions (not all
