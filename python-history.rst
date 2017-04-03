@@ -224,8 +224,14 @@ Why I like Python
 
 ----
 
-Before 1994
-===========
+.. A marker to make it obvious which slides represent a whole year.
+.. I'm (perhaps) chancing it a bit for portability by using direct embedding
+.. of a Unicode character. The blue circle 🔵 is U+1F535
+
+.. |year| unicode:: U+1F535
+
+|year| Before 1994
+==================
 
 Python **0.9.0** in 1991, followed by a flurry of other versions (not all
 released), leading up to **0.9.8** in 1993
@@ -327,8 +333,8 @@ Before 1994: Python 0.9.8
 
 ----
 
-1994
-====
+|year| 1994
+===========
 
 * Python **1.0**
 * Python **1.1**
@@ -367,7 +373,7 @@ Before 1994: Python 0.9.8
 ----
 
 Usenet and comp.lang.python
-===========================
+---------------------------
 
 * The BDFL
 * Guido's tendency to release a new version of Python and immediately go on holiday
@@ -425,8 +431,8 @@ Usenet and comp.lang.python
 
 ----
 
-1995
-====
+|year| 1995
+===========
 
 * Python **1.2**
 
@@ -557,8 +563,8 @@ The "ni" module supports importing modules with hierarchical names. So, for inst
 
 ----
 
-1996
-====
+|year| 1996
+===========
 
 Python **1.4**
 
@@ -583,8 +589,8 @@ Python **1.4**
 
 ----
 
-1997
-====
+|year| 1997
+===========
 
 * Python **1.5**
 
@@ -672,8 +678,8 @@ PythonWin and other associated Windows support is still released separately by M
 
 ----
 
-1998
-====
+|year| 1998
+===========
 
 **Stackless Python** started
 
@@ -682,7 +688,7 @@ PythonWin and other associated Windows support is still released separately by M
 ----
 
 Stackless Python
-================
+----------------
 
 Stackless Python, by Christian Tismer, was a set of modification for CPython
 to provide true continuations, replaced later on with tasklets.
@@ -726,7 +732,7 @@ PyPy.
 ----
 
 Zope
-====
+----
 
 Zope was the killer Python app that never quite became so. But it's important
 in various ways:
@@ -789,8 +795,8 @@ in various ways:
 
 ----
 
-1999
-====
+|year| 1999
+===========
 
 * Python **1.5.2**
 
@@ -852,8 +858,8 @@ in various ways:
 
 ----
 
-2000
-====
+|year| 2000
+===========
 
 * Python **1.6**, the penultimate CNRI version
 
@@ -1004,8 +1010,8 @@ The first non-CNRI version
 
 ----
 
-2001
-====
+|year| 2001
+===========
 
 * First release of reStructuredText
 
@@ -1075,7 +1081,7 @@ The first non-CNRI version
 ----
 
 eff-bot's favourite lambda refactoring rule
-===========================================
+-------------------------------------------
 
 ::
 
@@ -1152,8 +1158,8 @@ License now "Python Software Foundation License"
 
 ----
 
-2002
-====
+|year| 2002
+===========
 
 * First EuroPython
 
@@ -1205,8 +1211,8 @@ License now "Python Software Foundation License"
 
 ----
 
-2003
-====
+|year| 2003
+===========
 
 * Python **2.3**
 
@@ -1248,8 +1254,8 @@ License now "Python Software Foundation License"
 
 ----
 
-2004
-====
+|year| 2004
+===========
 
 * Python **2.4**
 
@@ -1299,8 +1305,8 @@ License now "Python Software Foundation License"
 
 ----
 
-2005
-====
+|year| 2005
+===========
 
 * IronPython started
 
@@ -1340,8 +1346,8 @@ License now "Python Software Foundation License"
 
 ----
 
-2006
-====
+|year| 2006
+===========
 
 * Python **2.5**
 
@@ -1392,8 +1398,8 @@ License now "Python Software Foundation License"
 
 ----
 
-2007
-====
+|year| 2007
+===========
 
 * Cython officially launched
 
@@ -1419,7 +1425,7 @@ License now "Python Software Foundation License"
 ----
 
 PyConUK
-=======
+-------
 
 The UK Python conferences were started by John Pinner and the West Midlands
 Python group in 2007.
@@ -1481,8 +1487,8 @@ Python group in 2007.
 
 ----
 
-2008
-====
+|year| 2008
+===========
 
 * Python **2.6**
 
@@ -1623,8 +1629,8 @@ So much stuff. This is only a sample:
 
 ----
 
-2009
-====
+|year| 2009
+===========
 
 * Python **3.1**
 
@@ -1672,8 +1678,8 @@ So much stuff. This is only a sample:
 
 ----
 
-2010
-====
+|year| 2010
+===========
 
 * Python **2.7**
 
@@ -1723,8 +1729,8 @@ Mostly backportings from 3.1
 
 ----
 
-2011
-====
+|year| 2011
+===========
 
 * Python **3.2**
 
@@ -1758,8 +1764,8 @@ Mostly backportings from 3.1
 
 ----
 
-2012
-====
+|year| 2012
+===========
 
 * Python **3.3**
 
@@ -1801,8 +1807,8 @@ Mostly backportings from 3.1
 
 ----
 
-2013
-====
+|year| 2013
+===========
 
 The MicroPython kickstarter
 
@@ -1822,8 +1828,8 @@ The MicroPython kickstarter
 
 ----
 
-2014
-====
+|year| 2014
+===========
 
 * Python **3.4**
 
@@ -1868,8 +1874,8 @@ No new syntax features
 
 ----
 
-2015
-====
+|year| 2015
+===========
 
 * Python **3.5**
 
@@ -1905,8 +1911,8 @@ No new syntax features
 
 ----
 
-2016
-====
+|year| 2016
+===========
 
 * Python **3.6**
 
@@ -1957,8 +1963,8 @@ No new syntax features
 
 ----
 
-2017
-====
+|year| 2017
+===========
 
 CPython source moved to github
 
@@ -1974,10 +1980,8 @@ CPython source moved to github
 
 ----
 
-.. |bluecircle| replace:: 🔵
-
-|bluecircle| 2018
-=================
+|year| 2018
+===========
 
 Python **3.7** is currently expected to be released in June 2018
 
