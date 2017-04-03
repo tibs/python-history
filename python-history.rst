@@ -27,26 +27,23 @@ Written using reStructuredText_.  Presented using hovercraft_.
 
   Other obviously related resources:
 
-  * http://python-history.blogspot.co.uk/ - The History of Python by Guido
+  * `The History of Python`__ blog by Guido
+  * `A Brief History of Python`__ by Sam Wood, Oct 2015
+  * `The Making of Python`__ - Interview with Guido
+  * `History and license`__
+  * video: Pycon UK 2014 keynote: `A time traveler's guide to Python`__,
+    Jessica McKellar. The first 7 minutes are a quick dash through the history
+    of Python itself.
+  * video: 2014  `What I learned about Python – and about Guido's time machine – by reading the
+    python-ideas mailing list`__ by David Mertz, and `slides`__ for the same
 
-    * Starts at http://python-history.blogspot.co.uk/2009/04/metaclasses-and-extension-classes-aka.html
-
-  * https://www.packtpub.com/books/content/brief-history-python - A Brief
-    History of Python by Sam Wood, Oct 2015
-  * http://www.artima.com/intv/pythonP.html - The Making of Python - Interview
-    with Guido
-  * https://docs.python.org/3/license.html - history and license
-
-  * video: https://www.youtube.com/channel/UChA9XP_feY1-1oSy2L7acog - PyCon UK videos
-
-  * video: https://www.youtube.com/watch?v=CI_RPSbsRw8 - Pycon UK 2014 keynote: A time
-    traveler's guide to Python, Jessica McKellar
-
-    First 7 minutes are a quick dash through the history of Python itself.
-
-  * video: 2014 https://archive.org/details/pyconza2014-python-ideas What I learned about Python – and about Guido's time machine – by reading the python-ideas mailing list 
-
-      * slides for the same: https://speakerdeck.com/pyconza/pyconza-2014-what-i-learned-about-python-and-about-guidos-time-machine-by-reading-the-python-ideas-mailing-list-by-david-mertz
+  .. __: http://python-history.blogspot.co.uk/
+  .. __: https://www.packtpub.com/books/content/brief-history-python
+  .. __: http://www.artima.com/intv/pythonP.html
+  .. __: https://docs.python.org/3/license.html
+  .. __: https://www.youtube.com/watch?v=CI_RPSbsRw8
+  .. __: https://archive.org/details/pyconza2014-python-ideas
+  .. __: https://speakerdeck.com/pyconza/pyconza-2014-what-i-learned-about-python-and-about-guidos-time-machine-by-reading-the-python-ideas-mailing-list-by-david-mertz
 
 ----
 
@@ -139,7 +136,7 @@ Where Python came from
   16-ton weight from the TV series or of a can of SPAM :-) """
 
   * perl: https://en.wikipedia.org/wiki/Perl
-  * tcl: http://www.tcl.tk/about/history.html by Jogn Ousterhout
+  * tcl: http://www.tcl.tk/about/history.html by John Ousterhout
   * occam: https://en.wikipedia.org/wiki/Occam_(programming_language)
 
   NB: significant *indentation*, not significant whitespace
@@ -372,6 +369,7 @@ Before 1994: Python 0.9.8
 
 ----
 
+
 Usenet and comp.lang.python
 ---------------------------
 
@@ -567,11 +565,6 @@ The "ni" module supports importing modules with hierarchical names. So, for inst
 ===============
 
 Python **1.4**
-
-.. note::
-
-  ...
-
 
 ----
 
@@ -1348,11 +1341,6 @@ License now "Python Software Foundation License"
 
 * Python **2.5**
 
-.. note::
-
-  ...
-
-
 ----
 
 2006 Sep Python 2.5
@@ -1703,14 +1691,12 @@ So much stuff. This is only a sample:
     * http://nuitka.net/
     * https://docs.python.org/3/faq/design.html#can-python-be-compiled-to-machine-code-c-or-some-other-language
 
-  * Python 2.7 will not be maintained past 2020 (https://pythonclock.org/)
-
 ----
 
 2010 Jul Python 2.7
 --------------------
 
-2.7 will be supported until 2020 (originally, until 2010)
+2.7 will be supported until 2020
 
 Mostly backportings from 3.1
 
@@ -1723,6 +1709,14 @@ Mostly backportings from 3.1
 * collections.Counter
 * unittest greatly enhanced - becomes what was the external unittest2
 * ensurepip appears in 2.7.9
+
+.. note::
+
+  2.7 will be supported until 2020 (originally, it was only until 2010)
+  
+  See https://pythonclock.org/
+
+  Mostly backportings from 3.1 - I don't plan to dwell on 2.7
 
 ----
 
@@ -1765,10 +1759,6 @@ Mostly backportings from 3.1
 ==============
 
 * Python **3.3**
-
-.. note::
-
-  ...
 
 ----
 
@@ -1875,10 +1865,6 @@ No new syntax features
 ==============
 
 * Python **3.5**
-
-.. note::
-
-  ...
 
 ----
 
