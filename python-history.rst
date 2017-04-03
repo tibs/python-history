@@ -1028,10 +1028,7 @@ The first non-CNRI version
 * Numarray
 * SciPy
 
-* Parrot April Fool joke (joint development of Perl 6 and Python on the same
-  interpreter, producing a new language to be called Parrot)
-  http://www.perl.com/pub/2001/04/01/parrot.htm
-  and the story behind it is told at http://archive.oreilly.com/pub/a/oreilly//news/parrotstory_0401.html
+* Parrot April Fool joke
 
 * Plone released
 
@@ -1218,7 +1215,7 @@ License now "Python Software Foundation License"
 
 * First PyCon in the USA (Washington DC)
 
-* PyPy project starts (see http://pypy.org/people.html)
+* PyPy project starts
 
 .. note::
 
@@ -1634,7 +1631,7 @@ So much stuff. This is only a sample:
 
 * Python **3.1**
 
-* `PEP 3003`_  Python Language Moratorium
+* PEP 3003: Python Language Moratorium
 
 * Announcement of proposed move to Mercurial
 
@@ -1853,7 +1850,7 @@ The MicroPython kickstarter
 
 No new syntax features
 
-* ``codecs.encode()`` and ``codesc.decode()`` (introduced in 2.4) now properly documented, and have been improved.
+* ``codecs.encode()`` and ``codesc.decode()`` improved
 * unittest gains ``subTest()`` and ``assertLogs()``
 * new modules: ensurepip, enum, pathlib
 * asyncio module, with a provisional API
@@ -1916,7 +1913,7 @@ No new syntax features
 
 * Python **3.6**
 
-* Linux kernel documentation now in reStructuredText, using Spinx
+* Linux kernel documentation now in reStructuredText, using Sphinx
 
 .. note::
 
