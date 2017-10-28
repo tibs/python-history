@@ -8,7 +8,7 @@ A slideshow produced for the `April 2017 meeting`_ of CamPUG_.
 
 and re-used at `PyCon UK 2017`_
 
-.. `PyCon UK 2017`: http://2017.pyconuk.org/
+.. _`PyCon UK 2017`: http://2017.pyconuk.org/
 
 The slides with notes are in `<python-history.rst>`_.
 
