@@ -10,10 +10,11 @@ would take too long...*
 
 By Tibs / Tony Ibbs, April 2017
 
-Written using reStructuredText_.  Presented using hovercraft_.
+Written using reStructuredText_.  Presented using hovercraft_. Sources on github_
 
 .. _reStructuredText: http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html
 .. _hovercraft: https://github.com/regebro/hovercraft
+.. _github: https://github.com/tibs/python-history
 
 .. note::
 
@@ -221,7 +222,6 @@ Why I like Python
 
 ----
 
-.. A marker to make it obvious which slides represent a whole year.
 .. I'm (perhaps) chancing it a bit for portability by using direct embedding
 .. of a Unicode character. The blue circle 🔵 is U+1F535
 
@@ -248,6 +248,13 @@ released), leading up to **0.9.8** in 1993
 
   * http://legacy.python.org/search/hypermail/python-1993/0001.html -
     announcement of 0.9.8, Jan 1993
+
+  Slides with the blue circle 🔵 represent a new year. Text in bold indicates a
+  topic that will have its own slide, coming up shortly. The negative numbers on
+  blue dot slides indicate how many years ago that slide represents - measured
+  from year 2017 as year 0.
+
+  As I said at the start, this is probably the year I first found Python.
 
 ----
 
@@ -683,7 +690,7 @@ PythonWin and other associated Windows support is still released separately by M
 Stackless Python
 ----------------
 
-Stackless Python, by Christian Tismer, was a set of modification for CPython
+Stackless Python, by Christian Tismer, was a set of modifications for CPython
 to provide true continuations, replaced later on with tasklets.
 
 It eventually led to the greenlets module, and is an important precursor to
@@ -769,7 +776,7 @@ in various ways:
   a `StructuredText github repository`_. To get a flavour of it, read the
   `Introduction to Structured Text`_. `StructuredTextNG`_ ("next generation")
   was intended to be a replacement. Back in the day, I wrote a document which
-  tried to `define StructuredTextNG` more formally than its own documentaiton,
+  tried to `define StructuredTextNG`_ more formally than its own documentaiton,
   as part of the work to work out a replacement.
 
   .. _4.1.0: https://pypi.python.org/pypi/zope.structuredtext
@@ -841,7 +848,7 @@ in various ways:
   * list ``pop`` method, experimentally
   * ``ndiff.py`` - Tim Peter's text diffing tool
 
-  There's a lot of argument behing how quit and exit at the Python prompt
+  There's a lot of argument behind how quit and exit at the Python prompt
   behave! They can't just exit because the Python prompt doesn't treat things
   (much) more specially than Python itself, and they aren't function calls,
   they're just objects. So the compromise is to change their representation to
@@ -907,6 +914,10 @@ in various ways:
        contained a list or not, since ``o`` was allowed as a list delimiter,
        and there was no need to precede a list with a blank line.)
 
+       (Actually, this example needs fixing, as StructuredText required blank
+       lines around body elements like list items. See my other talk on
+       "a history of markup languages" at  https://github.com/tibs/markup-history)
+
     He also insisted that any Python documentation system must allow him to
     use "<" and ">" without needing to use escapes - he wanted to be able to
     discuss XML easily, and presumably also to use the constructs like "<name>".
@@ -932,7 +943,7 @@ in various ways:
 
       (Basically, Perl 6 is a new language broadly based on Perl 5, and whilst
       it is arguably a much better, and perhaps more interesting, language, it
-      has never seemed to gain any traction - although many of its features
+      has never seemed to gain much traction - although many of its features
       have fed back into Perl 5. By contrast, Python 3 was much more modest
       in its changes, and has clearly been much more successful.)
 
@@ -1027,7 +1038,7 @@ The first non-CNRI version
 
 .. note::
 
-  As stated in the notes for an earlier slide, the first release of
+  As stated in the notes for an earlier slide, the first formal release of
   reStructuredText was in June 2001.
 
   Python 2.1 introduced Tim Peters doctest:

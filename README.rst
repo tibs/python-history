@@ -6,6 +6,16 @@ A slideshow produced for the `April 2017 meeting`_ of CamPUG_.
 .. _`April 2017 meeting`: https://www.meetup.com/CamPUG/events/233934907/
 .. _CamPUG: https://www.meetup.com/CamPUG/
 
+and re-used at `PyCon UK 2017`_
+
+.. `PyCon UK 2017`: http://2017.pyconuk.org/
+
+The slides with notes are in `<python-history.rst>`_.
+
+If you're at a presentation of this talk, but can't see the screen at the
+front very well, then the "bare" slides in `<just-the-slides.rst>`_ may be
+more useful.
+
 For convenience, you can use the Makefile to show the presentation, create the
 HTML version of the talk, and so on. For instance::
 
@@ -13,7 +23,7 @@ HTML version of the talk, and so on. For instance::
 
 will present the slideshow on ``https://localhost:8000``.
 
-For what the Makefile can do::
+For what the Makefile can do, use::
 
   $ make help
 
