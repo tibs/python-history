@@ -10,6 +10,11 @@ and re-used at `PyCon UK 2017`_
 
 .. _`PyCon UK 2017`: http://2017.pyconuk.org/
 
+This was an experiment on "how many slides *would* it take to give a talk on the history of Python?".
+Clearly the answer is "too many", which means that this talk is given from the start until time runs
+out, which appears to work quite well as the earlier parts of the story are most likely to be those
+the audience is unfamiliar with.
+
 The slides with notes are in `<python-history.rst>`_.
 
 If you're at a presentation of this talk, but can't see the screen at the
